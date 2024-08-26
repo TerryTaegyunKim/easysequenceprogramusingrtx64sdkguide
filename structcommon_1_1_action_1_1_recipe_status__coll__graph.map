@@ -1,0 +1,3 @@
+<map id="common::Action::RecipeStatus" name="common::Action::RecipeStatus">
+<area shape="rect" id="Node000001" title="레시피 상태를 정의하는 구조체입니다." alt="" coords="5,5,200,139"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="WMXLib::UpdateEcatStatus" name="WMXLib::UpdateEcatStatus">
+<area shape="rect" id="Node000001" title="엔진 상태를 업데이트합니다." alt="" coords="620,31,806,57"/>
+<area shape="rect" id="Node000002" href="$class_w_m_x_lib.html#a4593526f01b7407c20ad43f21e965d8f" title="EtherCAT 축을 설정합니다." alt="" coords="419,31,572,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="604,47,572,47,572,41,604,41"/>
+<area shape="rect" id="Node000003" href="$_win_app_8cpp.html#adbe7f1246db3436d145db64722faed15" title=" " alt="" coords="260,5,371,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,34,371,29,372,24,404,28"/>
+<area shape="rect" id="Node000005" href="$_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="404,47,55,47,55,41,404,41"/>
+<area shape="rect" id="Node000004" href="$_win_app_8cpp.html#a4bab8a811513db99dd6cf77f2072aa88" title=" " alt="" coords="103,5,212,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="244,21,213,21,213,16,244,16"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="88,35,56,42,55,37,87,30"/>
+</map>

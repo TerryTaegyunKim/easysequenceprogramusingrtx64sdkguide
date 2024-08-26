@@ -1,0 +1,7 @@
+<map id="common::Action::Object" name="common::Action::Object">
+<area shape="rect" id="Node000001" title="동작의 객체를 정의하는 구조체입니다." alt="" coords="89,373,242,443"/>
+<area shape="rect" id="Node000002" href="$structcommon_1_1_action_1_1_motion.html" title="모션을 정의하는 구조체입니다." alt="" coords="5,5,160,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,308,151,356,146,358,130,310"/>
+<area shape="rect" id="Node000003" href="$structcommon_1_1_action_1_1_io.html" title="I/O를 정의하는 구조체입니다." alt="" coords="185,59,311,256"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,256,221,304,204,350,199,360,195,357,199,348,215,302,228,255"/>
+</map>

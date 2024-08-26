@@ -1,0 +1,5 @@
+<map id="Prompt::Spinner" name="Prompt::Spinner">
+<area shape="rect" id="Node000001" title="콘솔에 스피너 애니메이션을 출력합니다." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="Node000002" href="$class_prompt.html#ab6641037a1722c838d55e02618c3270c" title="콘솔에 스피너 애니메이션을 출력합니다." alt="" coords="169,5,284,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,16,153,16,153,21,121,21"/>
+</map>

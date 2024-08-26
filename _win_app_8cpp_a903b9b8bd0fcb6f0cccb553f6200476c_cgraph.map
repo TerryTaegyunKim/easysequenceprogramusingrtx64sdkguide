@@ -1,0 +1,9 @@
+<map id="CreateWatchdogThread" name="CreateWatchdogThread">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,164,57"/>
+<area shape="rect" id="Node000002" href="$_win_app_8cpp.html#adede27729e0d39401806ac56f3a650ed" title=" " alt="" coords="212,31,331,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,41,196,41,196,47,164,47"/>
+<area shape="rect" id="Node000003" href="$class_w_m_x_lib.html#a9ca9dddeb821f9a04fd303dd487dee3f" title="긴급 정지를 수행합니다." alt="" coords="388,5,553,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,34,372,29,373,34,331,39"/>
+<area shape="rect" id="Node000004" href="$class_w_m_x_lib.html#a99f28b9ff4c7d4c105cb18b482b48545" title="긴급 정지를 해제합니다." alt="" coords="379,56,562,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="331,49,364,53,363,58,331,54"/>
+</map>

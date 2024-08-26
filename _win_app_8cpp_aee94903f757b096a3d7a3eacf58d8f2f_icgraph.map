@@ -1,0 +1,16 @@
+<map id="GetSystemConfig" name="GetSystemConfig">
+<area shape="rect" id="Node000001" title=" " alt="" coords="664,56,789,83"/>
+<area shape="rect" id="Node000002" href="$_win_app_8cpp.html#ab004bb3ed848531ece00b3093909b2ad" title=" " alt="" coords="260,5,433,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="648,62,433,33,434,28,649,56"/>
+<area shape="rect" id="Node000004" href="$_win_app_8cpp.html#ad1c7cc0ca7b7cd239b6120ea7dafd9b6" title=" " alt="" coords="481,81,616,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="649,83,616,88,615,82,648,78"/>
+<area shape="rect" id="Node000003" href="$_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,32,103,53,56,65,54,60,102,48,244,26"/>
+<area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="465,93,55,73,55,68,466,88"/>
+<area shape="rect" id="Node000005" href="$_win_app_8cpp.html#a4bab8a811513db99dd6cf77f2072aa88" title=" " alt="" coords="103,107,212,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="466,103,212,119,212,114,465,97"/>
+<area shape="rect" id="Node000006" href="$_win_app_8cpp.html#ad1d8d77c29d483b0d119e05173b08673" title=" " alt="" coords="276,157,418,184"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="498,116,434,141,386,159,384,154,432,136,497,112"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="107,103,54,81,56,77,109,98"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="279,155,209,137,211,131,280,150"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="WatchdogThread" name="WatchdogThread">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,125,57"/>
+<area shape="rect" id="Node000002" href="$class_w_m_x_lib.html#a9ca9dddeb821f9a04fd303dd487dee3f" title="긴급 정지를 수행합니다." alt="" coords="182,5,347,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,34,166,29,166,34,125,39"/>
+<area shape="rect" id="Node000003" href="$class_w_m_x_lib.html#a99f28b9ff4c7d4c105cb18b482b48545" title="긴급 정지를 해제합니다." alt="" coords="173,56,356,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,49,158,53,157,58,124,54"/>
+</map>

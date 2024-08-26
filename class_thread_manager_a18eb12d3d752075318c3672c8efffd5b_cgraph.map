@@ -1,0 +1,9 @@
+<map id="ThreadManager::~ThreadManager" name="ThreadManager::~ThreadManager">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,223,57"/>
+<area shape="rect" id="Node000002" href="$class_thread_manager.html#aceefa76e8011bee95d2dc19c28cc8308" title=" " alt="" coords="271,31,416,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,41,255,41,255,47,223,47"/>
+<area shape="rect" id="Node000003" href="$class_thread_manager.html#a5d12a3a4b96522d287cf1de4879dd3a7" title=" " alt="" coords="464,5,627,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,32,448,28,449,33,417,38"/>
+<area shape="rect" id="Node000004" href="$class_thread_manager.html#a6f2acc89fa00ae337de37c5e0842ee7a" title=" " alt="" coords="472,56,619,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="417,50,457,56,456,61,416,56"/>
+</map>

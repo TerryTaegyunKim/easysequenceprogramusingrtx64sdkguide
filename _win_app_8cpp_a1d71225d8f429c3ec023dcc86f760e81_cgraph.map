@@ -1,0 +1,46 @@
+<map id="SendActionsConfig" name="SendActionsConfig">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,665,139,691"/>
+<area shape="rect" id="Node000002" href="$_win_app_8cpp.html#a9470ae1a4450c0115066eabafeb5c698" title=" " alt="" coords="202,337,288,363"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,663,227,376,232,378,83,666"/>
+<area shape="rect" id="Node000017" href="$classshared_memory_1_1_shared_memory.html#a212b8529781cfac2d75de64db2abdea6" title="데이터를 송신하는 메서드입니다." alt="" coords="358,682,561,725"/>
+<area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="139,680,342,693,342,698,139,685"/>
+<area shape="rect" id="Node000018" href="$_win_app_8cpp.html#a528fb4f251de6d1750001554ab21964d" title=" " alt="" coords="187,715,303,742"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="121,689,183,708,182,713,120,695"/>
+<area shape="rect" id="Node000003" href="$classcommon_1_1_format.html#ad2933a25a043c93491a091f5612e7dd2" title="바이트 배열을 double 값으로 변환하는 함수입니다." alt="" coords="351,311,568,338"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,342,335,337,336,342,289,348"/>
+<area shape="rect" id="Node000004" href="$classcommon_1_1_format.html#a4d0c7354f04e8cb18cd30fe71eec717f" title="바이트 배열을 int 값으로 변환하는 함수입니다." alt="" coords="364,362,555,389"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="289,352,349,360,348,365,288,358"/>
+<area shape="rect" id="Node000005" href="$classcommon_1_1_format.html#a1d576fa2c83e0d0d1b1f129a307becfe" title="바이트 배열을 unsigned int 값으로 변환하는 함수입니다." alt="" coords="360,413,560,439"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="272,362,309,380,352,398,376,406,374,411,350,403,307,385,270,366"/>
+<area shape="rect" id="Node000006" href="$classcommon_1_1_format.html#aec91aa3973870d8935f567766347e548" title="double 값을 바이트 배열로 변환하는 함수입니다." alt="" coords="368,463,551,506"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="259,362,297,405,324,429,352,449,362,454,359,459,350,454,320,433,294,409,255,366"/>
+<area shape="rect" id="Node000007" href="$classini_parser_1_1_ini_parser.html#a4498306f4340f406ad3d1f133f2a3a06" title="GetAllKeysInSection 함수에서 반환된 동적 메모리를 해제하는 함수입니다." alt="" coords="639,321,772,363"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="251,363,259,404,277,460,290,488,307,516,328,540,352,560,409,588,434,594,459,596,484,594,509,587,567,560,592,543,613,522,649,473,675,422,691,377,696,379,680,424,654,476,617,526,595,547,570,564,511,592,485,599,459,601,433,599,407,593,350,564,324,544,303,519,285,491,272,462,254,406,245,364"/>
+<area shape="rect" id="Node000008" href="$classini_parser_1_1_ini_parser.html#a14ee5fb071a7c66a45d7d92ab325e48e" title="INI 파일의 특정 섹션에서 모든 키를 가져오는 함수입니다." alt="" coords="630,545,781,587"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="249,363,255,412,271,479,284,514,302,548,324,578,352,603,387,620,425,630,464,633,503,631,580,615,645,591,647,596,581,620,504,636,464,638,424,635,385,625,350,607,320,582,297,551,279,516,266,480,250,413,244,364"/>
+<area shape="rect" id="Node000009" href="$classini_parser_1_1_ini_parser.html#ad13701b97083de63a167d019754f56f2" title="INI 파일로부터 지정된 섹션과 키에 대한 값을 가져오는 함수입니다." alt="" coords="639,58,772,101"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="245,336,252,290,269,227,282,193,300,161,322,131,349,107,381,88,415,74,451,64,488,59,560,56,624,62,624,67,560,62,488,64,452,70,417,79,383,92,353,111,326,135,305,164,287,195,274,228,257,291,250,337"/>
+<area shape="rect" id="Node000010" href="$_win_app_8cpp.html#a8a06f0e167fd52499dd35a88471c5f05" title=" " alt="" coords="400,159,519,186"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="249,335,263,306,284,268,313,229,350,196,384,180,386,185,352,200,317,232,289,271,267,308,254,337"/>
+<area shape="rect" id="Node000011" href="$classcommon_1_1_message.html#a47587b821f2c83f89008cc11f387f9db" title="Level 3 메시지를 출력하는 함수입니다." alt="" coords="616,125,795,151"/>
+<area shape="poly" id="edge19_Node000002_Node000011" title=" " alt="" coords="246,336,255,296,274,243,304,189,325,165,350,145,384,128,421,116,459,108,498,105,573,108,638,118,637,124,573,114,498,111,460,114,422,121,386,132,352,150,329,169,309,192,278,245,260,298,251,337"/>
+<area shape="rect" id="Node000013" href="$classstopowatch_1_1_stopwatch.html#aa8017c358d91e6facd902a0f12176da0" title="현재 시간의 타임스탬프를 문자열로 반환하는 함수입니다." alt="" coords="626,214,785,257"/>
+<area shape="poly" id="edge20_Node000002_Node000013" title=" " alt="" coords="252,363,264,396,283,440,313,483,331,501,352,516,411,544,438,552,463,556,488,554,513,548,539,535,567,516,588,494,598,471,601,447,599,422,596,367,600,338,614,307,632,284,654,264,658,268,636,288,619,310,606,339,601,368,604,421,606,447,603,472,592,497,570,520,542,540,515,553,489,560,463,561,436,557,409,549,350,520,328,505,309,486,279,442,259,398,247,365"/>
+<area shape="rect" id="Node000014" href="$classcommon_1_1_format.html#a8a2c3f9d13d7df423dac497d33d3309a" title="int 값을 바이트 배열로 변환하는 함수입니다." alt="" coords="364,210,555,237"/>
+<area shape="poly" id="edge16_Node000002_Node000014" title=" " alt="" coords="254,334,293,291,320,267,350,246,363,240,365,245,352,251,323,271,297,294,258,338"/>
+<area shape="rect" id="Node000015" href="$classcommon_1_1_message.html#a40bb53cafcaa484ddcf126502abc161f" title="Level 2 메시지를 출력하는 함수입니다." alt="" coords="616,7,795,34"/>
+<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="244,336,249,284,264,209,277,168,295,129,319,93,349,63,377,44,408,29,473,11,539,4,601,4,601,10,539,9,474,16,410,34,380,48,353,67,323,96,300,132,282,170,269,210,254,284,249,336"/>
+<area shape="rect" id="Node000016" href="$classcommon_1_1_format.html#aae5d473a1f5c13c84fe2147f57404c2e" title="unsigned int 값을 바이트 배열로 변환하는 함수입니다." alt="" coords="360,261,560,287"/>
+<area shape="poly" id="edge21_Node000002_Node000016" title=" " alt="" coords="270,334,307,315,350,297,374,289,376,294,352,302,309,320,272,339"/>
+<area shape="poly" id="edge10_Node000010_Node000007" title=" " alt="" coords="521,176,546,184,570,196,588,213,597,230,605,248,618,267,664,309,660,313,614,270,600,250,592,232,583,216,567,200,544,189,519,181"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="520,173,547,181,570,196,588,217,599,238,607,279,608,323,611,348,619,375,654,459,688,530,683,532,649,461,614,376,606,349,603,324,601,280,594,240,584,220,567,200,544,186,519,178"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="496,156,615,110,631,104,633,109,617,115,498,161"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="519,162,600,150,601,155,520,167"/>
+<area shape="poly" id="edge15_Node000010_Node000013" title=" " alt="" coords="520,184,569,195,613,207,611,212,568,201,519,189"/>
+<area shape="rect" id="Node000012" href="$classcommon_1_1_message.html#ae483efdcb4abf9eb13d618362cf86b51" title="TCHAR 형식의 문자열을 출력하는 일반적인 출력 함수입니다." alt="" coords="843,66,1008,93"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="758,122,857,95,859,100,759,127"/>
+<area shape="poly" id="edge18_Node000015_Node000012" title=" " alt="" coords="759,32,859,59,857,64,758,37"/>
+<area shape="poly" id="edge25_Node000018_Node000017" title=" " alt="" coords="303,719,342,715,343,720,304,725"/>
+<area shape="rect" id="Node000019" href="$classshared_memory_1_1_shared_memory.html#aa0ac84da4690d8f02030dce64d794b6a" title="데이터를 수신하는 메서드입니다." alt="" coords="358,749,561,791"/>
+<area shape="poly" id="edge24_Node000018_Node000019" title=" " alt="" coords="304,737,343,745,342,750,303,743"/>
+</map>

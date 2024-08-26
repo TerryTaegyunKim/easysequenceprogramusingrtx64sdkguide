@@ -1,0 +1,7 @@
+<map id="WMXLib::Initialize" name="WMXLib::Initialize">
+<area shape="rect" id="Node000001" title="WMX 장치를 초기화합니다." alt="" coords="5,47,133,73"/>
+<area shape="rect" id="Node000002" href="$class_w_m_x_lib.html#addb6732912c49c183fedc95e37508e93" title="EtherCAT 모듈의 사용 가능 여부를 확인합니다." alt="" coords="183,5,372,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,47,167,42,168,47,134,52"/>
+<area shape="rect" id="Node000003" href="$class_w_m_x_lib.html#aafa2d5d0730879cb70db1ef35c21b101" title="시뮬레이션 모듈의 사용 가능 여부를 확인합니다." alt="" coords="181,72,374,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,68,166,73,165,78,133,73"/>
+</map>

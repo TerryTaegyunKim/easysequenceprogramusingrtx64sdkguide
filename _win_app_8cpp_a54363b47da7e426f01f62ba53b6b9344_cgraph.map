@@ -1,0 +1,24 @@
+<map id="SendMotionConfig" name="SendMotionConfig">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,305,134,332"/>
+<area shape="rect" id="Node000002" href="$_win_app_8cpp.html#a8a06f0e167fd52499dd35a88471c5f05" title=" " alt="" coords="182,176,301,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,303,209,210,212,214,91,307"/>
+<area shape="rect" id="Node000009" href="$classshared_memory_1_1_shared_memory.html#a212b8529781cfac2d75de64db2abdea6" title="데이터를 송신하는 메서드입니다." alt="" coords="349,323,552,365"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="134,320,334,334,333,339,134,326"/>
+<area shape="rect" id="Node000010" href="$_win_app_8cpp.html#a528fb4f251de6d1750001554ab21964d" title=" " alt="" coords="183,356,300,383"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="118,330,180,349,178,354,117,335"/>
+<area shape="rect" id="Node000003" href="$classini_parser_1_1_ini_parser.html#a4498306f4340f406ad3d1f133f2a3a06" title="GetAllKeysInSection 함수에서 반환된 동적 메모리를 해제하는 함수입니다." alt="" coords="384,5,517,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,174,286,118,314,86,347,58,369,46,372,50,351,62,318,90,290,121,253,177"/>
+<area shape="rect" id="Node000004" href="$classini_parser_1_1_ini_parser.html#a14ee5fb071a7c66a45d7d92ab325e48e" title="INI 파일의 특정 섹션에서 모든 키를 가져오는 함수입니다." alt="" coords="376,72,526,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="262,173,301,149,348,124,362,118,364,123,350,129,304,154,265,178"/>
+<area shape="rect" id="Node000005" href="$classini_parser_1_1_ini_parser.html#ad13701b97083de63a167d019754f56f2" title="INI 파일로부터 지정된 섹션과 키에 대한 값을 가져오는 함수입니다." alt="" coords="384,139,517,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="301,178,369,169,370,174,302,184"/>
+<area shape="rect" id="Node000006" href="$classcommon_1_1_message.html#a47587b821f2c83f89008cc11f387f9db" title="Level 3 메시지를 출력하는 함수입니다." alt="" coords="362,205,540,232"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="302,195,347,201,346,207,301,200"/>
+<area shape="rect" id="Node000008" href="$classstopowatch_1_1_stopwatch.html#aa8017c358d91e6facd902a0f12176da0" title="현재 시간의 타임스탬프를 문자열로 반환하는 함수입니다." alt="" coords="372,256,530,299"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="268,201,350,242,366,248,364,253,348,246,266,206"/>
+<area shape="rect" id="Node000007" href="$classcommon_1_1_message.html#ae483efdcb4abf9eb13d618362cf86b51" title="TCHAR 형식의 문자열을 출력하는 일반적인 출력 함수입니다." alt="" coords="600,205,766,232"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="540,216,585,216,585,221,540,221"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="299,360,333,356,334,361,300,365"/>
+<area shape="rect" id="Node000011" href="$classshared_memory_1_1_shared_memory.html#aa0ac84da4690d8f02030dce64d794b6a" title="데이터를 수신하는 메서드입니다." alt="" coords="349,389,552,432"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="300,378,334,385,333,390,299,383"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="stopowatch::Stopwatch" name="stopowatch::Stopwatch">
+<area shape="rect" id="Node000001" title="여러 개의 타이머를 관리하고 성능 측정을 위한 기능을 제공하는 클래스입니다." alt="" coords="5,363,180,624"/>
+<area shape="rect" id="Node000002" href="$structstopowatch_1_1_stopwatch_1_1_timer.html" title="타이머의 상태를 나타내는 구조체입니다." alt="" coords="18,5,167,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,282,95,345,90,345,90,282"/>
+</map>

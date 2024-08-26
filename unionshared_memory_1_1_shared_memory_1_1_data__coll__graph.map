@@ -1,0 +1,15 @@
+<map id="sharedMemory::SharedMemory::Data" name="sharedMemory::SharedMemory::Data">
+<area shape="rect" id="Node000001" title="공유 메모리에 저장되는 데이터의 유니온 구조체입니다." alt="" coords="302,677,497,784"/>
+<area shape="rect" id="Node000002" href="$structcommon_1_1_action_1_1_system_config.html" title="시스템 구성을 정의하는 구조체입니다." alt="" coords="5,384,204,603"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,600,217,611,294,666,290,670,214,615,201,604"/>
+<area shape="rect" id="Node000003" href="$structcommon_1_1_action_1_1_motion_config.html" title="기본 모션 구성을 정의하는 구조체입니다." alt="" coords="228,373,421,613"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="364,612,377,653,379,660,374,662,371,654,359,614"/>
+<area shape="rect" id="Node000004" href="$structcommon_1_1_action_1_1_object.html" title="동작의 객체를 정의하는 구조체입니다." alt="" coords="445,459,599,528"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="510,529,448,655,443,664,438,661,444,652,505,527"/>
+<area shape="rect" id="Node000005" href="$structcommon_1_1_action_1_1_motion.html" title="모션을 정의하는 구조체입니다." alt="" coords="362,5,517,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,309,512,441,507,443,474,310"/>
+<area shape="rect" id="Node000006" href="$structcommon_1_1_action_1_1_io.html" title="I/O를 정의하는 구조체입니다." alt="" coords="541,59,668,256"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="583,257,537,443,532,441,578,255"/>
+<area shape="rect" id="Node000007" href="$structcommon_1_1_action_1_1_recipe_status.html" title="레시피 상태를 정의하는 구조체입니다." alt="" coords="623,427,818,560"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="670,561,613,615,564,649,513,679,510,674,561,645,610,611,666,558"/>
+</map>
