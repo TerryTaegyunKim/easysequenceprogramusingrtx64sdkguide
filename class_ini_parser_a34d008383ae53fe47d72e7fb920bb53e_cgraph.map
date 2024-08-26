@@ -1,5 +1,0 @@
-<map id="IniParser::GetAllKeysInSection" name="IniParser::GetAllKeysInSection">
-<area shape="rect" id="Node000001" title="INI 파일에서 특정 섹션(section)의 모든 키(key)를 가져오는 함수." alt="" coords="5,5,208,32"/>
-<area shape="rect" id="Node000002" href="$class_ini_parser.html#aa2084d7f93faab2d1306e63a06e5463f" title="입력된 key 문자열로부터 key명을 가져오는 함수." alt="" coords="256,5,446,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,16,240,16,240,21,208,21"/>
-</map>

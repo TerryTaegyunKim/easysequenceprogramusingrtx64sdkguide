@@ -1,5 +1,0 @@
-<map id="WaitMotionAction" name="WaitMotionAction">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,129,32"/>
-<area shape="rect" id="Node000002" href="$class_w_m_x_lib.html#a5c9365f75b6888775704a51cc39a0959" title="현재 WMX 상태를 반환합니다." alt="" coords="177,5,315,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,16,161,16,161,21,129,21"/>
-</map>

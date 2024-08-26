@@ -1,7 +1,0 @@
-<map id="IniParser::CombinePaths" name="IniParser::CombinePaths">
-<area shape="rect" id="Node000001" title="두 개의 경로를 결합하여 하나의 경로를 생성하는 함수. 첫 번째 경로가 디렉터리 경로이고 두 번째 경로가 상대 경로일 때, 이들을 결합하여 하나의 경로로 반환합니다." alt="" coords="324,5,491,32"/>
-<area shape="rect" id="Node000002" href="$_win_app_8cpp.html#ab004bb3ed848531ece00b3093909b2ad" title=" " alt="" coords="103,5,276,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,21,276,21,276,16,309,16"/>
-<area shape="rect" id="Node000003" href="$_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
-</map>

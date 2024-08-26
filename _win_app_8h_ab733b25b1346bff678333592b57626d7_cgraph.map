@@ -1,7 +1,0 @@
-<map id="WaitRecvCheck" name="WaitRecvCheck">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,122,73"/>
-<area shape="rect" id="Node000002" href="$classshared_memory_1_1_shared_memory.html#aa0ac84da4690d8f02030dce64d794b6a" title="데이터를 수신하는 메서드입니다." alt="" coords="170,5,373,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,48,154,43,155,48,122,53"/>
-<area shape="rect" id="Node000003" href="$classshared_memory_1_1_shared_memory.html#a212b8529781cfac2d75de64db2abdea6" title="데이터를 송신하는 메서드입니다." alt="" coords="170,72,373,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,67,155,72,154,77,122,72"/>
-</map>
