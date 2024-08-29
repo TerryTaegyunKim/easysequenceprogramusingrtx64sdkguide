@@ -7,6 +7,6 @@ var searchData=
   ['waitthread_4',['WaitThread',['../_rtss_app_8cpp.html#aa01154c2fde56120b0aa3b3c14770b60',1,'WaitThread(HANDLE handle):&#160;RtssApp.cpp'],['../_rtss_app_8h.html#aa01154c2fde56120b0aa3b3c14770b60',1,'WaitThread(HANDLE handle):&#160;RtssApp.cpp']]],
   ['watchdogthread_5',['WatchdogThread',['../_win_app_8cpp.html#adede27729e0d39401806ac56f3a650ed',1,'WatchdogThread(LPVOID lpParam):&#160;WinApp.cpp'],['../_win_app_8h.html#a5da9bb7beffdaa66ff47e07667458841',1,'WatchdogThread(LPVOID lpParam):&#160;WinApp.cpp']]],
   ['wmxlib_6',['WMXLib',['../class_w_m_x_lib.html#a54a32df46dc22c6c6a1b9b86b4011492',1,'WMXLib']]],
-  ['wtof_7',['wtof',['../class_prompt.html#ab481cb69bac1dd689ee4780955ed50d9',1,'Prompt']]],
-  ['wtoi_8',['wtoi',['../class_prompt.html#a742bac5a2b73629ca700335585619000',1,'Prompt']]]
+  ['wtof_7',['wtof',['../classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657',1,'prompt::Prompt']]],
+  ['wtoi_8',['wtoi',['../classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc',1,'prompt::Prompt']]]
 ];

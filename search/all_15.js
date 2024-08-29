@@ -22,6 +22,6 @@ var searchData=
   ['wmxlib_2ecpp_19',['wmxLib.cpp',['../wmx_lib_8cpp.html',1,'']]],
   ['wmxlib_2eh_20',['wmxLib.h',['../wmx_lib_8h.html',1,'']]],
   ['wmxstatus_21',['WmxStatus',['../struct_w_m_x_lib_1_1_wmx_status.html',1,'WMXLib']]],
-  ['wtof_22',['wtof',['../class_prompt.html#ab481cb69bac1dd689ee4780955ed50d9',1,'Prompt']]],
-  ['wtoi_23',['wtoi',['../class_prompt.html#a742bac5a2b73629ca700335585619000',1,'Prompt']]]
+  ['wtof_22',['wtof',['../classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657',1,'prompt::Prompt']]],
+  ['wtoi_23',['wtoi',['../classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc',1,'prompt::Prompt']]]
 ];

@@ -14,13 +14,12 @@ var searchData=
   ['_5fprevrecipestatus_11',['_prevRecipeStatus',['../_rtss_app_8h.html#aba1c80b550321152d946c206a6e662f6',1,'RtssApp.h']]],
   ['_5fpsharedmemory_12',['_pSharedMemory',['../_rtss_app_8h.html#acba97f4dd400d6a346cbf46f0e608f76',1,'_pSharedMemory:&#160;RtssApp.h'],['../_win_app_8h.html#acba97f4dd400d6a346cbf46f0e608f76',1,'_pSharedMemory:&#160;WinApp.h']]],
   ['_5frecipestatus_13',['_recipeStatus',['../_rtss_app_8h.html#abaa5e3ffcef27c30b3329e4692f37167',1,'RtssApp.h']]],
-  ['_5frunning_14',['_running',['../_win_app_8h.html#a665c90a6f5b8fdb743accfaaf0517e27',1,'WinApp.h']]],
-  ['_5frx_15',['_rx',['../_rtss_app_8h.html#ac4e6ad8464a5d115ed158553c0f234b6',1,'_rx:&#160;RtssApp.h'],['../_win_app_8h.html#ac4e6ad8464a5d115ed158553c0f234b6',1,'_rx:&#160;WinApp.h']]],
-  ['_5fsysconfig_16',['_sysConfig',['../_rtss_app_8h.html#ae5b411fe3e75818c3e6479eb7a5e5165',1,'_sysConfig:&#160;RtssApp.h'],['../_win_app_8h.html#ae5b411fe3e75818c3e6479eb7a5e5165',1,'_sysConfig:&#160;WinApp.h']]],
-  ['_5ftacttime_17',['_tactTime',['../_rtss_app_8h.html#a0e423b468645d91a85e0f20d0f97ccf8',1,'RtssApp.h']]],
-  ['_5fthreadhandle_18',['_threadHandle',['../_rtss_app_8h.html#a226a0d583718eeb8aef9a4a95ed28fa8',1,'RtssApp.h']]],
-  ['_5fthreadid_19',['_threadId',['../_rtss_app_8h.html#a9a35cfad79d3b34878b6ec51df9d804d',1,'RtssApp.h']]],
-  ['_5ftx_20',['_tx',['../_rtss_app_8h.html#aff51658b14b5831703dec5444368e9d6',1,'_tx:&#160;RtssApp.h'],['../_win_app_8h.html#aff51658b14b5831703dec5444368e9d6',1,'_tx:&#160;WinApp.h']]],
-  ['_5fwatchdoghandle_21',['_watchdogHandle',['../_win_app_8h.html#a0f49c00bc65e8f40ea1839a514814e80',1,'WinApp.h']]],
-  ['_5fwmxlib_22',['_wmxLib',['../_rtss_app_8h.html#a0a2fa097dec5b01781c50c3e56b4ecce',1,'_wmxLib:&#160;RtssApp.h'],['../_vision_test_8cpp.html#a0a2fa097dec5b01781c50c3e56b4ecce',1,'_wmxLib:&#160;VisionTest.cpp'],['../_win_app_8h.html#a0a2fa097dec5b01781c50c3e56b4ecce',1,'_wmxLib:&#160;WinApp.h']]]
+  ['_5frx_14',['_rx',['../_rtss_app_8h.html#ac4e6ad8464a5d115ed158553c0f234b6',1,'_rx:&#160;RtssApp.h'],['../_win_app_8h.html#ac4e6ad8464a5d115ed158553c0f234b6',1,'_rx:&#160;WinApp.h']]],
+  ['_5fsysconfig_15',['_sysConfig',['../_rtss_app_8h.html#ae5b411fe3e75818c3e6479eb7a5e5165',1,'_sysConfig:&#160;RtssApp.h'],['../_win_app_8h.html#ae5b411fe3e75818c3e6479eb7a5e5165',1,'_sysConfig:&#160;WinApp.h']]],
+  ['_5ftacttime_16',['_tactTime',['../_rtss_app_8h.html#a0e423b468645d91a85e0f20d0f97ccf8',1,'RtssApp.h']]],
+  ['_5fthreadhandle_17',['_threadHandle',['../_rtss_app_8h.html#a226a0d583718eeb8aef9a4a95ed28fa8',1,'RtssApp.h']]],
+  ['_5fthreadid_18',['_threadId',['../_rtss_app_8h.html#a9a35cfad79d3b34878b6ec51df9d804d',1,'RtssApp.h']]],
+  ['_5ftx_19',['_tx',['../_rtss_app_8h.html#aff51658b14b5831703dec5444368e9d6',1,'_tx:&#160;RtssApp.h'],['../_win_app_8h.html#aff51658b14b5831703dec5444368e9d6',1,'_tx:&#160;WinApp.h']]],
+  ['_5fwatchdogthread_20',['_watchdogThread',['../_win_app_8h.html#ae6e2cd93ec34f8e8aa201caa8f296df5',1,'WinApp.h']]],
+  ['_5fwmxlib_21',['_wmxLib',['../_rtss_app_8h.html#a0a2fa097dec5b01781c50c3e56b4ecce',1,'_wmxLib:&#160;RtssApp.h'],['../_vision_test_8cpp.html#a0a2fa097dec5b01781c50c3e56b4ecce',1,'_wmxLib:&#160;VisionTest.cpp'],['../_win_app_8h.html#a0a2fa097dec5b01781c50c3e56b4ecce',1,'_wmxLib:&#160;WinApp.h']]]
 ];

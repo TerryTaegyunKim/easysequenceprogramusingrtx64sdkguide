@@ -1,0 +1,5 @@
+<map id="sharedMemory::SharedMemory::~SharedMemory" name="sharedMemory::SharedMemory::~SharedMemory">
+<area shape="rect" id="Node000001" title="SharedMemory 클래스의 소멸자입니다." alt="" coords="5,5,209,48"/>
+<area shape="rect" id="Node000002" href="$classshared_memory_1_1_shared_memory.html#aeb536ad3891285fa976bdf7f148026e0" title="공유 메모리를 닫는 메서드입니다." alt="" coords="257,5,460,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
+</map>

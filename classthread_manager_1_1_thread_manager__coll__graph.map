@@ -1,0 +1,5 @@
+<map id="threadManager::ThreadManager" name="threadManager::ThreadManager">
+<area shape="rect" id="Node000001" title="스레드 관리를 위한 클래스입니다." alt="" coords="5,219,203,480"/>
+<area shape="rect" id="Node000002" href="$structthread_manager_1_1_thread_manager_1_1_status.html" title="스레드의 상태를 관리하는 구조체입니다." alt="" coords="5,5,203,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,155,107,202,101,202,101,155"/>
+</map>

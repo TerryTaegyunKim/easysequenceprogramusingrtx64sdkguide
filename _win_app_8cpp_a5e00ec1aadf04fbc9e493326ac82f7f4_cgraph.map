@@ -1,7 +1,9 @@
 <map id="Send" name="Send">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,35,57,61"/>
-<area shape="rect" id="Node000002" href="$class_prompt.html#ab7a717039c8bfa1e61dc7d812acec15d" title="주어진 프로세스 이름을 기준으로 해당 프로세스가 실행 중인지 확인합니다." alt="" coords="121,5,292,32"/>
+<area shape="rect" id="Node000002" href="$classrt_lib_1_1_rt_lib.html#a992a369ffa71113c5f3c01222519b1ae" title="주어진 프로세스 이름을 기준으로 해당 프로세스가 실행 중인지 확인합니다." alt="" coords="110,5,303,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,41,108,32,109,38,58,46"/>
 <area shape="rect" id="Node000003" href="$classshared_memory_1_1_shared_memory.html#a212b8529781cfac2d75de64db2abdea6" title="데이터를 송신하는 메서드입니다." alt="" coords="105,56,308,99"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="58,50,90,55,89,60,57,55"/>
+<area shape="rect" id="Node000004" href="$classshared_memory_1_1_shared_memory.html#aac2e636e1bb07c9b201c7df657b48fac" title="공유 리소스에 접근하는 함수입니다." alt="" coords="356,56,559,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="308,75,340,75,340,80,308,80"/>
 </map>

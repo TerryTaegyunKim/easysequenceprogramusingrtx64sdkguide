@@ -6,4 +6,15 @@
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,55,184,61,184,66,142,60"/>
 <area shape="rect" id="Node000003" href="$classcommon_1_1_message.html#ae483efdcb4abf9eb13d618362cf86b51" title="TCHAR 형식의 문자열을 출력하는 일반적인 출력 함수입니다." alt="" coords="416,5,581,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,16,400,16,400,21,368,21"/>
+<area shape="rect" id="Node000005" href="$classstopowatch_1_1_stopwatch.html#ab9109777a989e397989e57ed02f963aa" title="참조 시간을 설정하는 함수입니다." alt="" coords="629,81,788,124"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="359,79,614,94,614,100,358,85"/>
+<area shape="rect" id="Node000009" href="$classstopowatch_1_1_stopwatch.html#a10e8747e2e04ee2a402f848bfb001d99" title="현재 시스템 시간을 업데이트하는 함수입니다." alt="" coords="420,111,578,153"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="359,94,405,106,404,111,358,100"/>
+<area shape="rect" id="Node000006" href="$classstopowatch_1_1_stopwatch.html#a7a6a5fa3f41742bb98935745bec45665" title="초기화 함수입니다." alt="" coords="836,81,994,124"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="788,100,820,100,820,105,788,105"/>
+<area shape="rect" id="Node000007" href="$classstopowatch_1_1_stopwatch.html#af155ffd67bd7a0ac1694d33b4a97c88e" title="초기 시스템 시간을 가져오는 함수입니다." alt="" coords="1042,48,1214,91"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="994,88,1026,83,1027,88,995,93"/>
+<area shape="rect" id="Node000008" href="$classstopowatch_1_1_stopwatch.html#a1e83a2b729d9d09cee68f4343e7935d8" title="초기 타이머를 설정하는 함수입니다." alt="" coords="1049,115,1207,157"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="995,112,1034,119,1033,124,994,118"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="578,118,613,113,614,119,579,124"/>
 </map>

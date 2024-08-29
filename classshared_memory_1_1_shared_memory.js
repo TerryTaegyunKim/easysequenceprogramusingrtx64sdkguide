@@ -12,7 +12,7 @@ var classshared_memory_1_1_shared_memory =
     [ "SharedMemory", "classshared_memory_1_1_shared_memory.html#a6fe910853087b22b4d01290328b12412", null ],
     [ "AccessResource", "classshared_memory_1_1_shared_memory.html#aac2e636e1bb07c9b201c7df657b48fac", null ],
     [ "Close", "classshared_memory_1_1_shared_memory.html#aeb536ad3891285fa976bdf7f148026e0", null ],
-    [ "getInstance", "classshared_memory_1_1_shared_memory.html#af7554079f73d89cd43d3a30a36ed6729", null ],
+    [ "getInstance", "classshared_memory_1_1_shared_memory.html#a2640ca595aaa5352544c4db3a8e678e9", null ],
     [ "Open", "classshared_memory_1_1_shared_memory.html#a3c08d12a81307dadb3dd701d06c248fc", null ],
     [ "operator=", "classshared_memory_1_1_shared_memory.html#ad728fd178f78554b198f469e2f62a7aa", null ],
     [ "Recv", "classshared_memory_1_1_shared_memory.html#aa0ac84da4690d8f02030dce64d794b6a", null ],

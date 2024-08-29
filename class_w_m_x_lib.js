@@ -1,9 +1,13 @@
 var class_w_m_x_lib =
 [
+    [ "AxisToSlaveInfo", "struct_w_m_x_lib_1_1_axis_to_slave_info.html", "struct_w_m_x_lib_1_1_axis_to_slave_info" ],
     [ "WmxStatus", "struct_w_m_x_lib_1_1_wmx_status.html", "struct_w_m_x_lib_1_1_wmx_status" ],
     [ "WMXLib", "class_w_m_x_lib.html#a54a32df46dc22c6c6a1b9b86b4011492", null ],
     [ "~WMXLib", "class_w_m_x_lib.html#a45f2e302da7e809638d5b3d21dd7921a", null ],
     [ "ClearAlarm", "class_w_m_x_lib.html#ad74869fb0812a472025dba04930dc7b8", null ],
+    [ "Close", "class_w_m_x_lib.html#a992c219ecf14ab6e1d5fbbf7d5d2ae4d", null ],
+    [ "GetAxisToSlaveId", "class_w_m_x_lib.html#afec077657b89bcae2d59ce85a97504ec", null ],
+    [ "GetDetailLogStateString", "class_w_m_x_lib.html#a834684e38d597de1f99270bd596f6067", null ],
     [ "GetEcat", "class_w_m_x_lib.html#a868dcfd0d7d591a89db42e3a7d4774a7", null ],
     [ "GetHomeStateString", "class_w_m_x_lib.html#a2a524efddc9452353fadcc7dc17abdfc", null ],
     [ "GetIo", "class_w_m_x_lib.html#a21f80880c6fe177530c6282720105f00", null ],
@@ -13,7 +17,7 @@ var class_w_m_x_lib =
     [ "GetStatus", "class_w_m_x_lib.html#a5c9365f75b6888775704a51cc39a0959", null ],
     [ "GetUserMemory", "class_w_m_x_lib.html#ae7f4d5f3857f399f6c3ce5063ddafda4", null ],
     [ "GetWmx3Lib", "class_w_m_x_lib.html#aa50a6e57198e2aa6efff797874722092", null ],
-    [ "Initialize", "class_w_m_x_lib.html#a1ecee27d3fe1fc0913ca70967d5b956e", null ],
+    [ "Initialize", "class_w_m_x_lib.html#a3f0820fd2f3223d3587927c389f701c9", null ],
     [ "IsEtherCATModuleAvailable", "class_w_m_x_lib.html#addb6732912c49c183fedc95e37508e93", null ],
     [ "IsSimulationModuleAvailable", "class_w_m_x_lib.html#aafa2d5d0730879cb70db1ef35c21b101", null ],
     [ "SetAllServo", "class_w_m_x_lib.html#ae6fcb3977922231b6b07f1edd071cdbc", null ],

@@ -37,10 +37,9 @@ var _win_app_8h =
     [ "_motionConfig", "_win_app_8h.html#a1b060c93fa188a065198cde685730303", null ],
     [ "_object", "_win_app_8h.html#a2eb4eccc58b123e0d9bbbaa787ce0524", null ],
     [ "_pSharedMemory", "_win_app_8h.html#acba97f4dd400d6a346cbf46f0e608f76", null ],
-    [ "_running", "_win_app_8h.html#a665c90a6f5b8fdb743accfaaf0517e27", null ],
     [ "_rx", "_win_app_8h.html#ac4e6ad8464a5d115ed158553c0f234b6", null ],
     [ "_sysConfig", "_win_app_8h.html#ae5b411fe3e75818c3e6479eb7a5e5165", null ],
     [ "_tx", "_win_app_8h.html#aff51658b14b5831703dec5444368e9d6", null ],
-    [ "_watchdogHandle", "_win_app_8h.html#a0f49c00bc65e8f40ea1839a514814e80", null ],
+    [ "_watchdogThread", "_win_app_8h.html#ae6e2cd93ec34f8e8aa201caa8f296df5", null ],
     [ "_wmxLib", "_win_app_8h.html#a0a2fa097dec5b01781c50c3e56b4ecce", null ]
 ];

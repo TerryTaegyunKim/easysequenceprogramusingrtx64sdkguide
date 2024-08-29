@@ -112,7 +112,7 @@ Collaboration diagram for iniParser::IniParser:</div>
 <div class="dyncontent">
 <div class="center"><img src="classini_parser_1_1_ini_parser__coll__graph.png" border="0" usemap="#aini_parser_1_1_ini_parser_coll__map" alt="Collaboration graph"/></div>
 <map name="aini_parser_1_1_ini_parser_coll__map" id="aini_parser_1_1_ini_parser_coll__map">
-<area shape="rect" title="INI 파일을 파싱하여 설정 값을 가져오는 클래스입니다." alt="" coords="5,5,177,224"/>
+<area shape="rect" title="INI 파일을 파싱하여 설정 값을 가져오는 클래스입니다." alt="" coords="5,5,177,245"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -133,6 +133,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a57f7fba42e1dbc59a9d5fb1ccea49469" id="r_a57f7fba42e1dbc59a9d5fb1ccea49469"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57f7fba42e1dbc59a9d5fb1ccea49469">GetKeyFromName</a> (const char *valueStr)</td></tr>
 <tr class="memdesc:a57f7fba42e1dbc59a9d5fb1ccea49469"><td class="mdescLeft">&#160;</td><td class="mdescRight">주어진 문자열에서 키명을 추출하는 함수입니다.  <br /></td></tr>
 <tr class="separator:a57f7fba42e1dbc59a9d5fb1ccea49469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6409dcc4e4e4af1aaac278e15a61a3a2" id="r_a6409dcc4e4e4af1aaac278e15a61a3a2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6409dcc4e4e4af1aaac278e15a61a3a2">IsKeyMatching</a> (const char *key, const char *refKey, int mode=0, char delimiter='_')</td></tr>
+<tr class="memdesc:a6409dcc4e4e4af1aaac278e15a61a3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">주어진 키 값이 기준 키 값과 지정된 모드에 따라 일치하는지 확인하는 함수입니다.  <br /></td></tr>
+<tr class="separator:a6409dcc4e4e4af1aaac278e15a61a3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b1b32350c20913f96a6e38635bfa67" id="r_ad7b1b32350c20913f96a6e38635bfa67"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b1b32350c20913f96a6e38635bfa67">GetCurrentExeDirectory</a> ()</td></tr>
 <tr class="memdesc:ad7b1b32350c20913f96a6e38635bfa67"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 실행 중인 파일의 디렉토리 경로를 가져오는 함수입니다.  <br /></td></tr>
 <tr class="separator:ad7b1b32350c20913f96a6e38635bfa67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,17 +190,17 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>: 두 경로가 결합된 전체 경로를 문자열로 반환합니다.</dd></dl>
 <p>이 함수는 첫 번째 경로와 두 번째 경로를 결합하여 하나의 전체 경로를 생성합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00205">205</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  206</span>{</div>
-<div class="line"><span class="lineno">  207</span>    std::string combined = path1; <span class="comment">// 기본 경로를 시작으로 설정</span></div>
-<div class="line"><span class="lineno">  208</span>    <span class="comment">// 기본 경로의 마지막 문자가 &#39;\\&#39; 또는 &#39;/&#39;가 아닐 경우 추가</span></div>
-<div class="line"><span class="lineno">  209</span>    <span class="keywordflow">if</span> (combined.back() != <span class="charliteral">&#39;\\&#39;</span> &amp;&amp; combined.back() != <span class="charliteral">&#39;/&#39;</span>)</div>
-<div class="line"><span class="lineno">  210</span>    {</div>
-<div class="line"><span class="lineno">  211</span>        combined += <span class="charliteral">&#39;\\&#39;</span>; <span class="comment">// 윈도우 경로 구분자 추가</span></div>
-<div class="line"><span class="lineno">  212</span>    }</div>
-<div class="line"><span class="lineno">  213</span>    combined += path2; <span class="comment">// 상대 경로를 추가하여 전체 경로를 생성</span></div>
-<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">return</span> combined;</div>
-<div class="line"><span class="lineno">  215</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00264">264</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  265</span>    {</div>
+<div class="line"><span class="lineno">  266</span>        std::string combined = path1; <span class="comment">// 기본 경로를 시작으로 설정</span></div>
+<div class="line"><span class="lineno">  267</span>        <span class="comment">// 기본 경로의 마지막 문자가 &#39;\\&#39; 또는 &#39;/&#39;가 아닐 경우 추가</span></div>
+<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">if</span> (combined.back() != <span class="charliteral">&#39;\\&#39;</span> &amp;&amp; combined.back() != <span class="charliteral">&#39;/&#39;</span>)</div>
+<div class="line"><span class="lineno">  269</span>        {</div>
+<div class="line"><span class="lineno">  270</span>            combined += <span class="charliteral">&#39;\\&#39;</span>; <span class="comment">// 윈도우 경로 구분자 추가</span></div>
+<div class="line"><span class="lineno">  271</span>        }</div>
+<div class="line"><span class="lineno">  272</span>        combined += path2; <span class="comment">// 상대 경로를 추가하여 전체 경로를 생성</span></div>
+<div class="line"><span class="lineno">  273</span>        <span class="keywordflow">return</span> combined;</div>
+<div class="line"><span class="lineno">  274</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -245,21 +248,20 @@ Here is the caller graph for this function:</div>
 </dl>
 <p>이 함수는 GetAllKeysInSection 함수에서 반환된 키 배열의 메모리를 해제합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00125">125</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
-<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  128</span>    {</div>
-<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* key : keys)</div>
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00127">127</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>    {</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">  130</span>        {</div>
-<div class="line"><span class="lineno">  131</span>            free((<span class="keywordtype">void</span>*)key); <span class="comment">// 동적 메모리 해제</span></div>
-<div class="line"><span class="lineno">  132</span>        }</div>
-<div class="line"><span class="lineno">  133</span>    }</div>
-<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">  135</span>    {</div>
-<div class="line"><span class="lineno">  136</span>        <span class="comment">// 예외 발생 시 사용자 정의 메시지를 포함한 예외를 던짐</span></div>
-<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in FreeKeys: &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">  138</span>    }</div>
-<div class="line"><span class="lineno">  139</span>}</div>
+<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* key : keys)</div>
+<div class="line"><span class="lineno">  132</span>            {</div>
+<div class="line"><span class="lineno">  133</span>                free((<span class="keywordtype">void</span>*)key); <span class="comment">// 동적 메모리 해제</span></div>
+<div class="line"><span class="lineno">  134</span>            }</div>
+<div class="line"><span class="lineno">  135</span>        }</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">  137</span>        {</div>
+<div class="line"><span class="lineno">  138</span>            <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in FreeKeys: &quot;</span>) + e.what());</div>
+<div class="line"><span class="lineno">  139</span>        }</div>
+<div class="line"><span class="lineno">  140</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -335,47 +337,57 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>: 해당 섹션에 포함된 모든 키의 배열을 반환합니다.</dd></dl>
 <p>이 함수는 지정된 섹션에 포함된 모든 키의 이름을 배열 형태로 반환합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00084">84</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>{</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   87</span>        <span class="comment">// 섹션 이름과 파일 경로의 유효성을 검사</span></div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">if</span> (section == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   89</span>        {</div>
-<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Section name is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   91</span>        }</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">if</span> (filePath == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   94</span>        {</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;File path is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
-<div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>        <span class="keywordtype">char</span> buffer[4096]; <span class="comment">// 섹션 데이터를 읽기 위한 버퍼</span></div>
-<div class="line"><span class="lineno">   99</span>        <span class="comment">// 지정된 섹션의 모든 데이터를 버퍼에 읽어옴</span></div>
-<div class="line"><span class="lineno">  100</span>        GetPrivateProfileSectionA(section, buffer, <span class="keyword">sizeof</span>(buffer), filePath);</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>        std::vector&lt;const char*&gt; keys; <span class="comment">// 결과를 저장할 벡터</span></div>
-<div class="line"><span class="lineno">  103</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* p = buffer;</div>
-<div class="line"><span class="lineno">  104</span>        <span class="comment">// 버퍼를 순회하여 각 키를 추출</span></div>
-<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">while</span> (*p != <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><span class="lineno">  106</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>* key = p; <span class="comment">// 현재 위치의 키를 가리킴</span></div>
-<div class="line"><span class="lineno">  107</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>* value = strchr(p, <span class="charliteral">&#39;=&#39;</span>); <span class="comment">// &#39;=&#39; 문자를 찾음</span></div>
-<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">if</span> (value != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  109</span>                std::string n = <a class="code hl_function" href="#a57f7fba42e1dbc59a9d5fb1ccea49469">GetKeyFromName</a>(key); <span class="comment">// &#39;=&#39; 앞의 문자열을 키로 변환</span></div>
-<div class="line"><span class="lineno">  110</span>                keys.push_back(_strdup(n.c_str())); <span class="comment">// 동적 메모리에 키를 저장</span></div>
-<div class="line"><span class="lineno">  111</span>            }</div>
-<div class="line"><span class="lineno">  112</span>            p += strlen(p) + 1; <span class="comment">// 다음 키/값 쌍으로 이동</span></div>
-<div class="line"><span class="lineno">  113</span>        }</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">return</span> keys;</div>
-<div class="line"><span class="lineno">  116</span>    }</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">  118</span>    {</div>
-<div class="line"><span class="lineno">  119</span>        <span class="comment">// 예외 발생 시 사용자 정의 메시지를 포함한 예외를 던짐</span></div>
-<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetAllKeysInSection: &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">  121</span>    }</div>
-<div class="line"><span class="lineno">  122</span>}</div>
-<div class="ttc" id="aclassini_parser_1_1_ini_parser_html_a57f7fba42e1dbc59a9d5fb1ccea49469"><div class="ttname"><a href="#a57f7fba42e1dbc59a9d5fb1ccea49469">iniParser::IniParser::GetKeyFromName</a></div><div class="ttdeci">static std::string GetKeyFromName(const char *valueStr)</div><div class="ttdoc">주어진 문자열에서 키명을 추출하는 함수입니다.</div><div class="ttdef"><b>Definition</b> <a href="_ini_parser_8cpp_source.html#l00142">IniParser.cpp:142</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00086">86</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>    {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   89</span>            <span class="comment">// 섹션 이름과 파일 경로의 유효성을 검사</span></div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">if</span> (section == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   91</span>            {</div>
+<div class="line"><span class="lineno">   92</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Section name is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   93</span>            }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">if</span> (filePath == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   96</span>            {</div>
+<div class="line"><span class="lineno">   97</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;File path is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   98</span>            }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordtype">char</span> buffer[4096]; <span class="comment">// 섹션 데이터를 읽기 위한 버퍼</span></div>
+<div class="line"><span class="lineno">  101</span>            <span class="comment">// 지정된 섹션의 모든 데이터를 버퍼에 읽어옴</span></div>
+<div class="line"><span class="lineno">  102</span>            GetPrivateProfileSectionA(section, buffer, <span class="keyword">sizeof</span>(buffer), filePath);</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>            std::vector&lt;const char*&gt; keys; <span class="comment">// 결과를 저장할 벡터</span></div>
+<div class="line"><span class="lineno">  105</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>* p = buffer;</div>
+<div class="line"><span class="lineno">  106</span>            <span class="comment">// 버퍼를 순회하여 각 키를 추출</span></div>
+<div class="line"><span class="lineno">  107</span>            <span class="keywordflow">while</span> (*p != <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><span class="lineno">  108</span>                <span class="keyword">const</span> <span class="keywordtype">char</span>* key = p; <span class="comment">// 현재 위치의 키를 가리킴</span></div>
+<div class="line"><span class="lineno">  109</span>                <span class="keyword">const</span> <span class="keywordtype">char</span>* value = strchr(p, <span class="charliteral">&#39;=&#39;</span>); <span class="comment">// &#39;=&#39; 문자를 찾음</span></div>
+<div class="line"><span class="lineno">  110</span>                <span class="keywordflow">if</span> (value != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  111</span>                    std::string n = <a class="code hl_function" href="#a57f7fba42e1dbc59a9d5fb1ccea49469">GetKeyFromName</a>(key); <span class="comment">// &#39;=&#39; 앞의 문자열을 키로 변환</span></div>
+<div class="line"><span class="lineno">  112</span>                    keys.push_back(_strdup(n.c_str())); <span class="comment">// 동적 메모리에 키를 저장</span></div>
+<div class="line"><span class="lineno">  113</span>                }</div>
+<div class="line"><span class="lineno">  114</span>                p += strlen(p) + 1; <span class="comment">// 다음 키/값 쌍으로 이동</span></div>
+<div class="line"><span class="lineno">  115</span>            }</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">return</span> keys;</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">  120</span>        {</div>
+<div class="line"><span class="lineno">  121</span>            <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetAllKeysInSection: &quot;</span>) + e.what());</div>
+<div class="line"><span class="lineno">  122</span>            <span class="keywordflow">return</span> std::vector&lt;const char*&gt;();</div>
+<div class="line"><span class="lineno">  123</span>        }</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="ttc" id="aclassini_parser_1_1_ini_parser_html_a57f7fba42e1dbc59a9d5fb1ccea49469"><div class="ttname"><a href="#a57f7fba42e1dbc59a9d5fb1ccea49469">iniParser::IniParser::GetKeyFromName</a></div><div class="ttdeci">static std::string GetKeyFromName(const char *valueStr)</div><div class="ttdoc">주어진 문자열에서 키명을 추출하는 함수입니다.</div><div class="ttdef"><b>Definition</b> <a href="_ini_parser_8cpp_source.html#l00143">IniParser.cpp:143</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classini_parser_1_1_ini_parser_a14ee5fb071a7c66a45d7d92ab325e48e_cgraph.png" border="0" usemap="#aclassini_parser_1_1_ini_parser_a14ee5fb071a7c66a45d7d92ab325e48e_cgraph" alt=""/></div>
+<map name="aclassini_parser_1_1_ini_parser_a14ee5fb071a7c66a45d7d92ab325e48e_cgraph" id="aclassini_parser_1_1_ini_parser_a14ee5fb071a7c66a45d7d92ab325e48e_cgraph">
+<area shape="rect" title="INI 파일의 특정 섹션에서 모든 키를 가져오는 함수입니다." alt="" coords="5,5,156,48"/>
+<area shape="rect" href="classini_parser_1_1_ini_parser.html#a57f7fba42e1dbc59a9d5fb1ccea49469" title="주어진 문자열에서 키명을 추출하는 함수입니다." alt="" coords="204,5,342,48"/>
+<area shape="poly" title=" " alt="" coords="156,24,188,24,188,29,156,29"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classini_parser_1_1_ini_parser_a14ee5fb071a7c66a45d7d92ab325e48e_icgraph.png" border="0" usemap="#aclassini_parser_1_1_ini_parser_a14ee5fb071a7c66a45d7d92ab325e48e_icgraph" alt=""/></div>
@@ -439,24 +451,24 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>: 현재 실행 파일의 디렉토리 경로를 문자열로 반환합니다.</dd></dl>
 <p>이 함수는 현재 실행 중인 프로그램의 경로를 반환합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00168">168</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  169</span>{</div>
-<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  171</span>    {</div>
-<div class="line"><span class="lineno">  172</span>        <span class="keywordtype">char</span> buffer[MAX_PATH]; <span class="comment">// 실행 파일 경로를 저장할 버퍼</span></div>
-<div class="line"><span class="lineno">  173</span>        <span class="comment">// 현재 모듈(실행 파일)의 경로를 가져옴</span></div>
-<div class="line"><span class="lineno">  174</span>        GetModuleFileNameA(<span class="keyword">nullptr</span>, buffer, MAX_PATH);</div>
-<div class="line"><span class="lineno">  175</span>        std::string path(buffer);</div>
-<div class="line"><span class="lineno">  176</span>        <span class="keywordtype">size_t</span> pos = path.find_last_of(<span class="stringliteral">&quot;\\/&quot;</span>); <span class="comment">// 마지막 디렉터리 구분자를 찾음</span></div>
-<div class="line"><span class="lineno">  177</span> </div>
-<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">return</span> path.substr(0, pos); <span class="comment">// 경로의 디렉터리 부분만 반환</span></div>
-<div class="line"><span class="lineno">  179</span>    }</div>
-<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">  181</span>    {</div>
-<div class="line"><span class="lineno">  182</span>        <span class="comment">// 예외 발생 시 사용자 정의 메시지를 포함한 예외를 던짐</span></div>
-<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetCurrentExeDirectory: &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">  184</span>    }</div>
-<div class="line"><span class="lineno">  185</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00224">224</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  225</span>    {</div>
+<div class="line"><span class="lineno">  226</span>        <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  227</span>        {</div>
+<div class="line"><span class="lineno">  228</span>            <span class="keywordtype">char</span> buffer[MAX_PATH]; <span class="comment">// 실행 파일 경로를 저장할 버퍼</span></div>
+<div class="line"><span class="lineno">  229</span>            <span class="comment">// 현재 모듈(실행 파일)의 경로를 가져옴</span></div>
+<div class="line"><span class="lineno">  230</span>            GetModuleFileNameA(<span class="keyword">nullptr</span>, buffer, MAX_PATH);</div>
+<div class="line"><span class="lineno">  231</span>            std::string path(buffer);</div>
+<div class="line"><span class="lineno">  232</span>            <span class="keywordtype">size_t</span> pos = path.find_last_of(<span class="stringliteral">&quot;\\/&quot;</span>); <span class="comment">// 마지막 디렉터리 구분자를 찾음</span></div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>            <span class="keywordflow">return</span> path.substr(0, pos); <span class="comment">// 경로의 디렉터리 부분만 반환</span></div>
+<div class="line"><span class="lineno">  235</span>        }</div>
+<div class="line"><span class="lineno">  236</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">  237</span>        {</div>
+<div class="line"><span class="lineno">  238</span>            <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetCurrentExeDirectory: &quot;</span>) + e.what());</div>
+<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  240</span>        }</div>
+<div class="line"><span class="lineno">  241</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -516,50 +528,50 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>: 각 키에 대해 설정된 값을 문자열 배열 형태로 반환합니다.</dd></dl>
 <p>이 함수는 INI 파일에서 지정된 섹션에 대해 여러 키의 값을 배열 형태로 반환합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00038">38</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   41</span>        <span class="comment">// 섹션, 키 목록, 파일 경로의 유효성을 검사</span></div>
-<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">if</span> (section == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   43</span>        {</div>
-<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Section name is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> (keys.empty())</div>
-<div class="line"><span class="lineno">   48</span>        {</div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Keys are empty.&quot;</span>);</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">if</span> (filePath == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   53</span>        {</div>
-<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;File path is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   55</span>        }</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>        std::vector&lt;std::string&gt; values; <span class="comment">// 결과를 저장할 벡터</span></div>
-<div class="line"><span class="lineno">   58</span>        values.reserve(keys.size()); <span class="comment">// 벡터의 크기를 미리 예약</span></div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>        <span class="comment">// 각 키에 대해 값을 읽어와서 벡터에 저장</span></div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; key : keys)</div>
-<div class="line"><span class="lineno">   62</span>        {</div>
-<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">if</span> (key == <span class="keyword">nullptr</span>)</div>
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00040">40</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>    {</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   43</span>            <span class="comment">// 섹션, 키 목록, 파일 경로의 유효성을 검사</span></div>
+<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">if</span> (section == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   45</span>            {</div>
+<div class="line"><span class="lineno">   46</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Section name is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   47</span>            }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (keys.empty())</div>
+<div class="line"><span class="lineno">   50</span>            {</div>
+<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Keys are empty.&quot;</span>);</div>
+<div class="line"><span class="lineno">   52</span>            }</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span> (filePath == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   55</span>            {</div>
+<div class="line"><span class="lineno">   56</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;File path is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   57</span>            }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>            std::vector&lt;std::string&gt; values; <span class="comment">// 결과를 저장할 벡터</span></div>
+<div class="line"><span class="lineno">   60</span>            values.reserve(keys.size()); <span class="comment">// 벡터의 크기를 미리 예약</span></div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>            <span class="comment">// 각 키에 대해 값을 읽어와서 벡터에 저장</span></div>
+<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; key : keys)</div>
 <div class="line"><span class="lineno">   64</span>            {</div>
-<div class="line"><span class="lineno">   65</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Key name is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   66</span>            }</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>            <span class="keywordtype">char</span> buffer[256]; <span class="comment">// INI 값을 읽기 위한 버퍼</span></div>
-<div class="line"><span class="lineno">   69</span>            GetPrivateProfileStringA(section, key, <span class="stringliteral">&quot;&quot;</span>, buffer, <span class="keyword">sizeof</span>(buffer), filePath);</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>            values.push_back(std::string(buffer)); <span class="comment">// 읽은 값을 벡터에 추가</span></div>
-<div class="line"><span class="lineno">   72</span>        }</div>
-<div class="line"><span class="lineno">   73</span> </div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">return</span> values;</div>
-<div class="line"><span class="lineno">   75</span>    }</div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">   77</span>    {</div>
-<div class="line"><span class="lineno">   78</span>        <span class="comment">// 예외 발생 시 사용자 정의 메시지를 포함한 예외를 던짐</span></div>
-<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetIniKeyArrValues: &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
-<div class="line"><span class="lineno">   81</span>}</div>
+<div class="line"><span class="lineno">   65</span>                <span class="keywordflow">if</span> (key == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   66</span>                {</div>
+<div class="line"><span class="lineno">   67</span>                    <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Key name is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   68</span>                }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>                <span class="keywordtype">char</span> buffer[256]; <span class="comment">// INI 값을 읽기 위한 버퍼</span></div>
+<div class="line"><span class="lineno">   71</span>                GetPrivateProfileStringA(section, key, <span class="stringliteral">&quot;&quot;</span>, buffer, <span class="keyword">sizeof</span>(buffer), filePath);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>                values.push_back(std::string(buffer)); <span class="comment">// 읽은 값을 벡터에 추가</span></div>
+<div class="line"><span class="lineno">   74</span>            }</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">return</span> values;</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">   79</span>        {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetIniKeyArrValues: &quot;</span>) + e.what());</div>
+<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">return</span> std::vector&lt;std::string&gt;();</div>
+<div class="line"><span class="lineno">   82</span>        }</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -607,38 +619,38 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>: 지정된 키에 대해 설정된 값을 반환합니다.</dd></dl>
 <p>이 함수는 INI 파일에서 지정된 섹션과 키에 해당하는 값을 문자열 형태로 반환합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00004">4</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    5</span>{</div>
-<div class="line"><span class="lineno">    6</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">    7</span>        <span class="comment">// 섹션, 키, 파일 경로의 유효성을 검사</span></div>
-<div class="line"><span class="lineno">    8</span>        <span class="keywordflow">if</span> (section == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">    9</span>        {</div>
-<div class="line"><span class="lineno">   10</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Section name is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   11</span>        }</div>
-<div class="line"><span class="lineno">   12</span> </div>
-<div class="line"><span class="lineno">   13</span>        <span class="keywordflow">if</span> (key == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   14</span>        {</div>
-<div class="line"><span class="lineno">   15</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Key name is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   16</span>        }</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span> (filePath == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">   19</span>        {</div>
-<div class="line"><span class="lineno">   20</span>            <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;File path is null.&quot;</span>);</div>
-<div class="line"><span class="lineno">   21</span>        }</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>        <span class="keywordtype">char</span> buffer[256]; <span class="comment">// INI 값을 읽기 위한 버퍼</span></div>
-<div class="line"><span class="lineno">   24</span>        <span class="comment">// 지정된 섹션과 키로부터 값을 읽어버퍼에 저장</span></div>
-<div class="line"><span class="lineno">   25</span>        GetPrivateProfileStringA(section, key, <span class="stringliteral">&quot;&quot;</span>, buffer, <span class="keyword">sizeof</span>(buffer), filePath);</div>
-<div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>        <span class="comment">// 버퍼에 저장된 값을 std::string으로 변환하여 반환</span></div>
-<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">return</span> std::string(buffer);</div>
-<div class="line"><span class="lineno">   29</span>    }</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">   31</span>    {</div>
-<div class="line"><span class="lineno">   32</span>        <span class="comment">// 예외 발생 시 사용자 정의 메시지를 포함한 예외를 던짐</span></div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetIniKeyValue: &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">   34</span>    }</div>
-<div class="line"><span class="lineno">   35</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00006">6</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>    {</div>
+<div class="line"><span class="lineno">    8</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">    9</span>            <span class="comment">// 섹션, 키, 파일 경로의 유효성을 검사</span></div>
+<div class="line"><span class="lineno">   10</span>            <span class="keywordflow">if</span> (section == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   11</span>            {</div>
+<div class="line"><span class="lineno">   12</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Section name is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   13</span>            }</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>            <span class="keywordflow">if</span> (key == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   16</span>            {</div>
+<div class="line"><span class="lineno">   17</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Key name is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   18</span>            }</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>            <span class="keywordflow">if</span> (filePath == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   21</span>            {</div>
+<div class="line"><span class="lineno">   22</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;File path is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">   23</span>            }</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>            <span class="keywordtype">char</span> buffer[256]; <span class="comment">// INI 값을 읽기 위한 버퍼</span></div>
+<div class="line"><span class="lineno">   26</span>            <span class="comment">// 지정된 섹션과 키로부터 값을 읽어버퍼에 저장</span></div>
+<div class="line"><span class="lineno">   27</span>            GetPrivateProfileStringA(section, key, <span class="stringliteral">&quot;&quot;</span>, buffer, <span class="keyword">sizeof</span>(buffer), filePath);</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>            <span class="comment">// 버퍼에 저장된 값을 std::string으로 변환하여 반환</span></div>
+<div class="line"><span class="lineno">   30</span>            <span class="keywordflow">return</span> std::string(buffer);</div>
+<div class="line"><span class="lineno">   31</span>        }</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">   33</span>        {</div>
+<div class="line"><span class="lineno">   34</span>            <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetIniKeyValue: &quot;</span>) + e.what());</div>
+<div class="line"><span class="lineno">   35</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -709,31 +721,67 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>: 추출된 키명을 문자열로 반환합니다.</dd></dl>
 <p>이 함수는 주어진 문자열에서 키명을 추출하여 반환합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00142">142</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  143</span>{</div>
-<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  145</span>    {</div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> (valueStr == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  147</span>        {</div>
-<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">  149</span>        }</div>
-<div class="line"><span class="lineno">  150</span> </div>
-<div class="line"><span class="lineno">  151</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* keyEnd = strchr(valueStr, <span class="charliteral">&#39;=&#39;</span>); <span class="comment">// &#39;=&#39; 문자를 찾음</span></div>
-<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">if</span> (keyEnd == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  153</span>        {</div>
-<div class="line"><span class="lineno">  154</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">  155</span>        }</div>
-<div class="line"><span class="lineno">  156</span> </div>
-<div class="line"><span class="lineno">  157</span>        <span class="keywordtype">size_t</span> keyLen = keyEnd - valueStr; <span class="comment">// 키의 길이 계산</span></div>
-<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> std::string(valueStr, keyLen); <span class="comment">// 키 부분만 문자열로 변환</span></div>
-<div class="line"><span class="lineno">  159</span>    }</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">  161</span>    {</div>
-<div class="line"><span class="lineno">  162</span>        <span class="comment">// 예외 발생 시 사용자 정의 메시지를 포함한 예외를 던짐</span></div>
-<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetKeyFromName: &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">  164</span>    }</div>
-<div class="line"><span class="lineno">  165</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00143">143</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  144</span>    {</div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  146</span>        {</div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">if</span> (valueStr == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  148</span>            {</div>
+<div class="line"><span class="lineno">  149</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  150</span>            }</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  152</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>* keyEnd = strchr(valueStr, <span class="charliteral">&#39;=&#39;</span>); <span class="comment">// &#39;=&#39; 문자를 찾음</span></div>
+<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">if</span> (keyEnd == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  154</span>            {</div>
+<div class="line"><span class="lineno">  155</span>                <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  156</span>            }</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>            <span class="keywordtype">size_t</span> keyLen = keyEnd - valueStr; <span class="comment">// 키의 길이 계산</span></div>
+<div class="line"><span class="lineno">  159</span>            <span class="keywordflow">return</span> std::string(valueStr, keyLen); <span class="comment">// 키 부분만 문자열로 변환</span></div>
+<div class="line"><span class="lineno">  160</span>        }</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">  162</span>        {</div>
+<div class="line"><span class="lineno">  163</span>            <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in GetKeyFromName: &quot;</span>) + e.what());</div>
+<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  165</span>        }</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classini_parser_1_1_ini_parser_a57f7fba42e1dbc59a9d5fb1ccea49469_icgraph.png" border="0" usemap="#aclassini_parser_1_1_ini_parser_a57f7fba42e1dbc59a9d5fb1ccea49469_icgraph" alt=""/></div>
+<map name="aclassini_parser_1_1_ini_parser_a57f7fba42e1dbc59a9d5fb1ccea49469_icgraph" id="aclassini_parser_1_1_ini_parser_a57f7fba42e1dbc59a9d5fb1ccea49469_icgraph">
+<area shape="rect" title="주어진 문자열에서 키명을 추출하는 함수입니다." alt="" coords="1206,48,1344,91"/>
+<area shape="rect" href="classini_parser_1_1_ini_parser.html#a14ee5fb071a7c66a45d7d92ab325e48e" title="INI 파일의 특정 섹션에서 모든 키를 가져오는 함수입니다." alt="" coords="1007,48,1158,91"/>
+<area shape="poly" title=" " alt="" coords="1190,72,1158,72,1158,67,1190,67"/>
+<area shape="rect" href="_win_app_8cpp.html#a9470ae1a4450c0115066eabafeb5c698" title=" " alt="" coords="685,5,771,32"/>
+<area shape="poly" title=" " alt="" coords="992,52,959,47,858,33,771,25,772,19,858,28,960,41,993,47"/>
+<area shape="rect" href="_win_app_8cpp.html#a8a06f0e167fd52499dd35a88471c5f05" title=" " alt="" coords="840,56,959,83"/>
+<area shape="poly" title=" " alt="" coords="992,72,960,72,960,67,992,67"/>
+<area shape="rect" href="_win_app_8cpp.html#aee94903f757b096a3d7a3eacf58d8f2f" title=" " alt="" coords="665,107,790,133"/>
+<area shape="poly" title=" " alt="" coords="993,91,960,97,791,117,791,112,959,92,992,86"/>
+<area shape="rect" href="_win_app_8cpp.html#a1d71225d8f429c3ec023dcc86f760e81" title=" " alt="" coords="482,5,615,32"/>
+<area shape="poly" title=" " alt="" coords="669,21,616,21,616,16,669,16"/>
+<area shape="rect" href="_win_app_8cpp.html#ad1d8d77c29d483b0d119e05173b08673" title=" " alt="" coords="276,31,418,57"/>
+<area shape="poly" title=" " alt="" coords="467,32,419,38,418,32,466,26"/>
+<area shape="rect" href="_win_app_8cpp.html#a4bab8a811513db99dd6cf77f2072aa88" title=" " alt="" coords="103,81,212,108"/>
+<area shape="poly" title=" " alt="" coords="280,65,211,83,209,78,279,59"/>
+<area shape="rect" href="_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="5,132,55,159"/>
+<area shape="poly" title=" " alt="" coords="109,117,56,138,54,133,107,112"/>
+<area shape="poly" title=" " alt="" coords="836,54,771,34,772,29,838,48"/>
+<area shape="rect" href="_win_app_8cpp.html#a54363b47da7e426f01f62ba53b6b9344" title=" " alt="" coords="664,56,792,83"/>
+<area shape="poly" title=" " alt="" coords="825,72,792,72,792,67,825,67"/>
+<area shape="poly" title=" " alt="" coords="648,67,418,51,418,46,648,61"/>
+<area shape="rect" href="_win_app_8cpp.html#ab004bb3ed848531ece00b3093909b2ad" title=" " alt="" coords="260,183,433,209"/>
+<area shape="poly" title=" " alt="" coords="653,140,616,148,427,185,426,179,615,143,652,135"/>
+<area shape="rect" href="_win_app_8cpp.html#ad1c7cc0ca7b7cd239b6120ea7dafd9b6" title=" " alt="" coords="481,107,616,133"/>
+<area shape="poly" title=" " alt="" coords="650,123,616,123,616,117,650,117"/>
+<area shape="poly" title=" " alt="" coords="244,188,102,167,54,155,56,150,103,161,245,183"/>
+<area shape="poly" title=" " alt="" coords="497,103,432,78,384,60,386,55,434,74,498,98"/>
+<area shape="poly" title=" " alt="" coords="465,117,212,101,212,95,466,112"/>
+<area shape="poly" title=" " alt="" coords="466,127,55,147,55,141,465,121"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af6b94717bcb6eafe482911d2673c293b" name="af6b94717bcb6eafe482911d2673c293b"></a>
@@ -769,20 +817,23 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>: 파일 경로가 유효하면 true, 그렇지 않으면 false를 반환합니다.</dd></dl>
 <p>이 함수는 주어진 파일 경로가 유효한지 여부를 검사하여 반환합니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00188">188</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  189</span>{</div>
-<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  191</span>    {</div>
-<div class="line"><span class="lineno">  192</span>        DWORD fileAttributes = GetFileAttributesA(filePath); <span class="comment">// 파일 속성 가져오기</span></div>
-<div class="line"><span class="lineno">  193</span>        <span class="comment">// 파일 속성이 유효하고, 디렉터리가 아닌 경우 true 반환</span></div>
-<div class="line"><span class="lineno">  194</span>        <span class="keywordflow">return</span> (fileAttributes != INVALID_FILE_ATTRIBUTES) &amp;&amp; !(fileAttributes &amp; FILE_ATTRIBUTE_DIRECTORY);</div>
-<div class="line"><span class="lineno">  195</span>    }</div>
-<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><span class="lineno">  197</span>    {</div>
-<div class="line"><span class="lineno">  198</span>        <span class="comment">// 예외 발생 시 사용자 정의 메시지를 포함한 예외를 던짐</span></div>
-<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in IsFilePathValid: &quot;</span>) + e.what());</div>
-<div class="line"><span class="lineno">  200</span>    }</div>
-<div class="line"><span class="lineno">  201</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00244">244</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  245</span>    {</div>
+<div class="line"><span class="lineno">  246</span>        <span class="comment">// 파일 경로가 비어 있는지 검사</span></div>
+<div class="line"><span class="lineno">  247</span>        <span class="keywordflow">if</span> (filePath == <span class="keyword">nullptr</span> || strlen(filePath) == 0)</div>
+<div class="line"><span class="lineno">  248</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>        DWORD fileAttributes = GetFileAttributesA(filePath); <span class="comment">// 파일 경로의 속성 가져오기</span></div>
+<div class="line"><span class="lineno">  251</span> </div>
+<div class="line"><span class="lineno">  252</span>        <span class="comment">// 파일 속성이 유효한지 확인</span></div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">if</span> (fileAttributes == INVALID_FILE_ATTRIBUTES)</div>
+<div class="line"><span class="lineno">  254</span>        {</div>
+<div class="line"><span class="lineno">  255</span>            <span class="comment">// 추가적으로, 오류 발생 시 GetLastError()를 호출하여 더 자세한 오류 정보를 얻을 수 있습니다.</span></div>
+<div class="line"><span class="lineno">  256</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  257</span>        }</div>
+<div class="line"><span class="lineno">  258</span>        <span class="comment">//파일인 경우 true 반환</span></div>
+<div class="line"><span class="lineno">  259</span>        <span class="keywordflow">return</span> !(fileAttributes &amp; FILE_ATTRIBUTE_DIRECTORY);</div>
+<div class="line"><span class="lineno">  260</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -798,9 +849,159 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a6409dcc4e4e4af1aaac278e15a61a3a2" name="a6409dcc4e4e4af1aaac278e15a61a3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6409dcc4e4e4af1aaac278e15a61a3a2">&#9670;&#160;</a></span>IsKeyMatching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool iniParser::IniParser::IsKeyMatching </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>refKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>delimiter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'_'</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>주어진 키 값이 기준 키 값과 지정된 모드에 따라 일치하는지 확인하는 함수입니다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>: 비교할 키 값입니다. </td></tr>
+    <tr><td class="paramname">refKey</td><td>: 비교 기준이 되는 키 값입니다. </td></tr>
+    <tr><td class="paramname">mode</td><td>: 비교 방법을 결정하는 모드입니다.<ul>
+<li>0: 전체 키가 기준 키와 정확히 일치하는지 확인합니다.</li>
+<li>1: 구분자 앞부분이 기준 키와 일치하는지 확인합니다.</li>
+<li>2: 구분자 뒷부분이 기준 키와 일치하는지 확인합니다. </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">delimiter</td><td>: 키와 기준 키를 구분하는 데 사용할 구분자 문자입니다. 기본값은 '_'입니다.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: 키가 기준 키와 지정된 모드에 따라 일치하면 true를 반환하고, 그렇지 않으면 false를 반환합니다.</dd></dl>
+<p>이 함수는 주어진 키와 기준 키를 지정된 모드와 구분자를 기준으로 비교합니다.</p><ul>
+<li>모드 0에서는 전체 키를 직접 비교합니다.</li>
+<li>모드 1에서는 구분자 앞부분의 키와 기준 키의 앞부분을 비교합니다.</li>
+<li>모드 2에서는 구분자 뒷부분의 키와 기준 키의 뒷부분을 비교합니다.</li>
+<li>구분자를 제공하지 않을 경우 자동으로 모드 0으로 동작합니다. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_ini_parser_8cpp_source.html#l00168">168</a> of file <a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  169</span>    {</div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  171</span>        {</div>
+<div class="line"><span class="lineno">  172</span>            <span class="comment">// key와 refKey가 nullptr이 아닌지 확인</span></div>
+<div class="line"><span class="lineno">  173</span>            <span class="keywordflow">if</span> (key == <span class="keyword">nullptr</span> || refKey == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  174</span>            {</div>
+<div class="line"><span class="lineno">  175</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Key or referenceKey is null.&quot;</span>);</div>
+<div class="line"><span class="lineno">  176</span>            }</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>            <span class="comment">// 모드가 0인 경우, 전체 키를 직접 비교</span></div>
+<div class="line"><span class="lineno">  179</span>            <span class="keywordflow">if</span> (mode == 0)</div>
+<div class="line"><span class="lineno">  180</span>            {</div>
+<div class="line"><span class="lineno">  181</span>                <span class="keywordflow">return</span> strcmp(key, refKey) == 0;</div>
+<div class="line"><span class="lineno">  182</span>            }</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>            <span class="comment">// 모드가 1 또는 2인 경우</span></div>
+<div class="line"><span class="lineno">  185</span>            std::string keyStr(key);</div>
+<div class="line"><span class="lineno">  186</span>            std::string refKeyStr(refKey);</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>            <span class="comment">// 구분자를 기준으로 키와 기준 키를 분리</span></div>
+<div class="line"><span class="lineno">  189</span>            <span class="keywordtype">size_t</span> keyPos = keyStr.find(delimiter);</div>
+<div class="line"><span class="lineno">  190</span>            <span class="keywordtype">size_t</span> refKeyPos = refKeyStr.find(delimiter);</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>            <span class="keywordflow">if</span> (keyPos == std::string::npos || refKeyPos == std::string::npos)</div>
+<div class="line"><span class="lineno">  193</span>            {</div>
+<div class="line"><span class="lineno">  194</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Delimiter not found in key or referenceKey.&quot;</span>);</div>
+<div class="line"><span class="lineno">  195</span>            }</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>            std::string keyBeforeDelimiter = keyStr.substr(0, keyPos);</div>
+<div class="line"><span class="lineno">  198</span>            std::string keyAfterDelimiter = keyStr.substr(keyPos + 1);</div>
+<div class="line"><span class="lineno">  199</span>            std::string refKeyBeforeDelimiter = refKeyStr.substr(0, refKeyPos);</div>
+<div class="line"><span class="lineno">  200</span>            std::string refKeyAfterDelimiter = refKeyStr.substr(refKeyPos + 1);</div>
+<div class="line"><span class="lineno">  201</span> </div>
+<div class="line"><span class="lineno">  202</span>            <span class="keywordflow">if</span> (mode == 1)</div>
+<div class="line"><span class="lineno">  203</span>            {</div>
+<div class="line"><span class="lineno">  204</span>                <span class="comment">// 모드 1: 구분자 앞부분 비교</span></div>
+<div class="line"><span class="lineno">  205</span>                <span class="keywordflow">return</span> keyBeforeDelimiter == refKeyBeforeDelimiter;</div>
+<div class="line"><span class="lineno">  206</span>            }</div>
+<div class="line"><span class="lineno">  207</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode == 2)</div>
+<div class="line"><span class="lineno">  208</span>            {</div>
+<div class="line"><span class="lineno">  209</span>                <span class="comment">// 모드 2: 구분자 뒷부분 비교</span></div>
+<div class="line"><span class="lineno">  210</span>                <span class="keywordflow">return</span> keyAfterDelimiter == refKeyAfterDelimiter;</div>
+<div class="line"><span class="lineno">  211</span>            }</div>
+<div class="line"><span class="lineno">  212</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  213</span>            {</div>
+<div class="line"><span class="lineno">  214</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Invalid mode specified.&quot;</span>);</div>
+<div class="line"><span class="lineno">  215</span>            }</div>
+<div class="line"><span class="lineno">  216</span>        }</div>
+<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><span class="lineno">  218</span>        {</div>
+<div class="line"><span class="lineno">  219</span>            <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Error in IsKeyMatching: &quot;</span>) + e.what());</div>
+<div class="line"><span class="lineno">  220</span>        }</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classini_parser_1_1_ini_parser_a6409dcc4e4e4af1aaac278e15a61a3a2_icgraph.png" border="0" usemap="#aclassini_parser_1_1_ini_parser_a6409dcc4e4e4af1aaac278e15a61a3a2_icgraph" alt=""/></div>
+<map name="aclassini_parser_1_1_ini_parser_a6409dcc4e4e4af1aaac278e15a61a3a2_icgraph" id="aclassini_parser_1_1_ini_parser_a6409dcc4e4e4af1aaac278e15a61a3a2_icgraph">
+<area shape="rect" title="주어진 키 값이 기준 키 값과 지정된 모드에 따라 일치하는지 확인하는 함수입니다." alt="" coords="1007,73,1140,116"/>
+<area shape="rect" href="_win_app_8cpp.html#a8a06f0e167fd52499dd35a88471c5f05" title=" " alt="" coords="840,56,959,83"/>
+<area shape="poly" title=" " alt="" coords="991,85,959,81,960,75,992,80"/>
+<area shape="rect" href="_win_app_8cpp.html#aee94903f757b096a3d7a3eacf58d8f2f" title=" " alt="" coords="665,107,790,133"/>
+<area shape="poly" title=" " alt="" coords="992,103,791,118,791,113,992,98"/>
+<area shape="rect" href="_win_app_8cpp.html#a9470ae1a4450c0115066eabafeb5c698" title=" " alt="" coords="685,56,771,83"/>
+<area shape="poly" title=" " alt="" coords="825,72,771,72,771,67,825,67"/>
+<area shape="rect" href="_win_app_8cpp.html#a54363b47da7e426f01f62ba53b6b9344" title=" " alt="" coords="664,5,792,32"/>
+<area shape="poly" title=" " alt="" coords="837,54,775,35,776,30,838,48"/>
+<area shape="rect" href="_win_app_8cpp.html#a1d71225d8f429c3ec023dcc86f760e81" title=" " alt="" coords="482,56,615,83"/>
+<area shape="poly" title=" " alt="" coords="669,72,616,72,616,67,669,67"/>
+<area shape="rect" href="_win_app_8cpp.html#ad1d8d77c29d483b0d119e05173b08673" title=" " alt="" coords="276,31,418,57"/>
+<area shape="poly" title=" " alt="" coords="466,62,418,56,419,50,467,56"/>
+<area shape="rect" href="_win_app_8cpp.html#a4bab8a811513db99dd6cf77f2072aa88" title=" " alt="" coords="103,81,212,108"/>
+<area shape="poly" title=" " alt="" coords="280,65,211,83,209,78,279,59"/>
+<area shape="rect" href="_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="5,132,55,159"/>
+<area shape="poly" title=" " alt="" coords="109,117,56,138,54,133,107,112"/>
+<area shape="poly" title=" " alt="" coords="648,27,418,42,418,37,648,21"/>
+<area shape="rect" href="_win_app_8cpp.html#ab004bb3ed848531ece00b3093909b2ad" title=" " alt="" coords="260,183,433,209"/>
+<area shape="poly" title=" " alt="" coords="653,140,616,148,427,185,426,179,615,143,652,135"/>
+<area shape="rect" href="_win_app_8cpp.html#ad1c7cc0ca7b7cd239b6120ea7dafd9b6" title=" " alt="" coords="481,107,616,133"/>
+<area shape="poly" title=" " alt="" coords="650,123,616,123,616,117,650,117"/>
+<area shape="poly" title=" " alt="" coords="244,188,102,167,54,155,56,150,103,161,245,183"/>
+<area shape="poly" title=" " alt="" coords="496,103,480,97,432,78,384,60,386,55,434,74,482,92,498,98"/>
+<area shape="poly" title=" " alt="" coords="465,117,212,101,212,95,466,112"/>
+<area shape="poly" title=" " alt="" coords="466,127,55,147,55,141,465,121"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/<a class="el" href="_ini_parser_8h_source.html">IniParser.h</a></li>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/<a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a></li>
+<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/External_lib/<a class="el" href="_ini_parser_8h_source.html">IniParser.h</a></li>
+<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/External_lib/<a class="el" href="_ini_parser_8cpp_source.html">IniParser.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

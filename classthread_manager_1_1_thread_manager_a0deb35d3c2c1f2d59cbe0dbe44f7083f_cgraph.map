@@ -1,0 +1,5 @@
+<map id="threadManager::ThreadManager::Start" name="threadManager::ThreadManager::Start">
+<area shape="rect" id="Node000001" title="스레드를 생성하고 실행합니다." alt="" coords="5,5,211,48"/>
+<area shape="rect" id="Node000002" href="$classthread_manager_1_1_thread_manager.html#a113f526143df0f4f11d25315365a3855" title="스레드를 실행 상태로 설정합니다." alt="" coords="259,5,464,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,24,243,24,243,29,211,29"/>
+</map>

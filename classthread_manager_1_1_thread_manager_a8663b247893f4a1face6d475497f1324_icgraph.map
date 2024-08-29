@@ -1,0 +1,5 @@
+<map id="threadManager::ThreadManager::Free" name="threadManager::ThreadManager::Free">
+<area shape="rect" id="Node000001" title="스레드를 종료하고 리소스를 해제합니다." alt="" coords="259,5,464,48"/>
+<area shape="rect" id="Node000002" href="$classthread_manager_1_1_thread_manager.html#aa6e26dca8389c06f08e30450fbc94a8e" title="소멸자, 스레드를 종료하고 리소스를 해제합니다." alt="" coords="5,5,211,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,29,211,29,211,24,243,24"/>
+</map>

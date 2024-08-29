@@ -1,7 +1,9 @@
 <map id="sharedMemory::SharedMemory::Close" name="sharedMemory::SharedMemory::Close">
-<area shape="rect" id="Node000001" title="공유 메모리를 닫는 메서드입니다." alt="" coords="114,23,317,65"/>
-<area shape="rect" id="Node000002" href="$_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title=" " alt="" coords="5,5,66,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,30,66,25,66,20,99,25"/>
-<area shape="rect" id="Node000003" href="$_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="11,56,60,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,63,61,69,60,63,98,58"/>
+<area shape="rect" id="Node000001" title="공유 메모리를 닫는 메서드입니다." alt="" coords="257,48,460,91"/>
+<area shape="rect" id="Node000002" href="$_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title=" " alt="" coords="77,5,137,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,48,137,27,138,22,242,43"/>
+<area shape="rect" id="Node000003" href="$_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="82,56,132,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,72,132,72,132,67,241,67"/>
+<area shape="rect" id="Node000004" href="$classshared_memory_1_1_shared_memory.html#a278d1c1c3cb41b07f8e865e8f55b9a57" title="SharedMemory 클래스의 소멸자입니다." alt="" coords="5,107,209,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,97,202,109,201,103,249,92"/>
 </map>

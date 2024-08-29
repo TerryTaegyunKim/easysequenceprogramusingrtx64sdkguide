@@ -1,0 +1,7 @@
+<map id="sharedMemory::SharedMemory::getInstance" name="sharedMemory::SharedMemory::getInstance">
+<area shape="rect" id="Node000001" title="SharedMemory의 인스턴스를 반환하는 정적 메서드입니다." alt="" coords="114,23,317,65"/>
+<area shape="rect" id="Node000002" href="$_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title=" " alt="" coords="5,5,66,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,30,66,25,66,20,99,25"/>
+<area shape="rect" id="Node000003" href="$_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="11,56,60,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,63,61,69,60,63,98,58"/>
+</map>

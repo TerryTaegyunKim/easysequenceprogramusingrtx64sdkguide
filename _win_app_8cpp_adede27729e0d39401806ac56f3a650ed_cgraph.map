@@ -1,7 +1,9 @@
 <map id="WatchdogThread" name="WatchdogThread">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,125,57"/>
-<area shape="rect" id="Node000002" href="$class_w_m_x_lib.html#a9ca9dddeb821f9a04fd303dd487dee3f" title="긴급 정지를 수행합니다." alt="" coords="182,5,347,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,34,166,29,166,34,125,39"/>
-<area shape="rect" id="Node000003" href="$class_w_m_x_lib.html#a99f28b9ff4c7d4c105cb18b482b48545" title="긴급 정지를 해제합니다." alt="" coords="173,56,356,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,49,158,53,157,58,124,54"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,125,99"/>
+<area shape="rect" id="Node000002" href="$classthread_manager_1_1_thread_manager.html#ac8c016e346442ecca1821c4018af27ea" title="스레드가 실행 중인지 확인합니다." alt="" coords="173,5,378,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,69,181,50,183,55,116,74"/>
+<area shape="rect" id="Node000003" href="$class_w_m_x_lib.html#a9ca9dddeb821f9a04fd303dd487dee3f" title="긴급 정지를 수행합니다." alt="" coords="193,72,358,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,83,177,83,177,88,125,88"/>
+<area shape="rect" id="Node000004" href="$class_w_m_x_lib.html#a99f28b9ff4c7d4c105cb18b482b48545" title="긴급 정지를 해제합니다." alt="" coords="184,123,367,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,97,203,116,202,121,123,102"/>
 </map>

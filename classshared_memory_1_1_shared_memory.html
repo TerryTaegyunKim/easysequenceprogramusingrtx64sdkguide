@@ -176,9 +176,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af7554079f73d89cd43d3a30a36ed6729" id="r_af7554079f73d89cd43d3a30a36ed6729"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classshared_memory_1_1_shared_memory.html">SharedMemory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7554079f73d89cd43d3a30a36ed6729">getInstance</a> (<a class="el" href="#a3bfb2c744be55204cc4928d9a390b9b9">PlatformType</a> <a class="el" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>)</td></tr>
-<tr class="memdesc:af7554079f73d89cd43d3a30a36ed6729"><td class="mdescLeft">&#160;</td><td class="mdescRight">SharedMemory의 인스턴스를 반환하는 정적 메서드입니다.  <br /></td></tr>
-<tr class="separator:af7554079f73d89cd43d3a30a36ed6729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2640ca595aaa5352544c4db3a8e678e9" id="r_a2640ca595aaa5352544c4db3a8e678e9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classshared_memory_1_1_shared_memory.html">SharedMemory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2640ca595aaa5352544c4db3a8e678e9">getInstance</a> (<a class="el" href="#a3bfb2c744be55204cc4928d9a390b9b9">PlatformType</a> <a class="el" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>)</td></tr>
+<tr class="memdesc:a2640ca595aaa5352544c4db3a8e678e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SharedMemory의 인스턴스를 반환하는 정적 메서드입니다.  <br /></td></tr>
+<tr class="separator:a2640ca595aaa5352544c4db3a8e678e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -283,16 +283,16 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00016">16</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>    : <a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>(<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>), <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>(<span class="keyword">nullptr</span>) </div>
-<div class="line"><span class="lineno">   18</span>{</div>
-<div class="line"><span class="lineno">   19</span>    <a class="code hl_function" href="#a3c08d12a81307dadb3dd701d06c248fc">Open</a>();</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00019">19</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>        : <a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>(<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>), <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   21</span>    {</div>
+<div class="line"><span class="lineno">   22</span>        <a class="code hl_function" href="#a3c08d12a81307dadb3dd701d06c248fc">Open</a>();</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
 <div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a0168c7f76fa4f7c70398ae276a7846d8"><div class="ttname"><a href="#a0168c7f76fa4f7c70398ae276a7846d8">sharedMemory::SharedMemory::platform</a></div><div class="ttdeci">const PlatformType platform</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00131">shmi.h:131</a></div></div>
 <div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a0be1558868bf9f15d8caebfac6278d3a"><div class="ttname"><a href="#a0be1558868bf9f15d8caebfac6278d3a">sharedMemory::SharedMemory::hSharedMemory</a></div><div class="ttdeci">HANDLE hSharedMemory</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00132">shmi.h:132</a></div></div>
 <div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a274821dc8dc7c672d83026ef29ff3433"><div class="ttname"><a href="#a274821dc8dc7c672d83026ef29ff3433">sharedMemory::SharedMemory::hEvent</a></div><div class="ttdeci">HANDLE hEvent</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00134">shmi.h:134</a></div></div>
 <div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a2cc5d8c6fe2b02dbc06df5e466e46731"><div class="ttname"><a href="#a2cc5d8c6fe2b02dbc06df5e466e46731">sharedMemory::SharedMemory::pSharedMemory</a></div><div class="ttdeci">SHMI * pSharedMemory</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00135">shmi.h:135</a></div></div>
-<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a3c08d12a81307dadb3dd701d06c248fc"><div class="ttname"><a href="#a3c08d12a81307dadb3dd701d06c248fc">sharedMemory::SharedMemory::Open</a></div><div class="ttdeci">bool Open()</div><div class="ttdoc">공유 메모리를 여는 메서드입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00055">shmi.cpp:55</a></div></div>
+<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a3c08d12a81307dadb3dd701d06c248fc"><div class="ttname"><a href="#a3c08d12a81307dadb3dd701d06c248fc">sharedMemory::SharedMemory::Open</a></div><div class="ttdeci">bool Open()</div><div class="ttdoc">공유 메모리를 여는 메서드입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00058">shmi.cpp:58</a></div></div>
 <div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a6571f3cc6d7628e6ad18e22e3d5c683d"><div class="ttname"><a href="#a6571f3cc6d7628e6ad18e22e3d5c683d">sharedMemory::SharedMemory::hSemaphore</a></div><div class="ttdeci">HANDLE hSemaphore</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00133">shmi.h:133</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -332,12 +332,22 @@ Here is the call graph for this function:</div>
 
 <p><a class="el" href="classshared_memory_1_1_shared_memory.html" title="SharedMemory 클래스는 Windows와 RTSS 간의 공유 메모리 인터페이스를 제공하는 클래스입니다.">SharedMemory</a> 클래스의 소멸자입니다. </p>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00022">22</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
-<div class="line"><span class="lineno">   24</span>    <a class="code hl_function" href="#aeb536ad3891285fa976bdf7f148026e0">Close</a>();</div>
-<div class="line"><span class="lineno">   25</span>}</div>
-<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_aeb536ad3891285fa976bdf7f148026e0"><div class="ttname"><a href="#aeb536ad3891285fa976bdf7f148026e0">sharedMemory::SharedMemory::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdoc">공유 메모리를 닫는 메서드입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00095">shmi.cpp:95</a></div></div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00025">25</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span>        <a class="code hl_function" href="#aeb536ad3891285fa976bdf7f148026e0">Close</a>();</div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_aeb536ad3891285fa976bdf7f148026e0"><div class="ttname"><a href="#aeb536ad3891285fa976bdf7f148026e0">sharedMemory::SharedMemory::Close</a></div><div class="ttdeci">bool Close()</div><div class="ttdoc">공유 메모리를 닫는 메서드입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00098">shmi.cpp:98</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classshared_memory_1_1_shared_memory_a278d1c1c3cb41b07f8e865e8f55b9a57_cgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_a278d1c1c3cb41b07f8e865e8f55b9a57_cgraph" alt=""/></div>
+<map name="aclassshared_memory_1_1_shared_memory_a278d1c1c3cb41b07f8e865e8f55b9a57_cgraph" id="aclassshared_memory_1_1_shared_memory_a278d1c1c3cb41b07f8e865e8f55b9a57_cgraph">
+<area shape="rect" title="SharedMemory 클래스의 소멸자입니다." alt="" coords="5,5,209,48"/>
+<area shape="rect" href="classshared_memory_1_1_shared_memory.html#aeb536ad3891285fa976bdf7f148026e0" title="공유 메모리를 닫는 메서드입니다." alt="" coords="257,5,460,48"/>
+<area shape="poly" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a6fe910853087b22b4d01290328b12412" name="a6fe910853087b22b4d01290328b12412"></a>
@@ -400,33 +410,93 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>성공 시 true, 실패 시 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00028">28</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordtype">bool</span> attemptAccess = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keyword">constexpr</span> DWORD milliseconds = 1000; <span class="comment">// Timeout</span></div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>    <span class="comment">// 세마포어를 기다립니다.</span></div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> (RtWaitForSingleObject(<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>, milliseconds) == WAIT_OBJECT_0) </div>
-<div class="line"><span class="lineno">   35</span>    {</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>        <span class="comment">// 이벤트를 신호 상태로 설정합니다.</span></div>
-<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span> (RtSetEvent(<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>)) </div>
-<div class="line"><span class="lineno">   39</span>        {</div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>) </div>
-<div class="line"><span class="lineno">   41</span>            {</div>
-<div class="line"><span class="lineno">   42</span>                func();</div>
-<div class="line"><span class="lineno">   43</span>                attemptAccess = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   44</span>            }</div>
-<div class="line"><span class="lineno">   45</span>            <span class="comment">// 작업 완료 후 이벤트를 비신호 상태로 설정</span></div>
-<div class="line"><span class="lineno">   46</span>            RtResetEvent(<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>);</div>
-<div class="line"><span class="lineno">   47</span>        }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>        <span class="comment">// 세마포어 해제</span></div>
-<div class="line"><span class="lineno">   50</span>        RtReleaseSemaphore(<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>, 1, NULL);</div>
-<div class="line"><span class="lineno">   51</span>    }</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> attemptAccess;</div>
-<div class="line"><span class="lineno">   53</span>}</div>
-</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00031">31</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>    {</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordtype">bool</span> attemptAccess = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keyword">constexpr</span> DWORD milliseconds = 1000; <span class="comment">// Timeout</span></div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>        <span class="comment">// 세마포어를 기다립니다.</span></div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (RtWaitForSingleObject(<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>, milliseconds) == WAIT_OBJECT_0)</div>
+<div class="line"><span class="lineno">   38</span>        {</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>            <span class="comment">// 이벤트를 신호 상태로 설정합니다.</span></div>
+<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">if</span> (RtSetEvent(<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>))</div>
+<div class="line"><span class="lineno">   42</span>            {</div>
+<div class="line"><span class="lineno">   43</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>)</div>
+<div class="line"><span class="lineno">   44</span>                {</div>
+<div class="line"><span class="lineno">   45</span>                    func();</div>
+<div class="line"><span class="lineno">   46</span>                    attemptAccess = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   47</span>                }</div>
+<div class="line"><span class="lineno">   48</span>                <span class="comment">// 작업 완료 후 이벤트를 비신호 상태로 설정</span></div>
+<div class="line"><span class="lineno">   49</span>                RtResetEvent(<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>);</div>
+<div class="line"><span class="lineno">   50</span>            }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>            <span class="comment">// 세마포어 해제</span></div>
+<div class="line"><span class="lineno">   53</span>            RtReleaseSemaphore(<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>, 1, NULL);</div>
+<div class="line"><span class="lineno">   54</span>        }</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> attemptAccess;</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classshared_memory_1_1_shared_memory_aac2e636e1bb07c9b201c7df657b48fac_icgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_aac2e636e1bb07c9b201c7df657b48fac_icgraph" alt=""/></div>
+<map name="aclassshared_memory_1_1_shared_memory_aac2e636e1bb07c9b201c7df657b48fac_icgraph" id="aclassshared_memory_1_1_shared_memory_aac2e636e1bb07c9b201c7df657b48fac_icgraph">
+<area shape="rect" title="공유 리소스에 접근하는 함수입니다." alt="" coords="1115,217,1319,260"/>
+<area shape="rect" href="classshared_memory_1_1_shared_memory.html#aa0ac84da4690d8f02030dce64d794b6a" title="데이터를 수신하는 메서드입니다." alt="" coords="864,116,1067,159"/>
+<area shape="poly" title=" " alt="" coords="1146,213,1020,162,1022,157,1149,208"/>
+<area shape="rect" href="classshared_memory_1_1_shared_memory.html#a212b8529781cfac2d75de64db2abdea6" title="데이터를 송신하는 메서드입니다." alt="" coords="864,251,1067,293"/>
+<area shape="poly" title=" " alt="" coords="1100,257,1068,261,1068,256,1100,252"/>
+<area shape="rect" href="_rtss_app_8cpp.html#ad6cddbe389369006f50244e7ff4fd90e" title=" " alt="" coords="639,56,816,83"/>
+<area shape="poly" title=" " alt="" coords="873,114,776,86,778,81,875,109"/>
+<area shape="rect" href="_win_app_8cpp.html#af0564d052ffe7783b5227e84725a7b0c" title=" " alt="" coords="701,5,754,32"/>
+<area shape="poly" title=" " alt="" coords="921,109,871,77,815,46,753,27,755,21,817,42,874,72,924,104"/>
+<area shape="rect" href="_win_app_8cpp.html#a528fb4f251de6d1750001554ab21964d" title=" " alt="" coords="669,208,786,235"/>
+<area shape="poly" title=" " alt="" coords="889,167,769,210,767,205,888,162"/>
+<area shape="rect" href="_rtss_app_8cpp.html#a3db71c15151b4d493496a84b964c847b" title=" " alt="" coords="466,56,581,83"/>
+<area shape="poly" title=" " alt="" coords="623,72,581,72,581,67,623,67"/>
+<area shape="rect" href="_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title=" " alt="" coords="304,56,364,83"/>
+<area shape="poly" title=" " alt="" coords="451,72,365,72,365,67,451,67"/>
+<area shape="rect" href="_win_app_8cpp.html#a1d71225d8f429c3ec023dcc86f760e81" title=" " alt="" coords="457,259,590,285"/>
+<area shape="poly" title=" " alt="" coords="657,242,581,261,580,255,655,236"/>
+<area shape="rect" href="_win_app_8cpp.html#a54363b47da7e426f01f62ba53b6b9344" title=" " alt="" coords="459,208,588,235"/>
+<area shape="poly" title=" " alt="" coords="654,224,588,224,588,219,654,219"/>
+<area shape="rect" href="_win_app_8cpp.html#a84a1e319ef084d1530c222f7d69b0552" title=" " alt="" coords="463,309,584,336"/>
+<area shape="poly" title=" " alt="" coords="692,245,592,300,565,311,563,306,590,295,689,241"/>
+<area shape="rect" href="_win_app_8cpp.html#ad1c7cc0ca7b7cd239b6120ea7dafd9b6" title=" " alt="" coords="456,157,591,184"/>
+<area shape="poly" title=" " alt="" coords="655,206,580,187,581,182,657,201"/>
+<area shape="rect" href="_win_app_8cpp.html#ab6469cba3368f5af79d85c8a472ea5d6" title=" " alt="" coords="460,360,587,387"/>
+<area shape="poly" title=" " alt="" coords="706,248,657,299,626,326,592,350,569,362,567,357,589,346,622,322,653,295,703,245"/>
+<area shape="rect" href="_win_app_8cpp.html#ad1d8d77c29d483b0d119e05173b08673" title=" " alt="" coords="263,259,405,285"/>
+<area shape="poly" title=" " alt="" coords="441,275,406,275,406,269,441,269"/>
+<area shape="rect" href="_win_app_8cpp.html#a4bab8a811513db99dd6cf77f2072aa88" title=" " alt="" coords="103,335,212,361"/>
+<area shape="poly" title=" " alt="" coords="288,294,191,337,189,332,286,289"/>
+<area shape="rect" href="_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="5,335,55,361"/>
+<area shape="poly" title=" " alt="" coords="87,351,55,351,55,345,87,345"/>
+<area shape="poly" title=" " alt="" coords="457,242,388,261,386,255,455,237"/>
+<area shape="rect" href="_win_app_8cpp.html#a27232eec7761cf7b60f64f83d591fd9c" title=" " alt="" coords="260,335,408,361"/>
+<area shape="poly" title=" " alt="" coords="449,335,409,341,409,335,448,330"/>
+<area shape="poly" title=" " alt="" coords="244,351,212,351,212,345,244,345"/>
+<area shape="poly" title=" " alt="" coords="467,193,458,198,434,220,410,242,375,261,372,256,407,238,430,216,455,194,464,189"/>
+<area shape="poly" title=" " alt="" coords="442,186,352,209,305,227,261,249,233,269,208,293,171,336,167,333,204,289,230,265,259,244,303,222,351,204,441,181"/>
+<area shape="poly" title=" " alt="" coords="441,173,353,181,306,189,261,203,195,233,134,270,48,337,45,332,131,266,193,228,259,197,305,184,352,175,441,168"/>
+<area shape="poly" title=" " alt="" coords="444,365,408,361,409,355,445,360"/>
+<area shape="poly" title=" " alt="" coords="927,241,862,172,848,152,840,135,831,119,814,103,781,86,784,81,818,99,835,116,844,133,853,150,866,169,931,238"/>
+<area shape="poly" title=" " alt="" coords="848,250,785,236,786,231,849,244"/>
+<area shape="poly" title=" " alt="" coords="848,275,590,275,590,269,848,269"/>
+<area shape="poly" title=" " alt="" coords="950,308,928,345,899,385,861,423,817,452,773,469,728,481,681,487,634,490,540,483,448,466,363,441,288,413,183,364,185,359,290,408,365,436,449,460,540,478,634,484,681,482,727,475,772,464,815,447,858,419,895,381,924,342,945,306"/>
+<area shape="poly" title=" " alt="" coords="919,244,870,218,815,199,751,190,686,192,626,199,575,210,574,205,625,194,686,186,752,185,817,193,872,214,921,240"/>
+<area shape="poly" title=" " alt="" coords="849,288,584,318,584,313,848,283"/>
+<area shape="poly" title=" " alt="" coords="928,242,877,205,847,188,815,176,758,163,698,159,641,159,591,163,591,158,641,154,698,153,758,158,817,171,849,184,880,201,931,238"/>
+<area shape="poly" title=" " alt="" coords="879,301,817,317,695,344,588,365,587,360,694,339,815,312,877,296"/>
+<area shape="rect" href="_win_app_8cpp.html#a4929103d0c2a3d1444fa228f414e10ed" title=" " alt="" coords="279,512,389,539"/>
+<area shape="poly" title=" " alt="" coords="954,309,935,354,906,406,867,456,843,478,817,496,763,521,706,538,646,548,587,553,476,550,389,539,390,534,477,545,587,548,646,543,704,533,761,516,815,491,840,473,863,452,901,403,930,351,950,307"/>
+<area shape="rect" href="_win_app_8cpp.html#a5e00ec1aadf04fbc9e493326ac82f7f4" title=" " alt="" coords="702,411,753,437"/>
+<area shape="poly" title=" " alt="" coords="933,306,881,351,817,394,785,409,754,420,752,415,783,404,815,390,878,347,930,302"/>
+<area shape="poly" title=" " alt="" coords="276,507,258,495,216,438,165,363,170,360,220,435,262,491,279,503"/>
+<area shape="poly" title=" " alt="" coords="283,508,259,496,138,424,49,364,52,360,141,419,261,491,286,503"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aeb536ad3891285fa976bdf7f148026e0" name="aeb536ad3891285fa976bdf7f148026e0"></a>
@@ -447,65 +517,67 @@ Here is the call graph for this function:</div>
 <p>공유 메모리를 닫는 메서드입니다. </p>
 <dl class="section return"><dt>Returns</dt><dd>성공 시 true, 실패 시 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00095">95</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   96</span>{</div>
-<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">try</span> </div>
-<div class="line"><span class="lineno">   98</span>    {</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> != INVALID_HANDLE_VALUE) </div>
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00098">98</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">  101</span>        {</div>
-<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">if</span> (!RtCloseHandle(<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>)) </div>
-<div class="line"><span class="lineno">  103</span>            {</div>
-<div class="line"><span class="lineno">  104</span>                RtPrintf(<span class="stringliteral">&quot;Failed to close shared memory semaphore handle. Error: %d\n&quot;</span>, GetLastError());</div>
-<div class="line"><span class="lineno">  105</span>            }</div>
-<div class="line"><span class="lineno">  106</span>        }</div>
-<div class="line"><span class="lineno">  107</span> </div>
-<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> != INVALID_HANDLE_VALUE) </div>
-<div class="line"><span class="lineno">  109</span>        {</div>
-<div class="line"><span class="lineno">  110</span>            <span class="keywordflow">if</span> (!RtCloseHandle(<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>)) </div>
-<div class="line"><span class="lineno">  111</span>            {</div>
-<div class="line"><span class="lineno">  112</span>                RtPrintf(<span class="stringliteral">&quot;Failed to close shared memory event handle. Error: %d\n&quot;</span>, GetLastError());</div>
-<div class="line"><span class="lineno">  113</span>            }</div>
-<div class="line"><span class="lineno">  114</span>        }</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> != INVALID_HANDLE_VALUE) </div>
-<div class="line"><span class="lineno">  117</span>        {</div>
-<div class="line"><span class="lineno">  118</span>            <span class="keywordflow">if</span> (!RtCloseHandle(<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a>)) </div>
-<div class="line"><span class="lineno">  119</span>            {</div>
-<div class="line"><span class="lineno">  120</span>                RtPrintf(<span class="stringliteral">&quot;Failed to close shared memory handle. Error: %d\n&quot;</span>, GetLastError());</div>
-<div class="line"><span class="lineno">  121</span>            }</div>
-<div class="line"><span class="lineno">  122</span>        }</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  125</span>        <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  126</span>        <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  127</span>        <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  130</span>    }</div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; ex) </div>
-<div class="line"><span class="lineno">  132</span>    {</div>
-<div class="line"><span class="lineno">  133</span>        RtPrintf(<span class="stringliteral">&quot;Exception occurred: %s\n&quot;</span>, ex.what());</div>
-<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  135</span>    }</div>
-<div class="line"><span class="lineno">  136</span>}</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> != INVALID_HANDLE_VALUE)</div>
+<div class="line"><span class="lineno">  104</span>            {</div>
+<div class="line"><span class="lineno">  105</span>                <span class="keywordflow">if</span> (!RtCloseHandle(<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a>))</div>
+<div class="line"><span class="lineno">  106</span>                {</div>
+<div class="line"><span class="lineno">  107</span>                    RtPrintf(<span class="stringliteral">&quot;Failed to close shared memory semaphore handle. Error: %d\n&quot;</span>, GetLastError());</div>
+<div class="line"><span class="lineno">  108</span>                }</div>
+<div class="line"><span class="lineno">  109</span>            }</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> != INVALID_HANDLE_VALUE)</div>
+<div class="line"><span class="lineno">  112</span>            {</div>
+<div class="line"><span class="lineno">  113</span>                <span class="keywordflow">if</span> (!RtCloseHandle(<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a>))</div>
+<div class="line"><span class="lineno">  114</span>                {</div>
+<div class="line"><span class="lineno">  115</span>                    RtPrintf(<span class="stringliteral">&quot;Failed to close shared memory event handle. Error: %d\n&quot;</span>, GetLastError());</div>
+<div class="line"><span class="lineno">  116</span>                }</div>
+<div class="line"><span class="lineno">  117</span>            }</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> != <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> != INVALID_HANDLE_VALUE)</div>
+<div class="line"><span class="lineno">  120</span>            {</div>
+<div class="line"><span class="lineno">  121</span>                <span class="keywordflow">if</span> (!RtCloseHandle(<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a>))</div>
+<div class="line"><span class="lineno">  122</span>                {</div>
+<div class="line"><span class="lineno">  123</span>                    RtPrintf(<span class="stringliteral">&quot;Failed to close shared memory handle. Error: %d\n&quot;</span>, GetLastError());</div>
+<div class="line"><span class="lineno">  124</span>                }</div>
+<div class="line"><span class="lineno">  125</span>            }</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>            <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  128</span>            <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  129</span>            <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  130</span>            <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  133</span>        }</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; ex)</div>
+<div class="line"><span class="lineno">  135</span>        {</div>
+<div class="line"><span class="lineno">  136</span>            RtPrintf(<span class="stringliteral">&quot;Exception occurred: %s\n&quot;</span>, ex.what());</div>
+<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  138</span>        }</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshared_memory_1_1_shared_memory_aeb536ad3891285fa976bdf7f148026e0_icgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_aeb536ad3891285fa976bdf7f148026e0_icgraph" alt=""/></div>
 <map name="aclassshared_memory_1_1_shared_memory_aeb536ad3891285fa976bdf7f148026e0_icgraph" id="aclassshared_memory_1_1_shared_memory_aeb536ad3891285fa976bdf7f148026e0_icgraph">
-<area shape="rect" title="공유 메모리를 닫는 메서드입니다." alt="" coords="114,23,317,65"/>
-<area shape="rect" href="_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title=" " alt="" coords="5,5,66,32"/>
-<area shape="poly" title=" " alt="" coords="98,30,66,25,66,20,99,25"/>
-<area shape="rect" href="_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="11,56,60,83"/>
-<area shape="poly" title=" " alt="" coords="99,63,61,69,60,63,98,58"/>
+<area shape="rect" title="공유 메모리를 닫는 메서드입니다." alt="" coords="257,48,460,91"/>
+<area shape="rect" href="_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title=" " alt="" coords="77,5,137,32"/>
+<area shape="poly" title=" " alt="" coords="241,48,137,27,138,22,242,43"/>
+<area shape="rect" href="_win_app_8cpp.html#a9ef43c94a04d3145f5f315231da4526e" title=" " alt="" coords="82,56,132,83"/>
+<area shape="poly" title=" " alt="" coords="241,72,132,72,132,67,241,67"/>
+<area shape="rect" href="classshared_memory_1_1_shared_memory.html#a278d1c1c3cb41b07f8e865e8f55b9a57" title="SharedMemory 클래스의 소멸자입니다." alt="" coords="5,107,209,149"/>
+<area shape="poly" title=" " alt="" coords="250,97,202,109,201,103,249,92"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af7554079f73d89cd43d3a30a36ed6729" name="af7554079f73d89cd43d3a30a36ed6729"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7554079f73d89cd43d3a30a36ed6729">&#9670;&#160;</a></span>getInstance()</h2>
+<a id="a2640ca595aaa5352544c4db3a8e678e9" name="a2640ca595aaa5352544c4db3a8e678e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2640ca595aaa5352544c4db3a8e678e9">&#9670;&#160;</a></span>getInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,7 +586,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classshared_memory_1_1_shared_memory.html">sharedMemory::SharedMemory</a> &amp; sharedMemory::SharedMemory::getInstance </td>
+          <td class="memname"><a class="el" href="classshared_memory_1_1_shared_memory.html">SharedMemory</a> &amp; sharedMemory::SharedMemory::getInstance </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a3bfb2c744be55204cc4928d9a390b9b9">PlatformType</a></td>          <td class="paramname"><span class="paramname"><em>platform</em></span></td><td>)</td>
           <td></td>
@@ -536,17 +608,17 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classshared_memory_1_1_shared_memory.html" title="SharedMemory 클래스는 Windows와 RTSS 간의 공유 메모리 인터페이스를 제공하는 클래스입니다.">SharedMemory</a> 클래스의 인스턴스 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00138">138</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
-<div class="line"><span class="lineno">  140</span>    <span class="keyword">static</span> <a class="code hl_function" href="#a4daef225a5338978342d1b40f8223a43">SharedMemory</a> instance(<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>);</div>
-<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">return</span> instance;</div>
-<div class="line"><span class="lineno">  142</span>}</div>
-<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a4daef225a5338978342d1b40f8223a43"><div class="ttname"><a href="#a4daef225a5338978342d1b40f8223a43">sharedMemory::SharedMemory::SharedMemory</a></div><div class="ttdeci">SharedMemory(PlatformType platform)</div><div class="ttdoc">SharedMemory 클래스의 생성자입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00016">shmi.cpp:16</a></div></div>
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00141">141</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        <span class="keyword">static</span> <a class="code hl_function" href="#a4daef225a5338978342d1b40f8223a43">SharedMemory</a> instance(<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a>);</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><span class="lineno">  145</span>    }</div>
+<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_a4daef225a5338978342d1b40f8223a43"><div class="ttname"><a href="#a4daef225a5338978342d1b40f8223a43">sharedMemory::SharedMemory::SharedMemory</a></div><div class="ttdeci">SharedMemory(PlatformType platform)</div><div class="ttdoc">SharedMemory 클래스의 생성자입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00019">shmi.cpp:19</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classshared_memory_1_1_shared_memory_af7554079f73d89cd43d3a30a36ed6729_icgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_af7554079f73d89cd43d3a30a36ed6729_icgraph" alt=""/></div>
-<map name="aclassshared_memory_1_1_shared_memory_af7554079f73d89cd43d3a30a36ed6729_icgraph" id="aclassshared_memory_1_1_shared_memory_af7554079f73d89cd43d3a30a36ed6729_icgraph">
+<div class="center"><img src="classshared_memory_1_1_shared_memory_a2640ca595aaa5352544c4db3a8e678e9_icgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_a2640ca595aaa5352544c4db3a8e678e9_icgraph" alt=""/></div>
+<map name="aclassshared_memory_1_1_shared_memory_a2640ca595aaa5352544c4db3a8e678e9_icgraph" id="aclassshared_memory_1_1_shared_memory_a2640ca595aaa5352544c4db3a8e678e9_icgraph">
 <area shape="rect" title="SharedMemory의 인스턴스를 반환하는 정적 메서드입니다." alt="" coords="114,23,317,65"/>
 <area shape="rect" href="_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title=" " alt="" coords="5,5,66,32"/>
 <area shape="poly" title=" " alt="" coords="98,30,66,25,66,20,99,25"/>
@@ -575,45 +647,45 @@ Here is the caller graph for this function:</div>
 <p>공유 메모리를 여는 메서드입니다. </p>
 <dl class="section return"><dt>Returns</dt><dd>성공 시 true, 실패 시 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00055">55</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>{</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> = RtOpenSharedMemory(SHM_MAP_ALL_ACCESS, FALSE, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a5d1e7ab7f0f988e1283fde9103ca55ac">constants::DEF_SHARED_MEMORY_AREA_NAME</a>, <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>**<span class="keyword">&gt;</span>(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>));</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> == <span class="keyword">nullptr</span>) </div>
-<div class="line"><span class="lineno">   59</span>    {</div>
-<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> = RtCreateSharedMemory(SHM_MAP_ALL_ACCESS, 0, <span class="keyword">sizeof</span>(*<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>), <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a5d1e7ab7f0f988e1283fde9103ca55ac">constants::DEF_SHARED_MEMORY_AREA_NAME</a>, <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>**<span class="keyword">&gt;</span>(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>));</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> == <span class="keyword">nullptr</span>) </div>
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00058">58</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> = RtOpenSharedMemory(SHM_MAP_ALL_ACCESS, FALSE, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a5d1e7ab7f0f988e1283fde9103ca55ac">constants::DEF_SHARED_MEMORY_AREA_NAME</a>, <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>**<span class="keyword">&gt;</span>(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>));</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   62</span>        {</div>
-<div class="line"><span class="lineno">   63</span>            RtPrintf(<span class="stringliteral">&quot;DataManager Create LookUp Table SharedMemory Fail...\n&quot;</span>);</div>
-<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   65</span>        }</div>
-<div class="line"><span class="lineno">   66</span>        <span class="comment">// Initialize All Data Zero Set</span></div>
-<div class="line"><span class="lineno">   67</span>        memset(<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>, 0x00, <span class="keyword">sizeof</span>(*<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>));</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> = RtOpenSemaphore(NULL, <span class="keyword">false</span>, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a940f46360f0010a277103dc50386491b">constants::DEF_SHARED_MEMORY_SEMAPHORE_NAME</a>);</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> == <span class="keyword">nullptr</span>) </div>
-<div class="line"><span class="lineno">   72</span>    {</div>
-<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> = RtCreateSemaphore(NULL, 1, 1, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a940f46360f0010a277103dc50386491b">constants::DEF_SHARED_MEMORY_SEMAPHORE_NAME</a>);</div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> == <span class="keyword">nullptr</span>) </div>
+<div class="line"><span class="lineno">   63</span>            <a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> = RtCreateSharedMemory(SHM_MAP_ALL_ACCESS, 0, <span class="keyword">sizeof</span>(*<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>), <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a5d1e7ab7f0f988e1283fde9103ca55ac">constants::DEF_SHARED_MEMORY_AREA_NAME</a>, <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>**<span class="keyword">&gt;</span>(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>));</div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0be1558868bf9f15d8caebfac6278d3a">hSharedMemory</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   65</span>            {</div>
+<div class="line"><span class="lineno">   66</span>                RtPrintf(<span class="stringliteral">&quot;DataManager Create LookUp Table SharedMemory Fail...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   68</span>            }</div>
+<div class="line"><span class="lineno">   69</span>            <span class="comment">// Initialize All Data Zero Set</span></div>
+<div class="line"><span class="lineno">   70</span>            memset(<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>, 0x00, <span class="keyword">sizeof</span>(*<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>));</div>
+<div class="line"><span class="lineno">   71</span>        }</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> = RtOpenSemaphore(NULL, <span class="keyword">false</span>, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a940f46360f0010a277103dc50386491b">constants::DEF_SHARED_MEMORY_SEMAPHORE_NAME</a>);</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   75</span>        {</div>
-<div class="line"><span class="lineno">   76</span>            RtPrintf(<span class="stringliteral">&quot;CreatehSemaphore Fail...\n&quot;</span>);</div>
-<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   78</span>        }</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
-<div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> = RtOpenEvent(NULL, NULL, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a429b71546008849f235f9ece8539ee3f">constants::DEF_SHARED_MEMORY_EVENT_NAME</a>);</div>
-<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> == <span class="keyword">nullptr</span>) </div>
-<div class="line"><span class="lineno">   83</span>    {</div>
-<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> = RtCreateEvent(NULL, TRUE, FALSE, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a429b71546008849f235f9ece8539ee3f">constants::DEF_SHARED_MEMORY_EVENT_NAME</a>);</div>
-<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> == <span class="keyword">nullptr</span>) </div>
+<div class="line"><span class="lineno">   76</span>            <a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> = RtCreateSemaphore(NULL, 1, 1, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a940f46360f0010a277103dc50386491b">constants::DEF_SHARED_MEMORY_SEMAPHORE_NAME</a>);</div>
+<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a6571f3cc6d7628e6ad18e22e3d5c683d">hSemaphore</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   78</span>            {</div>
+<div class="line"><span class="lineno">   79</span>                RtPrintf(<span class="stringliteral">&quot;CreatehSemaphore Fail...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   80</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   81</span>            }</div>
+<div class="line"><span class="lineno">   82</span>        }</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> = RtOpenEvent(NULL, NULL, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a429b71546008849f235f9ece8539ee3f">constants::DEF_SHARED_MEMORY_EVENT_NAME</a>);</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><span class="lineno">   86</span>        {</div>
-<div class="line"><span class="lineno">   87</span>            RtPrintf(<span class="stringliteral">&quot;RtCreateEvent Fail...\n&quot;</span>);</div>
-<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   89</span>        }</div>
-<div class="line"><span class="lineno">   90</span>    }</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   93</span>}</div>
+<div class="line"><span class="lineno">   87</span>            <a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> = RtCreateEvent(NULL, TRUE, FALSE, <a class="code hl_variable" href="namespaceshared_memory_1_1constants.html#a429b71546008849f235f9ece8539ee3f">constants::DEF_SHARED_MEMORY_EVENT_NAME</a>);</div>
+<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a274821dc8dc7c672d83026ef29ff3433">hEvent</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   89</span>            {</div>
+<div class="line"><span class="lineno">   90</span>                RtPrintf(<span class="stringliteral">&quot;RtCreateEvent Fail...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   91</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   92</span>            }</div>
+<div class="line"><span class="lineno">   93</span>        }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
 <div class="ttc" id="anamespaceshared_memory_1_1constants_html_a429b71546008849f235f9ece8539ee3f"><div class="ttname"><a href="namespaceshared_memory_1_1constants.html#a429b71546008849f235f9ece8539ee3f">sharedMemory::constants::DEF_SHARED_MEMORY_EVENT_NAME</a></div><div class="ttdeci">static const TCHAR * DEF_SHARED_MEMORY_EVENT_NAME</div><div class="ttdoc">기본 공유 메모리 영역 이름</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00035">shmi.h:35</a></div></div>
 <div class="ttc" id="anamespaceshared_memory_1_1constants_html_a5d1e7ab7f0f988e1283fde9103ca55ac"><div class="ttname"><a href="namespaceshared_memory_1_1constants.html#a5d1e7ab7f0f988e1283fde9103ca55ac">sharedMemory::constants::DEF_SHARED_MEMORY_AREA_NAME</a></div><div class="ttdeci">static const TCHAR * DEF_SHARED_MEMORY_AREA_NAME</div><div class="ttdoc">스택 크기를 MB 단위로 정의하는 매크로</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00034">shmi.h:34</a></div></div>
 <div class="ttc" id="anamespaceshared_memory_1_1constants_html_a940f46360f0010a277103dc50386491b"><div class="ttname"><a href="namespaceshared_memory_1_1constants.html#a940f46360f0010a277103dc50386491b">sharedMemory::constants::DEF_SHARED_MEMORY_SEMAPHORE_NAME</a></div><div class="ttdeci">static const TCHAR * DEF_SHARED_MEMORY_SEMAPHORE_NAME</div><div class="ttdoc">기본 공유 메모리 이벤트 이름</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00036">shmi.h:36</a></div></div>
@@ -687,30 +759,40 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00159">159</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
-<div class="line"><span class="lineno">  161</span>    <a class="code hl_function" href="#aac2e636e1bb07c9b201c7df657b48fac">AccessResource</a>([<span class="keyword">this</span>, &amp;rx]() </div>
-<div class="line"><span class="lineno">  162</span>    {</div>
-<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9aaea23489ce3aa9b6406ebb28e0cda430">PlatformType::Windows</a>) </div>
-<div class="line"><span class="lineno">  164</span>        {</div>
-<div class="line"><span class="lineno">  165</span>            rx = <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>; <span class="comment">// Rtss -&gt; Windows</span></div>
-<div class="line"><span class="lineno">  166</span>            <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#ad129a693634bb483ab8f932dc951d784">cmd</a> = 0;</div>
-<div class="line"><span class="lineno">  167</span>            memset(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>));</div>
-<div class="line"><span class="lineno">  168</span>        }</div>
-<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9a349afdc95e82784dfbeb31269f8d127c">PlatformType::RTSS</a>) </div>
-<div class="line"><span class="lineno">  170</span>        {</div>
-<div class="line"><span class="lineno">  171</span>            rx = <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>; <span class="comment">// Windows -&gt; Rtss</span></div>
-<div class="line"><span class="lineno">  172</span>            <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#ad129a693634bb483ab8f932dc951d784">cmd</a> = 0;</div>
-<div class="line"><span class="lineno">  173</span>            memset(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>));</div>
-<div class="line"><span class="lineno">  174</span>        }</div>
-<div class="line"><span class="lineno">  175</span>    });</div>
-<div class="line"><span class="lineno">  176</span>}</div>
-<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_aac2e636e1bb07c9b201c7df657b48fac"><div class="ttname"><a href="#aac2e636e1bb07c9b201c7df657b48fac">sharedMemory::SharedMemory::AccessResource</a></div><div class="ttdeci">bool AccessResource(std::function&lt; void()&gt; func)</div><div class="ttdoc">공유 리소스에 접근하는 함수입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00028">shmi.cpp:28</a></div></div>
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00162">162</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>    {</div>
+<div class="line"><span class="lineno">  164</span>        <a class="code hl_function" href="#aac2e636e1bb07c9b201c7df657b48fac">AccessResource</a>([<span class="keyword">this</span>, &amp;rx]()</div>
+<div class="line"><span class="lineno">  165</span>        {</div>
+<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9aaea23489ce3aa9b6406ebb28e0cda430">PlatformType::Windows</a>)</div>
+<div class="line"><span class="lineno">  167</span>            {</div>
+<div class="line"><span class="lineno">  168</span>                rx = <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>; <span class="comment">// Rtss -&gt; Windows</span></div>
+<div class="line"><span class="lineno">  169</span>                <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#ad129a693634bb483ab8f932dc951d784">cmd</a> = 0;</div>
+<div class="line"><span class="lineno">  170</span>                memset(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>));</div>
+<div class="line"><span class="lineno">  171</span>            }</div>
+<div class="line"><span class="lineno">  172</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9a349afdc95e82784dfbeb31269f8d127c">PlatformType::RTSS</a>)</div>
+<div class="line"><span class="lineno">  173</span>            {</div>
+<div class="line"><span class="lineno">  174</span>                rx = <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>; <span class="comment">// Windows -&gt; Rtss</span></div>
+<div class="line"><span class="lineno">  175</span>                <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#ad129a693634bb483ab8f932dc951d784">cmd</a> = 0;</div>
+<div class="line"><span class="lineno">  176</span>                memset(&amp;<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a>.<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">data</a>));</div>
+<div class="line"><span class="lineno">  177</span>            }</div>
+<div class="line"><span class="lineno">  178</span>        });</div>
+<div class="line"><span class="lineno">  179</span>    }</div>
+<div class="ttc" id="aclassshared_memory_1_1_shared_memory_html_aac2e636e1bb07c9b201c7df657b48fac"><div class="ttname"><a href="#aac2e636e1bb07c9b201c7df657b48fac">sharedMemory::SharedMemory::AccessResource</a></div><div class="ttdeci">bool AccessResource(std::function&lt; void()&gt; func)</div><div class="ttdoc">공유 리소스에 접근하는 함수입니다.</div><div class="ttdef"><b>Definition</b> <a href="shmi_8cpp_source.html#l00031">shmi.cpp:31</a></div></div>
 <div class="ttc" id="astructshared_memory_1_1_shared_memory_1_1_s_h_m_d_html_a2714fc2c6f4f1fc8556ddebc851fbc61"><div class="ttname"><a href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#a2714fc2c6f4f1fc8556ddebc851fbc61">sharedMemory::SharedMemory::SHMD::data</a></div><div class="ttdeci">Data data</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00069">shmi.h:69</a></div></div>
 <div class="ttc" id="astructshared_memory_1_1_shared_memory_1_1_s_h_m_d_html_ad129a693634bb483ab8f932dc951d784"><div class="ttname"><a href="structshared_memory_1_1_shared_memory_1_1_s_h_m_d.html#ad129a693634bb483ab8f932dc951d784">sharedMemory::SharedMemory::SHMD::cmd</a></div><div class="ttdeci">DWORD cmd</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00068">shmi.h:68</a></div></div>
 <div class="ttc" id="astructshared_memory_1_1_shared_memory_1_1_s_h_m_i_html_ab86e8241de61a872eeae27da324f0380"><div class="ttname"><a href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">sharedMemory::SharedMemory::SHMI::Tx</a></div><div class="ttdeci">SHMD Tx</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00079">shmi.h:79</a></div></div>
 <div class="ttc" id="astructshared_memory_1_1_shared_memory_1_1_s_h_m_i_html_ad05a4b70e68cc2211d70f1990bf4a5db"><div class="ttname"><a href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">sharedMemory::SharedMemory::SHMI::Rx</a></div><div class="ttdeci">SHMD Rx</div><div class="ttdef"><b>Definition</b> <a href="shmi_8h_source.html#l00080">shmi.h:80</a></div></div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classshared_memory_1_1_shared_memory_aa0ac84da4690d8f02030dce64d794b6a_cgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_aa0ac84da4690d8f02030dce64d794b6a_cgraph" alt=""/></div>
+<map name="aclassshared_memory_1_1_shared_memory_aa0ac84da4690d8f02030dce64d794b6a_cgraph" id="aclassshared_memory_1_1_shared_memory_aa0ac84da4690d8f02030dce64d794b6a_cgraph">
+<area shape="rect" title="데이터를 수신하는 메서드입니다." alt="" coords="5,5,209,48"/>
+<area shape="rect" href="classshared_memory_1_1_shared_memory.html#aac2e636e1bb07c9b201c7df657b48fac" title="공유 리소스에 접근하는 함수입니다." alt="" coords="257,5,460,48"/>
+<area shape="poly" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshared_memory_1_1_shared_memory_aa0ac84da4690d8f02030dce64d794b6a_icgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_aa0ac84da4690d8f02030dce64d794b6a_icgraph" alt=""/></div>
@@ -786,21 +868,31 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00144">144</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
-<div class="line"><span class="lineno">  146</span>    <a class="code hl_function" href="#aac2e636e1bb07c9b201c7df657b48fac">AccessResource</a>([<span class="keyword">this</span>, &amp;tx]() </div>
-<div class="line"><span class="lineno">  147</span>    {</div>
-<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9aaea23489ce3aa9b6406ebb28e0cda430">PlatformType::Windows</a>) </div>
-<div class="line"><span class="lineno">  149</span>        {</div>
-<div class="line"><span class="lineno">  150</span>            <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a> = tx; <span class="comment">// Windows -&gt; Rtss</span></div>
-<div class="line"><span class="lineno">  151</span>        }</div>
-<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9a349afdc95e82784dfbeb31269f8d127c">PlatformType::RTSS</a>) </div>
-<div class="line"><span class="lineno">  153</span>        {</div>
-<div class="line"><span class="lineno">  154</span>            <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a> = tx; <span class="comment">// Rtss -&gt; Windows</span></div>
-<div class="line"><span class="lineno">  155</span>        }</div>
-<div class="line"><span class="lineno">  156</span>    });</div>
-<div class="line"><span class="lineno">  157</span>}</div>
+<p class="definition">Definition at line <a class="el" href="shmi_8cpp_source.html#l00147">147</a> of file <a class="el" href="shmi_8cpp_source.html">shmi.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  148</span>    {</div>
+<div class="line"><span class="lineno">  149</span>        <a class="code hl_function" href="#aac2e636e1bb07c9b201c7df657b48fac">AccessResource</a>([<span class="keyword">this</span>, &amp;tx]()</div>
+<div class="line"><span class="lineno">  150</span>        {</div>
+<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9aaea23489ce3aa9b6406ebb28e0cda430">PlatformType::Windows</a>)</div>
+<div class="line"><span class="lineno">  152</span>            {</div>
+<div class="line"><span class="lineno">  153</span>                <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ab86e8241de61a872eeae27da324f0380">Tx</a> = tx; <span class="comment">// Windows -&gt; Rtss</span></div>
+<div class="line"><span class="lineno">  154</span>            }</div>
+<div class="line"><span class="lineno">  155</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0168c7f76fa4f7c70398ae276a7846d8">platform</a> == <a class="code hl_enumvalue" href="#a3bfb2c744be55204cc4928d9a390b9b9a349afdc95e82784dfbeb31269f8d127c">PlatformType::RTSS</a>)</div>
+<div class="line"><span class="lineno">  156</span>            {</div>
+<div class="line"><span class="lineno">  157</span>                <a class="code hl_variable" href="#a2cc5d8c6fe2b02dbc06df5e466e46731">pSharedMemory</a>-&gt;<a class="code hl_variable" href="structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html#ad05a4b70e68cc2211d70f1990bf4a5db">Rx</a> = tx; <span class="comment">// Rtss -&gt; Windows</span></div>
+<div class="line"><span class="lineno">  158</span>            }</div>
+<div class="line"><span class="lineno">  159</span>        });</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classshared_memory_1_1_shared_memory_a212b8529781cfac2d75de64db2abdea6_cgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_a212b8529781cfac2d75de64db2abdea6_cgraph" alt=""/></div>
+<map name="aclassshared_memory_1_1_shared_memory_a212b8529781cfac2d75de64db2abdea6_cgraph" id="aclassshared_memory_1_1_shared_memory_a212b8529781cfac2d75de64db2abdea6_cgraph">
+<area shape="rect" title="데이터를 송신하는 메서드입니다." alt="" coords="5,5,209,48"/>
+<area shape="rect" href="classshared_memory_1_1_shared_memory.html#aac2e636e1bb07c9b201c7df657b48fac" title="공유 리소스에 접근하는 함수입니다." alt="" coords="257,5,460,48"/>
+<area shape="poly" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classshared_memory_1_1_shared_memory_a212b8529781cfac2d75de64db2abdea6_icgraph.png" border="0" usemap="#aclassshared_memory_1_1_shared_memory_a212b8529781cfac2d75de64db2abdea6_icgraph" alt=""/></div>
@@ -982,8 +1074,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/<a class="el" href="shmi_8h_source.html">shmi.h</a></li>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/<a class="el" href="shmi_8cpp_source.html">shmi.cpp</a></li>
+<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/Custom_lib/<a class="el" href="shmi_8h_source.html">shmi.h</a></li>
+<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/Custom_lib/<a class="el" href="shmi_8cpp_source.html">shmi.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

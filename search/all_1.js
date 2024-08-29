@@ -8,5 +8,6 @@ var searchData=
   ['addr_5',['addr',['../structcommon_1_1_action_1_1_io.html#aa646eca2190c3f41fc000705abfe3d87',1,'common::Action::Io']]],
   ['align_6',['Align',['../classcommon_1_1_action.html#adc2d83dd34bda10110f6c11ef6f0f0cfa5f88065ac05371eff7b49c5d337fed2f',1,'common::Action']]],
   ['avg_7',['avg',['../structstopowatch_1_1_stopwatch_1_1_timer.html#a298e06ead3175b0f14fe6fb5f850f46e',1,'stopowatch::Stopwatch::Timer']]],
-  ['axis_8',['axis',['../structcommon_1_1_action_1_1_motion.html#a6022bce06b32a456493f924c56bd26e2',1,'common::Action::Motion']]]
+  ['axis_8',['axis',['../structcommon_1_1_action_1_1_motion.html#a6022bce06b32a456493f924c56bd26e2',1,'common::Action::Motion']]],
+  ['axistoslaveinfo_9',['AxisToSlaveInfo',['../struct_w_m_x_lib_1_1_axis_to_slave_info.html',1,'WMXLib']]]
 ];

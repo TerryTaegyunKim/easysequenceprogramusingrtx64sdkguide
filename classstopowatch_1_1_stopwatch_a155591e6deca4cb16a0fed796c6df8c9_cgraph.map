@@ -1,0 +1,14 @@
+<map id="stopowatch::Stopwatch::TimeLabel" name="stopowatch::Stopwatch::TimeLabel">
+<area shape="rect" id="Node000001" title="현재 시간의 레이블을 문자열로 반환하는 함수입니다." alt="" coords="5,39,164,81"/>
+<area shape="rect" id="Node000002" href="$classstopowatch_1_1_stopwatch.html#ab9109777a989e397989e57ed02f963aa" title="참조 시간을 설정하는 함수입니다." alt="" coords="418,39,576,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,54,212,53,370,53,402,54,402,59,370,59,212,59,164,60"/>
+<area shape="rect" id="Node000006" href="$classstopowatch_1_1_stopwatch.html#a10e8747e2e04ee2a402f848bfb001d99" title="현재 시스템 시간을 업데이트하는 함수입니다." alt="" coords="212,68,370,111"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="164,69,197,73,196,79,164,74"/>
+<area shape="rect" id="Node000003" href="$classstopowatch_1_1_stopwatch.html#a7a6a5fa3f41742bb98935745bec45665" title="초기화 함수입니다." alt="" coords="624,39,783,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="577,57,609,57,609,63,577,63"/>
+<area shape="rect" id="Node000004" href="$classstopowatch_1_1_stopwatch.html#af155ffd67bd7a0ac1694d33b4a97c88e" title="초기 시스템 시간을 가져오는 함수입니다." alt="" coords="831,5,1003,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="783,45,815,40,816,45,784,50"/>
+<area shape="rect" id="Node000005" href="$classstopowatch_1_1_stopwatch.html#a1e83a2b729d9d09cee68f4343e7935d8" title="초기 타이머를 설정하는 함수입니다." alt="" coords="838,72,996,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="784,70,823,76,822,81,783,75"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="370,75,402,71,403,76,371,81"/>
+</map>

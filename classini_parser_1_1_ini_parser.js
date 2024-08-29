@@ -7,5 +7,6 @@ var classini_parser_1_1_ini_parser =
     [ "GetIniKeyArrValues", "classini_parser_1_1_ini_parser.html#a0656d9fb12e2f417119454734c405188", null ],
     [ "GetIniKeyValue", "classini_parser_1_1_ini_parser.html#ad13701b97083de63a167d019754f56f2", null ],
     [ "GetKeyFromName", "classini_parser_1_1_ini_parser.html#a57f7fba42e1dbc59a9d5fb1ccea49469", null ],
-    [ "IsFilePathValid", "classini_parser_1_1_ini_parser.html#af6b94717bcb6eafe482911d2673c293b", null ]
+    [ "IsFilePathValid", "classini_parser_1_1_ini_parser.html#af6b94717bcb6eafe482911d2673c293b", null ],
+    [ "IsKeyMatching", "classini_parser_1_1_ini_parser.html#a6409dcc4e4e4af1aaac278e15a61a3a2", null ]
 ];
