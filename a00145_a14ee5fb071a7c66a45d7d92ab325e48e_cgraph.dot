@@ -1,0 +1,11 @@
+digraph "iniParser::IniParser::GetAllKeysInSection"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="iniParser::IniParser\l::GetAllKeysInSection",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="INI 파일의 특정 섹션에서 모든 키를 가져오는 함수입니다."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="iniParser::IniParser\l::GetKeyFromName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00145.html#a57f7fba42e1dbc59a9d5fb1ccea49469",tooltip="주어진 문자열에서 키명을 추출하는 함수입니다."];
+}

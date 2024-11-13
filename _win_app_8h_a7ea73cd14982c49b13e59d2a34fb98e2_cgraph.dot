@@ -1,0 +1,11 @@
+digraph "StopWatchdogThread"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="StopWatchdogThread",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Watchdog 스레드를 중지합니다."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="threadManager::ThreadManager\l::Stop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classthread_manager_1_1_thread_manager.html#ae7f455dfb535ac10104ac64484a1ee9f",tooltip="스레드를 중지합니다."];
+}

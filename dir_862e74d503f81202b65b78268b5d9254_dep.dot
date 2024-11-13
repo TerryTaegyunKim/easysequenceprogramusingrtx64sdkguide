@@ -1,0 +1,14 @@
+digraph "RTSeqSample/WinApp"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_d86f370549b760d3573d99ea9757c382 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="RTSeqSample", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_d86f370549b760d3573d99ea9757c382.html",tooltip=""]
+  dir_666cc346d4402d552310ca37cd15929c [label="External", fillcolor="#a2b4d6", color="red", style="filled", URL="dir_666cc346d4402d552310ca37cd15929c.html",tooltip=""];
+  dir_862e74d503f81202b65b78268b5d9254 [label="WinApp", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_862e74d503f81202b65b78268b5d9254.html",tooltip=""];
+  }
+  dir_862e74d503f81202b65b78268b5d9254->dir_666cc346d4402d552310ca37cd15929c [headlabel="14", labeldistance=1.5 headhref="dir_000006_000001.html" href="dir_000006_000001.html" color="steelblue1" fontcolor="steelblue1"];
+}

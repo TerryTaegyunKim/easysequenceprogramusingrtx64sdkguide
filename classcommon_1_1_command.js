@@ -22,5 +22,5 @@ var classcommon_1_1_command =
       [ "Send_Recipe_Status", "classcommon_1_1_command.html#ad97241de7e21f3ae0b7b2bd59df1d316a26672e1cf6a5792bd35365268db18296", null ],
       [ "Recv_Recipe_Status", "classcommon_1_1_command.html#ad97241de7e21f3ae0b7b2bd59df1d316a6e3d81bb57577776a1b95d2d9c13cea0", null ]
     ] ],
-    [ "GetCommandString", "classcommon_1_1_command.html#ad309057744a886093e88ba1939508ff9", null ]
+    [ "CommandToString", "classcommon_1_1_command.html#a418e6619dc3c69460f8aee1966dd1306", null ]
 ];

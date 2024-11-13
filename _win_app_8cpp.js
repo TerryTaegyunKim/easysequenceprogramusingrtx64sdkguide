@@ -29,7 +29,7 @@ var _win_app_8cpp =
     [ "SendStartRecipe", "_win_app_8cpp.html#a84a1e319ef084d1530c222f7d69b0552", null ],
     [ "SendSystemConfig", "_win_app_8cpp.html#ad1c7cc0ca7b7cd239b6120ea7dafd9b6", null ],
     [ "StopWatchdogThread", "_win_app_8cpp.html#a7ea73cd14982c49b13e59d2a34fb98e2", null ],
-    [ "WaitRecipeMotion", "_win_app_8cpp.html#ab6469cba3368f5af79d85c8a472ea5d6", null ],
-    [ "WaitRecvCheck", "_win_app_8cpp.html#a528fb4f251de6d1750001554ab21964d", null ],
+    [ "WaitRecipeMotion", "_win_app_8cpp.html#a48e5240f7e67dc844a70220a2dc1c001", null ],
+    [ "WaitRecvCheck", "_win_app_8cpp.html#a1dbc4e0a1498a42d8442c915be7358aa", null ],
     [ "WatchdogThread", "_win_app_8cpp.html#adede27729e0d39401806ac56f3a650ed", null ]
 ];

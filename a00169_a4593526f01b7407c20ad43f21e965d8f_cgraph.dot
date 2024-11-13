@@ -1,0 +1,13 @@
+digraph "WMXLib::SetEcatAxis"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="WMXLib::SetEcatAxis",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="EtherCAT 축을 설정합니다."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="WMXLib::GetStatus",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#a5c9365f75b6888775704a51cc39a0959",tooltip="현재 WMX 상태를 반환합니다."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="WMXLib::UpdateEcatStatus",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#a3c56ea94ea94d87f1a42b92d19d279ed",tooltip="엔진 상태를 업데이트합니다."];
+}

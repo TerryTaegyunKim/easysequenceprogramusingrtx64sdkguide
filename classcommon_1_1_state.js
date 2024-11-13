@@ -18,5 +18,5 @@ var classcommon_1_1_state =
       [ "Io_Done", "classcommon_1_1_state.html#a263965668109c0dbb4e3baa29c70012fa082e008193d07053da638162a9d5ab28", null ],
       [ "Unknown", "classcommon_1_1_state.html#a263965668109c0dbb4e3baa29c70012fa5338cfe7c3f7e5287eadd359d262c8e5", null ]
     ] ],
-    [ "GetJobStateString", "classcommon_1_1_state.html#a1995a4cf45ba87066d00356029652ea9", null ]
+    [ "JobStateToString", "classcommon_1_1_state.html#ac71d8a6767999560171d8e4acaea6d87", null ]
 ];

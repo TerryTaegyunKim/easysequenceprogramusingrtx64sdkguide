@@ -1,7 +1,7 @@
 var _rtss_app_8cpp =
 [
     [ "_tmain", "_rtss_app_8cpp.html#a353674c5af92be7fb389265cde4e5e03", null ],
-    [ "changedRecipeStatus", "_rtss_app_8cpp.html#a253ff9069553d2df261b1555a0fba338", null ],
+    [ "ChangedRecipeStatus", "_rtss_app_8cpp.html#a80fc64daa42ab26896f656d15b890da9", null ],
     [ "CloseThreadHandle", "_rtss_app_8cpp.html#a3754d22c5256ceffecceff1d802dd1b8", null ],
     [ "CommunicationProcessing", "_rtss_app_8cpp.html#ad6cddbe389369006f50244e7ff4fd90e", null ],
     [ "DisplayActionsConfig", "_rtss_app_8cpp.html#a8246ed3e255a9f6a2e43f09cfe674ee5", null ],
@@ -24,5 +24,5 @@ var _rtss_app_8cpp =
     [ "TactTimeToFile", "_rtss_app_8cpp.html#a51ec2b1e237a68f7eb00da453d49b9c1", null ],
     [ "WaitIoAction", "_rtss_app_8cpp.html#a846233571b4a12fba41e02d16aa9811e", null ],
     [ "WaitMotionAction", "_rtss_app_8cpp.html#a9c7a581f9794f2d7d4cd4fe314c2ca8a", null ],
-    [ "WaitThread", "_rtss_app_8cpp.html#aa01154c2fde56120b0aa3b3c14770b60", null ]
+    [ "WaitTerminationThread", "_rtss_app_8cpp.html#a6e703e91084cf57867ba8bfa121cd11d", null ]
 ];

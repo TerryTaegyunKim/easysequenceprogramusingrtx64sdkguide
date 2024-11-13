@@ -6,8 +6,16 @@ var searchData=
   ['actions_3',['actions',['../unionshared_memory_1_1_shared_memory_1_1_data.html#a50057a6d5eba5b46ab6aa7178221721f',1,'sharedMemory::SharedMemory::Data']]],
   ['actions_5fconfig_4',['Actions_Config',['../classcommon_1_1_state.html#a263965668109c0dbb4e3baa29c70012fad60357f6714961ae6011f65d557b9b3e',1,'common::State']]],
   ['addr_5',['addr',['../structcommon_1_1_action_1_1_io.html#aa646eca2190c3f41fc000705abfe3d87',1,'common::Action::Io']]],
-  ['align_6',['Align',['../classcommon_1_1_action.html#adc2d83dd34bda10110f6c11ef6f0f0cfa5f88065ac05371eff7b49c5d337fed2f',1,'common::Action']]],
-  ['avg_7',['avg',['../structstopowatch_1_1_stopwatch_1_1_timer.html#a298e06ead3175b0f14fe6fb5f850f46e',1,'stopowatch::Stopwatch::Timer']]],
-  ['axis_8',['axis',['../structcommon_1_1_action_1_1_motion.html#a6022bce06b32a456493f924c56bd26e2',1,'common::Action::Motion']]],
-  ['axistoslaveinfo_9',['AxisToSlaveInfo',['../struct_w_m_x_lib_1_1_axis_to_slave_info.html',1,'WMXLib']]]
+  ['addr_5falig_5fposition_5ft_6',['ADDR_ALIG_POSITION_T',['../common_8h.html#ac1db4a6d640b1a316a84e3d34bc3c3bb',1,'common.h']]],
+  ['addr_5falig_5fposition_5fx_7',['ADDR_ALIG_POSITION_X',['../common_8h.html#a7350c4936082cae263ee47f08369d496',1,'common.h']]],
+  ['addr_5falig_5fposition_5fy_8',['ADDR_ALIG_POSITION_Y',['../common_8h.html#a891ec932671a9caed5e43094d52c718e',1,'common.h']]],
+  ['addr_5fend_5fposition_5ft_9',['ADDR_END_POSITION_T',['../common_8h.html#a4c8e71e76418f25ad1ed1b2939694650',1,'common.h']]],
+  ['addr_5fend_5fposition_5fx_10',['ADDR_END_POSITION_X',['../common_8h.html#a2f6513261d1538d1de48025ab332e1c7',1,'common.h']]],
+  ['addr_5fend_5fposition_5fy_11',['ADDR_END_POSITION_Y',['../common_8h.html#acc1c26bdec02882c9f70119783841220',1,'common.h']]],
+  ['addr_5fjob_5fstate_12',['ADDR_JOB_STATE',['../common_8h.html#a012ad3953043ca2bde5f52681f767a47',1,'common.h']]],
+  ['addr_5fvision_5fflag_13',['ADDR_VISION_FLAG',['../common_8h.html#a2dcbcd3f8ad7a4c9674639b051e798f3',1,'common.h']]],
+  ['align_14',['Align',['../classcommon_1_1_action.html#adc2d83dd34bda10110f6c11ef6f0f0cfa5f88065ac05371eff7b49c5d337fed2f',1,'common::Action']]],
+  ['avg_15',['avg',['../structstopowatch_1_1_stopwatch_1_1_timer.html#a298e06ead3175b0f14fe6fb5f850f46e',1,'stopowatch::Stopwatch::Timer']]],
+  ['axis_16',['axis',['../structcommon_1_1_action_1_1_motion.html#a6022bce06b32a456493f924c56bd26e2',1,'common::Action::Motion']]],
+  ['axistoslaveinfo_17',['AxisToSlaveInfo',['../struct_w_m_x_lib_1_1_axis_to_slave_info.html',1,'WMXLib']]]
 ];

@@ -131,6 +131,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a998d4cf3b807e984f707c427e9056b7a" id="r_a998d4cf3b807e984f707c427e9056b7a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a998d4cf3b807e984f707c427e9056b7a">ParseCommand</a> (const std::basic_string&lt; _TCHAR &gt; &amp;input, int &amp;argc, _TCHAR *argv[], int maxArgs=100)</td></tr>
 <tr class="memdesc:a998d4cf3b807e984f707c427e9056b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">사용자의 입력 명령어를 파싱하여 argc 및 argv 형태로 분리합니다.  <br /></td></tr>
 <tr class="separator:a998d4cf3b807e984f707c427e9056b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa584daa4f16fcfbca5003d5f5ad2d1fb" id="r_aa584daa4f16fcfbca5003d5f5ad2d1fb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa584daa4f16fcfbca5003d5f5ad2d1fb">IsCommandValid</a> (int argc, _TCHAR *argv[], const _TCHAR *cmd)</td></tr>
+<tr class="memdesc:aa584daa4f16fcfbca5003d5f5ad2d1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">주어진 명령어가 유효한지 확인합니다.  <br /></td></tr>
+<tr class="separator:aa584daa4f16fcfbca5003d5f5ad2d1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a422dff8328f7a4777c51dff1badcdffb" id="r_a422dff8328f7a4777c51dff1badcdffb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a422dff8328f7a4777c51dff1badcdffb">Spinner</a> (bool done, const _TCHAR *status)</td></tr>
 <tr class="memdesc:a422dff8328f7a4777c51dff1badcdffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">콘솔에 스피너 애니메이션을 출력합니다.  <br /></td></tr>
 <tr class="separator:a422dff8328f7a4777c51dff1badcdffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,14 +238,14 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00230">230</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  231</span>    {</div>
-<div class="line"><span class="lineno">  232</span>        system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
-<div class="line"><span class="lineno">  233</span>        <span class="keywordflow">if</span> (mes != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  234</span>        {</div>
-<div class="line"><span class="lineno">  235</span>            std::wcout &lt;&lt; mes;</div>
-<div class="line"><span class="lineno">  236</span>        }</div>
-<div class="line"><span class="lineno">  237</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00237">237</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  238</span>    {</div>
+<div class="line"><span class="lineno">  239</span>        system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
+<div class="line"><span class="lineno">  240</span>        <span class="keywordflow">if</span> (mes != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  241</span>        {</div>
+<div class="line"><span class="lineno">  242</span>            std::wcout &lt;&lt; mes;</div>
+<div class="line"><span class="lineno">  243</span>        }</div>
+<div class="line"><span class="lineno">  244</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -417,20 +420,20 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 파일 이름 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00271">271</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  272</span>    {</div>
-<div class="line"><span class="lineno">  273</span>        std::basic_string&lt;TCHAR&gt; pathStr(path);</div>
-<div class="line"><span class="lineno">  274</span>        <span class="keywordtype">size_t</span> lastBackslash = pathStr.find_last_of(_T(<span class="stringliteral">&quot;\\&quot;</span>));</div>
-<div class="line"><span class="lineno">  275</span> </div>
-<div class="line"><span class="lineno">  276</span>        <span class="keywordflow">if</span> (lastBackslash != std::basic_string&lt;TCHAR&gt;::npos)</div>
-<div class="line"><span class="lineno">  277</span>        {</div>
-<div class="line"><span class="lineno">  278</span>            <span class="keywordflow">return</span> path + lastBackslash + 1;</div>
-<div class="line"><span class="lineno">  279</span>        }</div>
-<div class="line"><span class="lineno">  280</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  281</span>        {</div>
-<div class="line"><span class="lineno">  282</span>            <span class="keywordflow">return</span> path;</div>
-<div class="line"><span class="lineno">  283</span>        }</div>
-<div class="line"><span class="lineno">  284</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00278">278</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  279</span>    {</div>
+<div class="line"><span class="lineno">  280</span>        std::basic_string&lt;TCHAR&gt; pathStr(path);</div>
+<div class="line"><span class="lineno">  281</span>        <span class="keywordtype">size_t</span> lastBackslash = pathStr.find_last_of(_T(<span class="stringliteral">&quot;\\&quot;</span>));</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>        <span class="keywordflow">if</span> (lastBackslash != std::basic_string&lt;TCHAR&gt;::npos)</div>
+<div class="line"><span class="lineno">  284</span>        {</div>
+<div class="line"><span class="lineno">  285</span>            <span class="keywordflow">return</span> path + lastBackslash + 1;</div>
+<div class="line"><span class="lineno">  286</span>        }</div>
+<div class="line"><span class="lineno">  287</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  288</span>        {</div>
+<div class="line"><span class="lineno">  289</span>            <span class="keywordflow">return</span> path;</div>
+<div class="line"><span class="lineno">  290</span>        }</div>
+<div class="line"><span class="lineno">  291</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -487,18 +490,18 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 절대 경로 (변환 실패 시 빈 문자열) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00306">306</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  307</span>    {</div>
-<div class="line"><span class="lineno">  308</span>        <span class="keyword">static</span> _TCHAR fullPath[MAX_PATH];</div>
-<div class="line"><span class="lineno">  309</span>        <span class="keywordflow">if</span> (GetFullPathName(relativePath, MAX_PATH, fullPath, <span class="keyword">nullptr</span>))</div>
-<div class="line"><span class="lineno">  310</span>        {</div>
-<div class="line"><span class="lineno">  311</span>            <span class="keywordflow">return</span> fullPath;</div>
-<div class="line"><span class="lineno">  312</span>        }</div>
-<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  314</span>        {</div>
-<div class="line"><span class="lineno">  315</span>            <span class="keywordflow">return</span> _T(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">  316</span>        }</div>
-<div class="line"><span class="lineno">  317</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00313">313</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  314</span>    {</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keyword">static</span> _TCHAR fullPath[MAX_PATH];</div>
+<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">if</span> (GetFullPathName(relativePath, MAX_PATH, fullPath, <span class="keyword">nullptr</span>))</div>
+<div class="line"><span class="lineno">  317</span>        {</div>
+<div class="line"><span class="lineno">  318</span>            <span class="keywordflow">return</span> fullPath;</div>
+<div class="line"><span class="lineno">  319</span>        }</div>
+<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  321</span>        {</div>
+<div class="line"><span class="lineno">  322</span>            <span class="keywordflow">return</span> _T(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  323</span>        }</div>
+<div class="line"><span class="lineno">  324</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -560,25 +563,25 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 절대 경로이면 true, 그렇지 않으면 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00286">286</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  287</span>    {</div>
-<div class="line"><span class="lineno">  288</span>        <span class="keywordflow">if</span> (_tcslen(path) == 0)</div>
-<div class="line"><span class="lineno">  289</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  290</span> </div>
-<div class="line"><span class="lineno">  291</span>        <span class="comment">// Check for drive letter and colon (e.g., C:\&zwj;)</span></div>
-<div class="line"><span class="lineno">  292</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; _istalpha(path[0]) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;:&#39;</span>))</div>
-<div class="line"><span class="lineno">  293</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  294</span> </div>
-<div class="line"><span class="lineno">  295</span>        <span class="comment">// Check for UNC paths (e.g., \\server\share)</span></div>
-<div class="line"><span class="lineno">  296</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
-<div class="line"><span class="lineno">  297</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  298</span> </div>
-<div class="line"><span class="lineno">  299</span>        <span class="comment">// Check for root paths (e.g., \folder)</span></div>
-<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">if</span> (path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
-<div class="line"><span class="lineno">  301</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  302</span> </div>
-<div class="line"><span class="lineno">  303</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  304</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00293">293</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  294</span>    {</div>
+<div class="line"><span class="lineno">  295</span>        <span class="keywordflow">if</span> (_tcslen(path) == 0)</div>
+<div class="line"><span class="lineno">  296</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span>        <span class="comment">// Check for drive letter and colon (e.g., C:\&zwj;)</span></div>
+<div class="line"><span class="lineno">  299</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; _istalpha(path[0]) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;:&#39;</span>))</div>
+<div class="line"><span class="lineno">  300</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  301</span> </div>
+<div class="line"><span class="lineno">  302</span>        <span class="comment">// Check for UNC paths (e.g., \\server\share)</span></div>
+<div class="line"><span class="lineno">  303</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
+<div class="line"><span class="lineno">  304</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>        <span class="comment">// Check for root paths (e.g., \folder)</span></div>
+<div class="line"><span class="lineno">  307</span>        <span class="keywordflow">if</span> (path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
+<div class="line"><span class="lineno">  308</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  309</span> </div>
+<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  311</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -604,6 +607,64 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="267,104,205,86,206,81,269,99"/>
 <area shape="poly" title=" " alt="" coords="260,117,55,99,55,94,260,111"/>
 </map>
+</div>
+
+</div>
+</div>
+<a id="aa584daa4f16fcfbca5003d5f5ad2d1fb" name="aa584daa4f16fcfbca5003d5f5ad2d1fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa584daa4f16fcfbca5003d5f5ad2d1fb">&#9670;&#160;</a></span>IsCommandValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool prompt::Prompt::IsCommandValid </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_TCHAR *</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const _TCHAR *</td>          <td class="paramname"><span class="paramname"><em>cmd</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>주어진 명령어가 유효한지 확인합니다. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>명령 줄 인자의 수입니다. </td></tr>
+    <tr><td class="paramname">argv</td><td>명령 줄 인자 문자열 배열입니다. </td></tr>
+    <tr><td class="paramname">cmd</td><td>비교할 명령어 문자열입니다. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>명령어가 유효하면 true를 반환하고, 그렇지 않으면 false를 반환합니다. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00103">103</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="comment">// 조건 확인: 인자가 있고, 해당 인자가 cmd와 일치하는지 확인</span></div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">if</span> (argc &gt; 0 &amp;&amp; (_tcscmp(argv[<a class="code hl_define" href="prompt_8h.html#ab0d87e07831e7e4943caef187872123e">COMMAND</a>], cmd) == 0)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="ttc" id="aprompt_8h_html_ab0d87e07831e7e4943caef187872123e"><div class="ttname"><a href="prompt_8h.html#ab0d87e07831e7e4943caef187872123e">COMMAND</a></div><div class="ttdeci">#define COMMAND</div><div class="ttdef"><b>Definition</b> <a href="prompt_8h_source.html#l00011">prompt.h:11</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classprompt_1_1_prompt_aa584daa4f16fcfbca5003d5f5ad2d1fb_icgraph.png" border="0" usemap="#aclassprompt_1_1_prompt_aa584daa4f16fcfbca5003d5f5ad2d1fb_icgraph" alt=""/></div>
 </div>
 
 </div>
@@ -640,20 +701,20 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 실수이면 true, 그렇지 않으면 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00104">104</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  105</span>    {</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  107</span>        {</div>
-<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  109</span>            _TCHAR* end;</div>
-<div class="line"><span class="lineno">  110</span>            std::wcstod(str, &amp;end);</div>
-<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>);</div>
-<div class="line"><span class="lineno">  112</span>        }</div>
-<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">catch</span> (...)</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00111">111</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>    {</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">  114</span>        {</div>
-<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  116</span>        }</div>
-<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  116</span>            _TCHAR* end;</div>
+<div class="line"><span class="lineno">  117</span>            std::wcstod(str, &amp;end);</div>
+<div class="line"><span class="lineno">  118</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><span class="lineno">  119</span>        }</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  121</span>        {</div>
+<div class="line"><span class="lineno">  122</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  123</span>        }</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -689,19 +750,19 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 정수이면 true, 그렇지 않으면 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00120">120</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  123</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  124</span>            _TCHAR* end;</div>
-<div class="line"><span class="lineno">  125</span>            <span class="keywordtype">long</span> val = _tcstol(str, &amp;end, 10);</div>
-<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp; val &gt;= INT_MIN &amp;&amp; val &lt;= INT_MAX;</div>
-<div class="line"><span class="lineno">  127</span>        }</div>
-<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><span class="lineno">  129</span>        {</div>
-<div class="line"><span class="lineno">  130</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  131</span>        }</div>
-<div class="line"><span class="lineno">  132</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00127">127</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>    {</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  130</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  131</span>            _TCHAR* end;</div>
+<div class="line"><span class="lineno">  132</span>            <span class="keywordtype">long</span> val = _tcstol(str, &amp;end, 10);</div>
+<div class="line"><span class="lineno">  133</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp; val &gt;= INT_MIN &amp;&amp; val &lt;= INT_MAX;</div>
+<div class="line"><span class="lineno">  134</span>        }</div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><span class="lineno">  136</span>        {</div>
+<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  138</span>        }</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -826,53 +887,53 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00176">176</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  177</span>    {</div>
-<div class="line"><span class="lineno">  178</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> spinnerChars[] = { <span class="charliteral">&#39;l&#39;</span>, <span class="charliteral">&#39;+&#39;</span>, <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;*&#39;</span> };</div>
-<div class="line"><span class="lineno">  179</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> counter = 0;</div>
-<div class="line"><span class="lineno">  180</span> </div>
-<div class="line"><span class="lineno">  181</span>        std::wostringstream oss;</div>
-<div class="line"><span class="lineno">  182</span> </div>
-<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">if</span> (done)</div>
-<div class="line"><span class="lineno">  184</span>        {</div>
-<div class="line"><span class="lineno">  185</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; std::setw(10) &lt;&lt; std::setfill(L<span class="charliteral">&#39; &#39;</span>) &lt;&lt; std::left &lt;&lt; L<span class="stringliteral">&quot;Result &gt;&gt;&quot;</span>;</div>
-<div class="line"><span class="lineno">  186</span>        }</div>
-<div class="line"><span class="lineno">  187</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  188</span>            <span class="keywordtype">char</span> spinner = spinnerChars[counter % 4];</div>
-<div class="line"><span class="lineno">  189</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; spinner;</div>
-<div class="line"><span class="lineno">  190</span>        }</div>
-<div class="line"><span class="lineno">  191</span> </div>
-<div class="line"><span class="lineno">  192</span>        <span class="keywordflow">if</span> (status != <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  193</span>        {</div>
-<div class="line"><span class="lineno">  194</span>            oss &lt;&lt; L<span class="stringliteral">&quot; &quot;</span> &lt;&lt; status;</div>
-<div class="line"><span class="lineno">  195</span>        }</div>
-<div class="line"><span class="lineno">  196</span> </div>
-<div class="line"><span class="lineno">  197</span>        std::wstring output = oss.str();</div>
-<div class="line"><span class="lineno">  198</span>        <span class="keywordtype">int</span> outputLength = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
-<div class="line"><span class="lineno">  199</span> </div>
-<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">if</span> (outputLength &lt; <a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a>)</div>
-<div class="line"><span class="lineno">  201</span>        {</div>
-<div class="line"><span class="lineno">  202</span>            output.append(<a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> - outputLength, L<span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><span class="lineno">  203</span>        }</div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>        std::wcout &lt;&lt; output;</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00183">183</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  184</span>    {</div>
+<div class="line"><span class="lineno">  185</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> spinnerChars[] = { <span class="charliteral">&#39;l&#39;</span>, <span class="charliteral">&#39;+&#39;</span>, <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;*&#39;</span> };</div>
+<div class="line"><span class="lineno">  186</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> counter = 0;</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>        std::wostringstream oss;</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>        <span class="keywordflow">if</span> (done)</div>
+<div class="line"><span class="lineno">  191</span>        {</div>
+<div class="line"><span class="lineno">  192</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; std::setw(10) &lt;&lt; std::setfill(L<span class="charliteral">&#39; &#39;</span>) &lt;&lt; std::left &lt;&lt; L<span class="stringliteral">&quot;Result &gt;&gt;&quot;</span>;</div>
+<div class="line"><span class="lineno">  193</span>        }</div>
+<div class="line"><span class="lineno">  194</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  195</span>            <span class="keywordtype">char</span> spinner = spinnerChars[counter % 4];</div>
+<div class="line"><span class="lineno">  196</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; spinner;</div>
+<div class="line"><span class="lineno">  197</span>        }</div>
+<div class="line"><span class="lineno">  198</span> </div>
+<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">if</span> (status != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  200</span>        {</div>
+<div class="line"><span class="lineno">  201</span>            oss &lt;&lt; L<span class="stringliteral">&quot; &quot;</span> &lt;&lt; status;</div>
+<div class="line"><span class="lineno">  202</span>        }</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>        std::wstring output = oss.str();</div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordtype">int</span> outputLength = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
 <div class="line"><span class="lineno">  206</span> </div>
-<div class="line"><span class="lineno">  207</span>        <a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
-<div class="line"><span class="lineno">  208</span> </div>
-<div class="line"><span class="lineno">  209</span>        std::wcout.flush();</div>
-<div class="line"><span class="lineno">  210</span> </div>
-<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">if</span> (!done)</div>
-<div class="line"><span class="lineno">  212</span>        {</div>
-<div class="line"><span class="lineno">  213</span>            counter++;</div>
-<div class="line"><span class="lineno">  214</span>        }</div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">if</span> (outputLength &lt; <a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a>)</div>
+<div class="line"><span class="lineno">  208</span>        {</div>
+<div class="line"><span class="lineno">  209</span>            output.append(<a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> - outputLength, L<span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><span class="lineno">  210</span>        }</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>        std::wcout &lt;&lt; output;</div>
+<div class="line"><span class="lineno">  213</span> </div>
+<div class="line"><span class="lineno">  214</span>        <a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
 <div class="line"><span class="lineno">  215</span> </div>
-<div class="line"><span class="lineno">  216</span>        <span class="keywordflow">if</span> (done)</div>
-<div class="line"><span class="lineno">  217</span>        {</div>
-<div class="line"><span class="lineno">  218</span>            std::wcout &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  219</span>            <a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = 0;</div>
-<div class="line"><span class="lineno">  220</span>        }</div>
-<div class="line"><span class="lineno">  221</span>    }</div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_abe66a6ed7075ee66079cc8aa8a003cb8"><div class="ttname"><a href="#abe66a6ed7075ee66079cc8aa8a003cb8">prompt::Prompt::lastMessageLength</a></div><div class="ttdeci">static int lastMessageLength</div><div class="ttdef"><b>Definition</b> <a href="prompt_8h_source.html#l00147">prompt.h:147</a></div></div>
+<div class="line"><span class="lineno">  216</span>        std::wcout.flush();</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">if</span> (!done)</div>
+<div class="line"><span class="lineno">  219</span>        {</div>
+<div class="line"><span class="lineno">  220</span>            counter++;</div>
+<div class="line"><span class="lineno">  221</span>        }</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">if</span> (done)</div>
+<div class="line"><span class="lineno">  224</span>        {</div>
+<div class="line"><span class="lineno">  225</span>            std::wcout &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  226</span>            <a class="code hl_variable" href="#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = 0;</div>
+<div class="line"><span class="lineno">  227</span>        }</div>
+<div class="line"><span class="lineno">  228</span>    }</div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_abe66a6ed7075ee66079cc8aa8a003cb8"><div class="ttname"><a href="#abe66a6ed7075ee66079cc8aa8a003cb8">prompt::Prompt::lastMessageLength</a></div><div class="ttdeci">static int lastMessageLength</div><div class="ttdef"><b>Definition</b> <a href="prompt_8h_source.html#l00158">prompt.h:158</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -939,12 +1000,12 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00223">223</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  224</span>    {</div>
-<div class="line"><span class="lineno">  225</span>        <span class="keyword">const</span> _TCHAR* strStatus = status.c_str();</div>
-<div class="line"><span class="lineno">  226</span>        <a class="code hl_function" href="#a422dff8328f7a4777c51dff1badcdffb">Spinner</a>(done, strStatus);</div>
-<div class="line"><span class="lineno">  227</span>    }</div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a422dff8328f7a4777c51dff1badcdffb"><div class="ttname"><a href="#a422dff8328f7a4777c51dff1badcdffb">prompt::Prompt::Spinner</a></div><div class="ttdeci">static void Spinner(bool done, const _TCHAR *status)</div><div class="ttdoc">콘솔에 스피너 애니메이션을 출력합니다.</div><div class="ttdef"><b>Definition</b> <a href="prompt_8cpp_source.html#l00176">prompt.cpp:176</a></div></div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00230">230</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  231</span>    {</div>
+<div class="line"><span class="lineno">  232</span>        <span class="keyword">const</span> _TCHAR* strStatus = status.c_str();</div>
+<div class="line"><span class="lineno">  233</span>        <a class="code hl_function" href="#a422dff8328f7a4777c51dff1badcdffb">Spinner</a>(done, strStatus);</div>
+<div class="line"><span class="lineno">  234</span>    }</div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a422dff8328f7a4777c51dff1badcdffb"><div class="ttname"><a href="#a422dff8328f7a4777c51dff1badcdffb">prompt::Prompt::Spinner</a></div><div class="ttdeci">static void Spinner(bool done, const _TCHAR *status)</div><div class="ttdoc">콘솔에 스피너 애니메이션을 출력합니다.</div><div class="ttdef"><b>Definition</b> <a href="prompt_8cpp_source.html#l00183">prompt.cpp:183</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -990,20 +1051,20 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 변환된 TCHAR 문자열 (동적 할당됨, 호출자가 메모리 해제 필요) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00255">255</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  256</span>    {</div>
-<div class="line"><span class="lineno">  257</span><span class="preprocessor">#ifdef _UNICODE</span></div>
-<div class="line"><span class="lineno">  258</span>        <span class="keywordtype">size_t</span> len = str.size();</div>
-<div class="line"><span class="lineno">  259</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
-<div class="line"><span class="lineno">  260</span>        <span class="keywordtype">wchar_t</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">wchar_t</span>[len + 1];</div>
-<div class="line"><span class="lineno">  261</span>        mbstowcs_s(&amp;convertedChars, ptsz, len + 1, str.c_str(), _TRUNCATE);</div>
-<div class="line"><span class="lineno">  262</span>        <span class="keywordflow">return</span> ptsz;</div>
-<div class="line"><span class="lineno">  263</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  264</span>        <span class="keywordtype">char</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">char</span>[str.size() + 1];</div>
-<div class="line"><span class="lineno">  265</span>        strcpy_s(ptsz, str.size() + 1, str.c_str());</div>
-<div class="line"><span class="lineno">  266</span>        <span class="keywordflow">return</span> ptsz;</div>
-<div class="line"><span class="lineno">  267</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  268</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00262">262</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  263</span>    {</div>
+<div class="line"><span class="lineno">  264</span><span class="preprocessor">#ifdef _UNICODE</span></div>
+<div class="line"><span class="lineno">  265</span>        <span class="keywordtype">size_t</span> len = str.size();</div>
+<div class="line"><span class="lineno">  266</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
+<div class="line"><span class="lineno">  267</span>        <span class="keywordtype">wchar_t</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">wchar_t</span>[len + 1];</div>
+<div class="line"><span class="lineno">  268</span>        mbstowcs_s(&amp;convertedChars, ptsz, len + 1, str.c_str(), _TRUNCATE);</div>
+<div class="line"><span class="lineno">  269</span>        <span class="keywordflow">return</span> ptsz;</div>
+<div class="line"><span class="lineno">  270</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  271</span>        <span class="keywordtype">char</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">char</span>[str.size() + 1];</div>
+<div class="line"><span class="lineno">  272</span>        strcpy_s(ptsz, str.size() + 1, str.c_str());</div>
+<div class="line"><span class="lineno">  273</span>        <span class="keywordflow">return</span> ptsz;</div>
+<div class="line"><span class="lineno">  274</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  275</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1039,20 +1100,20 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 변환된 std::string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00240">240</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  241</span>    {</div>
-<div class="line"><span class="lineno">  242</span><span class="preprocessor">#ifdef _UNICODE</span></div>
-<div class="line"><span class="lineno">  243</span>        <span class="keywordtype">size_t</span> len = wcslen(ptsz);</div>
-<div class="line"><span class="lineno">  244</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
-<div class="line"><span class="lineno">  245</span>        <span class="keywordtype">char</span>* psz = <span class="keyword">new</span> <span class="keywordtype">char</span>[2 * len + 1];</div>
-<div class="line"><span class="lineno">  246</span>        wcstombs_s(&amp;convertedChars, psz, 2 * len + 1, ptsz, _TRUNCATE);</div>
-<div class="line"><span class="lineno">  247</span>        std::string s = psz;</div>
-<div class="line"><span class="lineno">  248</span>        <span class="keyword">delete</span>[] psz;</div>
-<div class="line"><span class="lineno">  249</span>        <span class="keywordflow">return</span> s;</div>
-<div class="line"><span class="lineno">  250</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  251</span>        <span class="keywordflow">return</span> std::string(ptsz);</div>
-<div class="line"><span class="lineno">  252</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  253</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00247">247</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  248</span>    {</div>
+<div class="line"><span class="lineno">  249</span><span class="preprocessor">#ifdef _UNICODE</span></div>
+<div class="line"><span class="lineno">  250</span>        <span class="keywordtype">size_t</span> len = wcslen(ptsz);</div>
+<div class="line"><span class="lineno">  251</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
+<div class="line"><span class="lineno">  252</span>        <span class="keywordtype">char</span>* psz = <span class="keyword">new</span> <span class="keywordtype">char</span>[2 * len + 1];</div>
+<div class="line"><span class="lineno">  253</span>        wcstombs_s(&amp;convertedChars, psz, 2 * len + 1, ptsz, _TRUNCATE);</div>
+<div class="line"><span class="lineno">  254</span>        std::string s = psz;</div>
+<div class="line"><span class="lineno">  255</span>        <span class="keyword">delete</span>[] psz;</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">return</span> s;</div>
+<div class="line"><span class="lineno">  257</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">return</span> std::string(ptsz);</div>
+<div class="line"><span class="lineno">  259</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  260</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1110,26 +1171,26 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 변환 성공 여부 (성공 = true, 실패 = false) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00155">155</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  156</span>    {</div>
-<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || f == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  158</span>        {</div>
-<div class="line"><span class="lineno">  159</span>            *f = 0.0;</div>
-<div class="line"><span class="lineno">  160</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  161</span>        }</div>
-<div class="line"><span class="lineno">  162</span> </div>
-<div class="line"><span class="lineno">  163</span>        std::wstringstream ss(str);</div>
-<div class="line"><span class="lineno">  164</span>        ss &gt;&gt; *f;</div>
-<div class="line"><span class="lineno">  165</span> </div>
-<div class="line"><span class="lineno">  166</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
-<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
-<div class="line"><span class="lineno">  168</span>        {</div>
-<div class="line"><span class="lineno">  169</span>            *f = 0.0;</div>
-<div class="line"><span class="lineno">  170</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  171</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00162">162</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>    {</div>
+<div class="line"><span class="lineno">  164</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  165</span>        {</div>
+<div class="line"><span class="lineno">  166</span>            *f = 0.0;</div>
+<div class="line"><span class="lineno">  167</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  168</span>        }</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>        std::wstringstream ss(str);</div>
+<div class="line"><span class="lineno">  171</span>        ss &gt;&gt; *f;</div>
 <div class="line"><span class="lineno">  172</span> </div>
-<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  174</span>    }</div>
+<div class="line"><span class="lineno">  173</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
+<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
+<div class="line"><span class="lineno">  175</span>        {</div>
+<div class="line"><span class="lineno">  176</span>            *f = 0.0;</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  178</span>        }</div>
+<div class="line"><span class="lineno">  179</span> </div>
+<div class="line"><span class="lineno">  180</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1170,26 +1231,26 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>: 변환 성공 여부 (성공 = true, 실패 = false) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00134">134</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>    {</div>
-<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || i == <span class="keyword">nullptr</span>)</div>
-<div class="line"><span class="lineno">  137</span>        {</div>
-<div class="line"><span class="lineno">  138</span>            *i = 0;</div>
-<div class="line"><span class="lineno">  139</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  140</span>        }</div>
-<div class="line"><span class="lineno">  141</span> </div>
-<div class="line"><span class="lineno">  142</span>        std::wstringstream ss(str);</div>
-<div class="line"><span class="lineno">  143</span>        ss &gt;&gt; *i;</div>
-<div class="line"><span class="lineno">  144</span> </div>
-<div class="line"><span class="lineno">  145</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
-<div class="line"><span class="lineno">  147</span>        {</div>
-<div class="line"><span class="lineno">  148</span>            *i = 0;</div>
-<div class="line"><span class="lineno">  149</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  150</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="prompt_8cpp_source.html#l00141">141</a> of file <a class="el" href="prompt_8cpp_source.html">prompt.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || i == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  144</span>        {</div>
+<div class="line"><span class="lineno">  145</span>            *i = 0;</div>
+<div class="line"><span class="lineno">  146</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  147</span>        }</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>        std::wstringstream ss(str);</div>
+<div class="line"><span class="lineno">  150</span>        ss &gt;&gt; *i;</div>
 <div class="line"><span class="lineno">  151</span> </div>
-<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  153</span>    }</div>
+<div class="line"><span class="lineno">  152</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
+<div class="line"><span class="lineno">  154</span>        {</div>
+<div class="line"><span class="lineno">  155</span>            *i = 0;</div>
+<div class="line"><span class="lineno">  156</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  157</span>        }</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1241,13 +1302,13 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>&lt; Spinner 함수에서 마지막으로 출력된 메시지의 길이를 저장하는 변수 </p>
 
-<p class="definition">Definition at line <a class="el" href="prompt_8h_source.html#l00147">147</a> of file <a class="el" href="prompt_8h_source.html">prompt.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="prompt_8h_source.html#l00158">158</a> of file <a class="el" href="prompt_8h_source.html">prompt.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/External_lib/<a class="el" href="prompt_8h_source.html">prompt.h</a></li>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/External_lib/<a class="el" href="prompt_8cpp_source.html">prompt.cpp</a></li>
+<li><a class="el" href="prompt_8h_source.html">prompt.h</a></li>
+<li><a class="el" href="prompt_8cpp_source.html">prompt.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

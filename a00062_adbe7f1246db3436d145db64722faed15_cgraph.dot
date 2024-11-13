@@ -1,0 +1,42 @@
+digraph "CommandAxes"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="CommandAxes",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="축 관련 명령어를 처리합니다."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="WMXLib::IsEtherCATModule\lAvailable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#addb6732912c49c183fedc95e37508e93",tooltip="EtherCAT 모듈의 사용 가능 여부를 확인합니다."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="WMXLib::IsSimulationModule\lAvailable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#aafa2d5d0730879cb70db1ef35c21b101",tooltip="시뮬레이션 모듈의 사용 가능 여부를 확인합니다."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="common::Message::Level2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00117.html#a40bb53cafcaa484ddcf126502abc161f",tooltip="Level 2 메시지를 출력하는 함수입니다."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="common::Message::print",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00117.html#ae483efdcb4abf9eb13d618362cf86b51",tooltip="TCHAR 형식의 문자열을 출력하는 일반적인 출력 함수입니다."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="WMXLib::SetEcatAxis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#a4593526f01b7407c20ad43f21e965d8f",tooltip="EtherCAT 축을 설정합니다."];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="WMXLib::GetStatus",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#a5c9365f75b6888775704a51cc39a0959",tooltip="현재 WMX 상태를 반환합니다."];
+  Node6 -> Node8 [id="edge7_Node000006_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="WMXLib::UpdateEcatStatus",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#a3c56ea94ea94d87f1a42b92d19d279ed",tooltip="엔진 상태를 업데이트합니다."];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="WMXLib::SetSimuAxis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#ad4d52358366aaeb410e99d1660cabf39",tooltip="시뮬레이션 축을 설정합니다."];
+  Node9 -> Node10 [id="edge9_Node000009_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="WMXLib::GetWmx3Lib",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00169.html#aa50a6e57198e2aa6efff797874722092",tooltip="WMX3 API 객체를 반환합니다."];
+  Node1 -> Node11 [id="edge10_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="stopowatch::Stopwatch\l::Timestamp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00153.html#aa8017c358d91e6facd902a0f12176da0",tooltip="현재 시간의 타임스탬프를 문자열로 반환하는 함수입니다."];
+  Node11 -> Node12 [id="edge11_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="stopowatch::Stopwatch\l::SetReferenceTime",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00153.html#ab9109777a989e397989e57ed02f963aa",tooltip="참조 시간을 설정하는 함수입니다."];
+  Node12 -> Node13 [id="edge12_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="stopowatch::Stopwatch\l::Initialize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00153.html#a7a6a5fa3f41742bb98935745bec45665",tooltip="초기화 함수입니다."];
+  Node13 -> Node14 [id="edge13_Node000013_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="stopowatch::Stopwatch\l::GetInitializeSystemTime",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00153.html#af155ffd67bd7a0ac1694d33b4a97c88e",tooltip="초기 시스템 시간을 가져오는 함수입니다."];
+  Node13 -> Node15 [id="edge14_Node000013_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="stopowatch::Stopwatch\l::GetInitializeTimer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00153.html#a1e83a2b729d9d09cee68f4343e7935d8",tooltip="초기 타이머를 설정하는 함수입니다."];
+  Node11 -> Node16 [id="edge15_Node000011_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="stopowatch::Stopwatch\l::UpdateSystemTime",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00153.html#a10e8747e2e04ee2a402f848bfb001d99",tooltip="현재 시스템 시간을 업데이트하는 함수입니다."];
+  Node16 -> Node12 [id="edge16_Node000016_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node17 [id="edge17_Node000001_Node000017",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="prompt::Prompt::wtoi",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a00149.html#a1bfcf938fc3f66eb6677462e72e636bc",tooltip="주어진 문자열을 정수로 변환합니다."];
+}

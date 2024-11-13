@@ -6,6 +6,5 @@ var shmi_8h =
     [ "sharedMemory::SharedMemory::SHMI", "structshared_memory_1_1_shared_memory_1_1_s_h_m_i.html", "structshared_memory_1_1_shared_memory_1_1_s_h_m_i" ],
     [ "DEF_SHARED_MEMORY_AREA_NAME", "shmi_8h.html#a5d1e7ab7f0f988e1283fde9103ca55ac", null ],
     [ "DEF_SHARED_MEMORY_EVENT_NAME", "shmi_8h.html#a429b71546008849f235f9ece8539ee3f", null ],
-    [ "DEF_SHARED_MEMORY_SEMAPHORE_NAME", "shmi_8h.html#a940f46360f0010a277103dc50386491b", null ],
-    [ "STACK_SIZE_MB", "shmi_8h.html#a8f61b9238d1f8efae544293cb4ac8e0b", null ]
+    [ "DEF_SHARED_MEMORY_SEMAPHORE_NAME", "shmi_8h.html#a940f46360f0010a277103dc50386491b", null ]
 ];

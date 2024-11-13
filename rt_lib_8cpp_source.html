@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Easy Sequence Program Using Rtx64sdk Guide: C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/Custom_lib/rtLib.cpp Source File</title>
+<title>Easy Sequence Program Using Rtx64sdk Guide: rtLib.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -164,7 +164,7 @@ $(function(){initNavTree('rt_lib_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    TCHAR lpBaseName[255];</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    <span class="keywordflow">if</span> (RtGetModuleBaseName(hProc, NULL, lpBaseName, <span class="keyword">sizeof</span>(lpBaseName) / <span class="keyword">sizeof</span>(TCHAR)))</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                        Message::Level4(_T(<span class="stringliteral">&quot;%ls\n&quot;</span>), lpBaseName);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                        <span class="comment">//Message::Level4(_T(&quot;%ls\n&quot;), lpBaseName);</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                        <span class="keywordflow">if</span> (_tcscmp(procName, lpBaseName) == 0)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                        {</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                            <span class="keywordflow">return</span> proc[i];</div>
@@ -197,7 +197,7 @@ $(function(){initNavTree('rt_lib_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    TCHAR lpBaseName[255];</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    <span class="keywordflow">if</span> (RtGetModuleBaseName(hProc, NULL, lpBaseName, <span class="keyword">sizeof</span>(lpBaseName) / <span class="keyword">sizeof</span>(TCHAR)))</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        Message::Level4(_T(<span class="stringliteral">&quot;%ls\n&quot;</span>), lpBaseName);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                        <span class="comment">//Message::Level4(_T(&quot;%ls\n&quot;), lpBaseName);</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        <span class="keywordflow">if</span> (_tcscmp(procName, lpBaseName) == 0)</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                        {</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>

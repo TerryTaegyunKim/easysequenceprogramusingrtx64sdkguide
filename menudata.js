@@ -66,6 +66,7 @@ var menudata={children:[
 {text:"f",url:"functions_func.html#index_f"},
 {text:"g",url:"functions_func.html#index_g"},
 {text:"i",url:"functions_func.html#index_i"},
+{text:"j",url:"functions_func.html#index_j"},
 {text:"l",url:"functions_func.html#index_l"},
 {text:"o",url:"functions_func.html#index_o"},
 {text:"p",url:"functions_func.html#index_p"},
@@ -102,6 +103,7 @@ var menudata={children:[
 {text:"d",url:"functions_eval.html#index_d"},
 {text:"e",url:"functions_eval.html#index_e"},
 {text:"f",url:"functions_eval.html#index_f"},
+{text:"g",url:"functions_eval.html#index_g"},
 {text:"i",url:"functions_eval.html#index_i"},
 {text:"l",url:"functions_eval.html#index_l"},
 {text:"m",url:"functions_eval.html#index_m"},
@@ -109,6 +111,7 @@ var menudata={children:[
 {text:"p",url:"functions_eval.html#index_p"},
 {text:"r",url:"functions_eval.html#index_r"},
 {text:"s",url:"functions_eval.html#index_s"},
+{text:"t",url:"functions_eval.html#index_t"},
 {text:"u",url:"functions_eval.html#index_u"},
 {text:"w",url:"functions_eval.html#index_w"}]}]}]},
 {text:"Files",url:"files.html",children:[
@@ -116,6 +119,7 @@ var menudata={children:[
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
 {text:"_",url:"globals.html#index__5F"},
+{text:"a",url:"globals.html#index_a"},
 {text:"b",url:"globals.html#index_b"},
 {text:"c",url:"globals.html#index_c"},
 {text:"d",url:"globals.html#index_d"},

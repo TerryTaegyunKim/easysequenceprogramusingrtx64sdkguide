@@ -179,7 +179,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   59</span>                    TCHAR lpBaseName[255];</div>
 <div class="line"><span class="lineno">   60</span>                    <span class="keywordflow">if</span> (RtGetModuleBaseName(hProc, NULL, lpBaseName, <span class="keyword">sizeof</span>(lpBaseName) / <span class="keyword">sizeof</span>(TCHAR)))</div>
 <div class="line"><span class="lineno">   61</span>                    {</div>
-<div class="line"><span class="lineno">   62</span>                        Message::Level4(_T(<span class="stringliteral">&quot;%ls\n&quot;</span>), lpBaseName);</div>
+<div class="line"><span class="lineno">   62</span>                        <span class="comment">//Message::Level4(_T(&quot;%ls\n&quot;), lpBaseName);</span></div>
 <div class="line"><span class="lineno">   63</span>                        <span class="keywordflow">if</span> (_tcscmp(procName, lpBaseName) == 0)</div>
 <div class="line"><span class="lineno">   64</span>                        {</div>
 <div class="line"><span class="lineno">   65</span>                            <span class="keywordflow">return</span> proc[i];</div>
@@ -321,7 +321,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   90</span>                    TCHAR lpBaseName[255];</div>
 <div class="line"><span class="lineno">   91</span>                    <span class="keywordflow">if</span> (RtGetModuleBaseName(hProc, NULL, lpBaseName, <span class="keyword">sizeof</span>(lpBaseName) / <span class="keyword">sizeof</span>(TCHAR)))</div>
 <div class="line"><span class="lineno">   92</span>                    {</div>
-<div class="line"><span class="lineno">   93</span>                        Message::Level4(_T(<span class="stringliteral">&quot;%ls\n&quot;</span>), lpBaseName);</div>
+<div class="line"><span class="lineno">   93</span>                        <span class="comment">//Message::Level4(_T(&quot;%ls\n&quot;), lpBaseName);</span></div>
 <div class="line"><span class="lineno">   94</span>                        <span class="keywordflow">if</span> (_tcscmp(procName, lpBaseName) == 0)</div>
 <div class="line"><span class="lineno">   95</span>                        {</div>
 <div class="line"><span class="lineno">   96</span>                            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -362,8 +362,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/Custom_lib/<a class="el" href="rt_lib_8h_source.html">rtLib.h</a></li>
-<li>C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/Custom_lib/<a class="el" href="rt_lib_8cpp_source.html">rtLib.cpp</a></li>
+<li><a class="el" href="rt_lib_8h_source.html">rtLib.h</a></li>
+<li><a class="el" href="rt_lib_8cpp_source.html">rtLib.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

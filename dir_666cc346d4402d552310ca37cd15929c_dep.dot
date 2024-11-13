@@ -1,0 +1,17 @@
+digraph "RTSeqSample/External"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_d86f370549b760d3573d99ea9757c382 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="RTSeqSample", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_d86f370549b760d3573d99ea9757c382.html",tooltip=""]
+  subgraph clusterdir_666cc346d4402d552310ca37cd15929c {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_666cc346d4402d552310ca37cd15929c.html",tooltip=""]
+    dir_666cc346d4402d552310ca37cd15929c [shape=plaintext, label="External"];
+  dir_93fae6a088312209311f4ad9547a48c8 [label="Custom_lib", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_93fae6a088312209311f4ad9547a48c8.html",tooltip=""];
+  dir_f1771c239e38f10fa65d037f229fd9ff [label="External_lib", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_f1771c239e38f10fa65d037f229fd9ff.html",tooltip=""];
+  }
+  }
+}

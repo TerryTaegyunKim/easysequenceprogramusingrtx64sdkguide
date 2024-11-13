@@ -6,6 +6,7 @@ var classprompt_1_1_prompt =
     [ "GetFileName", "classprompt_1_1_prompt.html#a42620bbdcc465d3d5435012536926fa3", null ],
     [ "GetFullPath", "classprompt_1_1_prompt.html#a20c6f56c1ae45a4ab06f8b86b63da4b9", null ],
     [ "IsAbsolutePath", "classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca", null ],
+    [ "IsCommandValid", "classprompt_1_1_prompt.html#aa584daa4f16fcfbca5003d5f5ad2d1fb", null ],
     [ "IsDouble", "classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd", null ],
     [ "IsInteger", "classprompt_1_1_prompt.html#a537e306b14a45f9bd537054e1ee38c4c", null ],
     [ "ParseCommand", "classprompt_1_1_prompt.html#a998d4cf3b807e984f707c427e9056b7a", null ],

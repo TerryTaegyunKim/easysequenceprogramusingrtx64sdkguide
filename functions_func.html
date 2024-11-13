@@ -124,6 +124,7 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 <li>ClearConsole()&#160;:&#160;<a class="el" href="classprompt_1_1_prompt.html#a3cab872e21984606fdc8848b84a0c0b8">prompt::Prompt</a></li>
 <li>Close()&#160;:&#160;<a class="el" href="classshared_memory_1_1_shared_memory.html#aeb536ad3891285fa976bdf7f148026e0">sharedMemory::SharedMemory</a>, <a class="el" href="class_w_m_x_lib.html#a992c219ecf14ab6e1d5fbbf7d5d2ae4d">WMXLib</a></li>
 <li>CombinePaths()&#160;:&#160;<a class="el" href="classini_parser_1_1_ini_parser.html#ae895c40a005daab0687e9608f968a966">iniParser::IniParser</a></li>
+<li>CommandToString()&#160;:&#160;<a class="el" href="classcommon_1_1_command.html#a418e6619dc3c69460f8aee1966dd1306">common::Command</a></li>
 </ul>
 
 
@@ -147,7 +148,6 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
 <li>GetAllKeysInSection()&#160;:&#160;<a class="el" href="classini_parser_1_1_ini_parser.html#a14ee5fb071a7c66a45d7d92ab325e48e">iniParser::IniParser</a></li>
 <li>GetAxisToSlaveId()&#160;:&#160;<a class="el" href="class_w_m_x_lib.html#afec077657b89bcae2d59ce85a97504ec">WMXLib</a></li>
-<li>GetCommandString()&#160;:&#160;<a class="el" href="classcommon_1_1_command.html#ad309057744a886093e88ba1939508ff9">common::Command</a></li>
 <li>GetCurrentExeDirectory()&#160;:&#160;<a class="el" href="classini_parser_1_1_ini_parser.html#ad7b1b32350c20913f96a6e38635bfa67">iniParser::IniParser</a></li>
 <li>GetDetailLogStateString()&#160;:&#160;<a class="el" href="class_w_m_x_lib.html#a834684e38d597de1f99270bd596f6067">WMXLib</a></li>
 <li>GetEcat()&#160;:&#160;<a class="el" href="class_w_m_x_lib.html#a868dcfd0d7d591a89db42e3a7d4774a7">WMXLib</a></li>
@@ -160,7 +160,6 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 <li>GetInitializeTimer()&#160;:&#160;<a class="el" href="classstopowatch_1_1_stopwatch.html#a1e83a2b729d9d09cee68f4343e7935d8">stopowatch::Stopwatch</a></li>
 <li>getInstance()&#160;:&#160;<a class="el" href="classshared_memory_1_1_shared_memory.html#a2640ca595aaa5352544c4db3a8e678e9">sharedMemory::SharedMemory</a></li>
 <li>GetIo()&#160;:&#160;<a class="el" href="class_w_m_x_lib.html#a21f80880c6fe177530c6282720105f00">WMXLib</a></li>
-<li>GetJobStateString()&#160;:&#160;<a class="el" href="classcommon_1_1_state.html#a1995a4cf45ba87066d00356029652ea9">common::State</a></li>
 <li>GetKeyFromName()&#160;:&#160;<a class="el" href="classini_parser_1_1_ini_parser.html#a57f7fba42e1dbc59a9d5fb1ccea49469">iniParser::IniParser</a></li>
 <li>GetLog()&#160;:&#160;<a class="el" href="class_w_m_x_lib.html#af6f357ecc45d0dbaad7748ff8d938e88">WMXLib</a></li>
 <li>GetMessageLevel()&#160;:&#160;<a class="el" href="classcommon_1_1_message.html#a9db1c0ac1a92030350bc18cc9cf5db23">common::Message</a></li>
@@ -179,6 +178,7 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 <li>Initialize()&#160;:&#160;<a class="el" href="classstopowatch_1_1_stopwatch.html#a7a6a5fa3f41742bb98935745bec45665">stopowatch::Stopwatch</a>, <a class="el" href="class_w_m_x_lib.html#a3f0820fd2f3223d3587927c389f701c9">WMXLib</a></li>
 <li>IntToBytes()&#160;:&#160;<a class="el" href="classcommon_1_1_format.html#a8a2c3f9d13d7df423dac497d33d3309a">common::Format</a></li>
 <li>IsAbsolutePath()&#160;:&#160;<a class="el" href="classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca">prompt::Prompt</a></li>
+<li>IsCommandValid()&#160;:&#160;<a class="el" href="classprompt_1_1_prompt.html#aa584daa4f16fcfbca5003d5f5ad2d1fb">prompt::Prompt</a></li>
 <li>IsDouble()&#160;:&#160;<a class="el" href="classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd">prompt::Prompt</a></li>
 <li>IsEtherCATModuleAvailable()&#160;:&#160;<a class="el" href="class_w_m_x_lib.html#addb6732912c49c183fedc95e37508e93">WMXLib</a></li>
 <li>IsFilePathValid()&#160;:&#160;<a class="el" href="classini_parser_1_1_ini_parser.html#af6b94717bcb6eafe482911d2673c293b">iniParser::IniParser</a></li>
@@ -188,6 +188,11 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 <li>IsRunning()&#160;:&#160;<a class="el" href="classthread_manager_1_1_thread_manager.html#ac8c016e346442ecca1821c4018af27ea">threadManager::ThreadManager</a></li>
 <li>IsRunningRtProc()&#160;:&#160;<a class="el" href="classrt_lib_1_1_rt_lib.html#a992a369ffa71113c5f3c01222519b1ae">rtLib::RtLib</a></li>
 <li>IsSimulationModuleAvailable()&#160;:&#160;<a class="el" href="class_w_m_x_lib.html#aafa2d5d0730879cb70db1ef35c21b101">WMXLib</a></li>
+</ul>
+
+
+<h3><a id="index_j" name="index_j"></a>- j -</h3><ul>
+<li>JobStateToString()&#160;:&#160;<a class="el" href="classcommon_1_1_state.html#ac71d8a6767999560171d8e4acaea6d87">common::State</a></li>
 </ul>
 
 

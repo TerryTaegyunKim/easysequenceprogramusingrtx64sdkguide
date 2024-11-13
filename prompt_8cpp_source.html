@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Easy Sequence Program Using Rtx64sdk Guide: C:/Users/TerryTaegyunKim/source/easysequenceprogramusingrtx64sdk/RTSeqSample/External/External_lib/prompt.cpp Source File</title>
+<title>Easy Sequence Program Using Rtx64sdk Guide: prompt.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -206,263 +206,274 @@ $(function(){initNavTree('prompt_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// Check if the string is a double</span></div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd">  104</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd">Prompt::IsDouble</a>(<span class="keyword">const</span> _TCHAR* str)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            _TCHAR* end;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            std::wcstod(str, &amp;end);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#aa584daa4f16fcfbca5003d5f5ad2d1fb">  103</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#aa584daa4f16fcfbca5003d5f5ad2d1fb">Prompt::IsCommandValid</a>(<span class="keywordtype">int</span> argc, _TCHAR* argv[], <span class="keyword">const</span> _TCHAR* cmd)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="comment">// 조건 확인: 인자가 있고, 해당 인자가 cmd와 일치하는지 확인</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">if</span> (argc &gt; 0 &amp;&amp; (_tcscmp(argv[<a class="code hl_define" href="prompt_8h.html#ab0d87e07831e7e4943caef187872123e">COMMAND</a>], cmd) == 0)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// Check if the string is a double</span></div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd">  111</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd">Prompt::IsDouble</a>(<span class="keyword">const</span> _TCHAR* str)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            _TCHAR* end;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            std::wcstod(str, &amp;end);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
 </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="comment">// Check if the string is an integer</span></div>
-<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a537e306b14a45f9bd537054e1ee38c4c">  120</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a537e306b14a45f9bd537054e1ee38c4c">Prompt::IsInteger</a>(<span class="keyword">const</span> _TCHAR* str)</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            _TCHAR* end;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordtype">long</span> val = _tcstol(str, &amp;end, 10);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp; val &gt;= INT_MIN &amp;&amp; val &lt;= INT_MAX;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">catch</span> (...)</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// Check if the string is an integer</span></div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a537e306b14a45f9bd537054e1ee38c4c">  127</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a537e306b14a45f9bd537054e1ee38c4c">Prompt::IsInteger</a>(<span class="keyword">const</span> _TCHAR* str)</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">if</span> (str == <span class="keyword">nullptr</span> || *str == _T(<span class="charliteral">&#39;\0&#39;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            _TCHAR* end;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordtype">long</span> val = _tcstol(str, &amp;end, 10);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordflow">return</span> *end == _T(<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp; val &gt;= INT_MIN &amp;&amp; val &lt;= INT_MAX;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">catch</span> (...)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc">  134</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc">Prompt::wtoi</a>(<span class="keyword">const</span> std::wstring&amp; str, <span class="keywordtype">int</span>* i)</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || i == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        {</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            *i = 0;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        std::wstringstream ss(str);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        ss &gt;&gt; *i;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            *i = 0;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc">  141</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc">Prompt::wtoi</a>(<span class="keyword">const</span> std::wstring&amp; str, <span class="keywordtype">int</span>* i)</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || i == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            *i = 0;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        std::wstringstream ss(str);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        ss &gt;&gt; *i;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            *i = 0;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
 </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="foldopen" id="foldopen00155" data-start="{" data-end="}">
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657">  155</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657">Prompt::wtof</a>(<span class="keyword">const</span> std::wstring&amp; str, <span class="keywordtype">double</span>* f)</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || f == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            *f = 0.0;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        }</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        std::wstringstream ss(str);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        ss &gt;&gt; *f;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            *f = 0.0;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657">  162</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657">Prompt::wtof</a>(<span class="keyword">const</span> std::wstring&amp; str, <span class="keywordtype">double</span>* f)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">if</span> (str.empty() || str == L<span class="stringliteral">&quot; &quot;</span> || f == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            *f = 0.0;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        std::wstringstream ss(str);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        ss &gt;&gt; *f;</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="comment">// Check for any errors in the conversion process</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">if</span> (ss.fail() || !ss.eof())</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            *f = 0.0;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    }</div>
 </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="comment">// Spinner function</span></div>
-<div class="foldopen" id="foldopen00176" data-start="{" data-end="}">
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">  176</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">Prompt::Spinner</a>(<span class="keywordtype">bool</span> done, <span class="keyword">const</span> _TCHAR* status)</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> spinnerChars[] = { <span class="charliteral">&#39;l&#39;</span>, <span class="charliteral">&#39;+&#39;</span>, <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;*&#39;</span> };</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> counter = 0;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        std::wostringstream oss;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="keywordflow">if</span> (done)</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; std::setw(10) &lt;&lt; std::setfill(L<span class="charliteral">&#39; &#39;</span>) &lt;&lt; std::left &lt;&lt; L<span class="stringliteral">&quot;Result &gt;&gt;&quot;</span>;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <span class="keywordtype">char</span> spinner = spinnerChars[counter % 4];</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; spinner;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        }</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keywordflow">if</span> (status != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            oss &lt;&lt; L<span class="stringliteral">&quot; &quot;</span> &lt;&lt; status;</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        std::wstring output = oss.str();</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordtype">int</span> outputLength = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordflow">if</span> (outputLength &lt; <a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a>)</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            output.append(<a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> - outputLength, L<span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        std::wcout &lt;&lt; output;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="comment">// Spinner function</span></div>
+<div class="foldopen" id="foldopen00183" data-start="{" data-end="}">
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">  183</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">Prompt::Spinner</a>(<span class="keywordtype">bool</span> done, <span class="keyword">const</span> _TCHAR* status)</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> spinnerChars[] = { <span class="charliteral">&#39;l&#39;</span>, <span class="charliteral">&#39;+&#39;</span>, <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;*&#39;</span> };</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> counter = 0;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        std::wostringstream oss;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">if</span> (done)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; std::setw(10) &lt;&lt; std::setfill(L<span class="charliteral">&#39; &#39;</span>) &lt;&lt; std::left &lt;&lt; L<span class="stringliteral">&quot;Result &gt;&gt;&quot;</span>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordtype">char</span> spinner = spinnerChars[counter % 4];</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            oss &lt;&lt; L<span class="stringliteral">&quot;\r&quot;</span> &lt;&lt; spinner;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">if</span> (status != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            oss &lt;&lt; L<span class="stringliteral">&quot; &quot;</span> &lt;&lt; status;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        std::wstring output = oss.str();</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordtype">int</span> outputLength = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        std::wcout.flush();</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">if</span> (!done)</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        {</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            counter++;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">if</span> (outputLength &lt; <a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a>)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            output.append(<a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> - outputLength, L<span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        std::wcout &lt;&lt; output;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(output.length());</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordflow">if</span> (done)</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        {</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            std::wcout &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = 0;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    }</div>
-</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        std::wcout.flush();</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keywordflow">if</span> (!done)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            counter++;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        }</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="foldopen" id="foldopen00223" data-start="{" data-end="}">
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#ad35f4d6bb9dc7fd7d57f6ee30bec217d">  223</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">Prompt::Spinner</a>(<span class="keywordtype">bool</span> done, <span class="keyword">const</span> std::wstring&amp; status)</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keyword">const</span> _TCHAR* strStatus = status.c_str();</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <a class="code hl_function" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">Spinner</a>(done, strStatus);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordflow">if</span> (done)</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            std::wcout &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <a class="code hl_variable" href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">lastMessageLength</a> = 0;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
 </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">// Clear console</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a3cab872e21984606fdc8848b84a0c0b8">  230</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a3cab872e21984606fdc8848b84a0c0b8">Prompt::ClearConsole</a>(<span class="keyword">const</span> _TCHAR* mes)</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#ad35f4d6bb9dc7fd7d57f6ee30bec217d">  230</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">Prompt::Spinner</a>(<span class="keywordtype">bool</span> done, <span class="keyword">const</span> std::wstring&amp; status)</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keywordflow">if</span> (mes != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        {</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            std::wcout &lt;&lt; mes;</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        }</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keyword">const</span> _TCHAR* strStatus = status.c_str();</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <a class="code hl_function" href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">Spinner</a>(done, strStatus);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
 </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="comment">// Convert TCHAR to std::string</span></div>
-<div class="foldopen" id="foldopen00240" data-start="{" data-end="}">
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a30fb012d7cf854aab64f42fd8b05aa0a">  240</a></span>    std::string <a class="code hl_function" href="classprompt_1_1_prompt.html#a30fb012d7cf854aab64f42fd8b05aa0a">Prompt::TCHARToString</a>(<span class="keyword">const</span> TCHAR* ptsz)</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#ifdef _UNICODE</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <span class="keywordtype">size_t</span> len = wcslen(ptsz);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordtype">char</span>* psz = <span class="keyword">new</span> <span class="keywordtype">char</span>[2 * len + 1];</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        wcstombs_s(&amp;convertedChars, psz, 2 * len + 1, ptsz, _TRUNCATE);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        std::string s = psz;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keyword">delete</span>[] psz;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">return</span> s;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">return</span> std::string(ptsz);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="comment">// Clear console</span></div>
+<div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a3cab872e21984606fdc8848b84a0c0b8">  237</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#a3cab872e21984606fdc8848b84a0c0b8">Prompt::ClearConsole</a>(<span class="keyword">const</span> _TCHAR* mes)</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <span class="keywordflow">if</span> (mes != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            std::wcout &lt;&lt; mes;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
 </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="foldopen" id="foldopen00255" data-start="{" data-end="}">
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#af7bf9f7202405fcc5c606900e4494461">  255</a></span>    TCHAR* <a class="code hl_function" href="classprompt_1_1_prompt.html#af7bf9f7202405fcc5c606900e4494461">Prompt::StringToTCHAR</a>(<span class="keyword">const</span> std::string&amp; str)</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    {</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#ifdef _UNICODE</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordtype">size_t</span> len = str.size();</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordtype">wchar_t</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">wchar_t</span>[len + 1];</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        mbstowcs_s(&amp;convertedChars, ptsz, len + 1, str.c_str(), _TRUNCATE);</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">return</span> ptsz;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keywordtype">char</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">char</span>[str.size() + 1];</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        strcpy_s(ptsz, str.size() + 1, str.c_str());</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">return</span> ptsz;</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="comment">// Convert TCHAR to std::string</span></div>
+<div class="foldopen" id="foldopen00247" data-start="{" data-end="}">
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a30fb012d7cf854aab64f42fd8b05aa0a">  247</a></span>    std::string <a class="code hl_function" href="classprompt_1_1_prompt.html#a30fb012d7cf854aab64f42fd8b05aa0a">Prompt::TCHARToString</a>(<span class="keyword">const</span> TCHAR* ptsz)</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    {</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#ifdef _UNICODE</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <span class="keywordtype">size_t</span> len = wcslen(ptsz);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <span class="keywordtype">char</span>* psz = <span class="keyword">new</span> <span class="keywordtype">char</span>[2 * len + 1];</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        wcstombs_s(&amp;convertedChars, psz, 2 * len + 1, ptsz, _TRUNCATE);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        std::string s = psz;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keyword">delete</span>[] psz;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <span class="keywordflow">return</span> s;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">return</span> std::string(ptsz);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
 </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="comment">// Get file name from path</span></div>
-<div class="foldopen" id="foldopen00271" data-start="{" data-end="}">
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a42620bbdcc465d3d5435012536926fa3">  271</a></span>    <span class="keyword">const</span> _TCHAR* <a class="code hl_function" href="classprompt_1_1_prompt.html#a42620bbdcc465d3d5435012536926fa3">Prompt::GetFileName</a>(<span class="keyword">const</span> _TCHAR* path)</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        std::basic_string&lt;TCHAR&gt; pathStr(path);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordtype">size_t</span> lastBackslash = pathStr.find_last_of(_T(<span class="stringliteral">&quot;\\&quot;</span>));</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <span class="keywordflow">if</span> (lastBackslash != std::basic_string&lt;TCHAR&gt;::npos)</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        {</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="keywordflow">return</span> path + lastBackslash + 1;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        }</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        {</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <span class="keywordflow">return</span> path;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        }</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="foldopen" id="foldopen00262" data-start="{" data-end="}">
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#af7bf9f7202405fcc5c606900e4494461">  262</a></span>    TCHAR* <a class="code hl_function" href="classprompt_1_1_prompt.html#af7bf9f7202405fcc5c606900e4494461">Prompt::StringToTCHAR</a>(<span class="keyword">const</span> std::string&amp; str)</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">#ifdef _UNICODE</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordtype">size_t</span> len = str.size();</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordtype">size_t</span> convertedChars = 0;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordtype">wchar_t</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">wchar_t</span>[len + 1];</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        mbstowcs_s(&amp;convertedChars, ptsz, len + 1, str.c_str(), _TRUNCATE);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">return</span> ptsz;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordtype">char</span>* ptsz = <span class="keyword">new</span> <span class="keywordtype">char</span>[str.size() + 1];</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        strcpy_s(ptsz, str.size() + 1, str.c_str());</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keywordflow">return</span> ptsz;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
 </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="foldopen" id="foldopen00286" data-start="{" data-end="}">
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca">  286</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca">Prompt::IsAbsolutePath</a>(<span class="keyword">const</span> _TCHAR* path)</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    {</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <span class="keywordflow">if</span> (_tcslen(path) == 0)</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="comment">// Check for drive letter and colon (e.g., C:\&zwj;)</span></div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; _istalpha(path[0]) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;:&#39;</span>))</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        <span class="comment">// Check for UNC paths (e.g., \\server\share)</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="comment">// Check for root paths (e.g., \folder)</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        <span class="keywordflow">if</span> (path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="comment">// Get file name from path</span></div>
+<div class="foldopen" id="foldopen00278" data-start="{" data-end="}">
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a42620bbdcc465d3d5435012536926fa3">  278</a></span>    <span class="keyword">const</span> _TCHAR* <a class="code hl_function" href="classprompt_1_1_prompt.html#a42620bbdcc465d3d5435012536926fa3">Prompt::GetFileName</a>(<span class="keyword">const</span> _TCHAR* path)</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    {</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        std::basic_string&lt;TCHAR&gt; pathStr(path);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keywordtype">size_t</span> lastBackslash = pathStr.find_last_of(_T(<span class="stringliteral">&quot;\\&quot;</span>));</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">if</span> (lastBackslash != std::basic_string&lt;TCHAR&gt;::npos)</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            <span class="keywordflow">return</span> path + lastBackslash + 1;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        {</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">return</span> path;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    }</div>
 </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="foldopen" id="foldopen00293" data-start="{" data-end="}">
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca">  293</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca">Prompt::IsAbsolutePath</a>(<span class="keyword">const</span> _TCHAR* path)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        <span class="keywordflow">if</span> (_tcslen(path) == 0)</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="comment">// Check for drive letter and colon (e.g., C:\&zwj;)</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; _istalpha(path[0]) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;:&#39;</span>))</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        <span class="comment">// Check for UNC paths (e.g., \\server\share)</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <span class="keywordflow">if</span> (_tcslen(path) &gt;= 2 &amp;&amp; path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>) &amp;&amp; path[1] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="foldopen" id="foldopen00306" data-start="{" data-end="}">
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a20c6f56c1ae45a4ab06f8b86b63da4b9">  306</a></span>    <span class="keyword">const</span> _TCHAR* <a class="code hl_function" href="classprompt_1_1_prompt.html#a20c6f56c1ae45a4ab06f8b86b63da4b9">Prompt::GetFullPath</a>(<span class="keyword">const</span> _TCHAR* relativePath)</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    {</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="keyword">static</span> _TCHAR fullPath[MAX_PATH];</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keywordflow">if</span> (GetFullPathName(relativePath, MAX_PATH, fullPath, <span class="keyword">nullptr</span>))</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        {</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            <span class="keywordflow">return</span> fullPath;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        }</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        {</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <span class="keywordflow">return</span> _T(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        }</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    }</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <span class="comment">// Check for root paths (e.g., \folder)</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        <span class="keywordflow">if</span> (path[0] == _T(<span class="charliteral">&#39;\\&#39;</span>))</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    }</div>
 </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>}</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="foldopen" id="foldopen00313" data-start="{" data-end="}">
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="classprompt_1_1_prompt.html#a20c6f56c1ae45a4ab06f8b86b63da4b9">  313</a></span>    <span class="keyword">const</span> _TCHAR* <a class="code hl_function" href="classprompt_1_1_prompt.html#a20c6f56c1ae45a4ab06f8b86b63da4b9">Prompt::GetFullPath</a>(<span class="keyword">const</span> _TCHAR* relativePath)</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keyword">static</span> _TCHAR fullPath[MAX_PATH];</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="keywordflow">if</span> (GetFullPathName(relativePath, MAX_PATH, fullPath, <span class="keyword">nullptr</span>))</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        {</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            <span class="keywordflow">return</span> fullPath;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        }</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        {</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            <span class="keywordflow">return</span> _T(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    }</div>
 </div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a1bfcf938fc3f66eb6677462e72e636bc"><div class="ttname"><a href="classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc">prompt::Prompt::wtoi</a></div><div class="ttdeci">static bool wtoi(const std::wstring &amp;str, int *i)</div><div class="ttdoc">주어진 문자열을 정수로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00134">prompt.cpp:134</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a20c6f56c1ae45a4ab06f8b86b63da4b9"><div class="ttname"><a href="classprompt_1_1_prompt.html#a20c6f56c1ae45a4ab06f8b86b63da4b9">prompt::Prompt::GetFullPath</a></div><div class="ttdeci">static const _TCHAR * GetFullPath(const _TCHAR *relativePath)</div><div class="ttdoc">주어진 상대 경로를 절대 경로로 변환하여 반환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00306">prompt.cpp:306</a></div></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>}</div>
+</div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a1bfcf938fc3f66eb6677462e72e636bc"><div class="ttname"><a href="classprompt_1_1_prompt.html#a1bfcf938fc3f66eb6677462e72e636bc">prompt::Prompt::wtoi</a></div><div class="ttdeci">static bool wtoi(const std::wstring &amp;str, int *i)</div><div class="ttdoc">주어진 문자열을 정수로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00141">prompt.cpp:141</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a20c6f56c1ae45a4ab06f8b86b63da4b9"><div class="ttname"><a href="classprompt_1_1_prompt.html#a20c6f56c1ae45a4ab06f8b86b63da4b9">prompt::Prompt::GetFullPath</a></div><div class="ttdeci">static const _TCHAR * GetFullPath(const _TCHAR *relativePath)</div><div class="ttdoc">주어진 상대 경로를 절대 경로로 변환하여 반환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00313">prompt.cpp:313</a></div></div>
 <div class="ttc" id="aclassprompt_1_1_prompt_html_a23c0175dad540b5db0c485f69b852785"><div class="ttname"><a href="classprompt_1_1_prompt.html#a23c0175dad540b5db0c485f69b852785">prompt::Prompt::ExecCommand</a></div><div class="ttdeci">static std::string ExecCommand(std::string szCmdArg)</div><div class="ttdoc">주어진 명령어를 실행하고 그 결과를 문자열로 반환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00008">prompt.cpp:8</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a30fb012d7cf854aab64f42fd8b05aa0a"><div class="ttname"><a href="classprompt_1_1_prompt.html#a30fb012d7cf854aab64f42fd8b05aa0a">prompt::Prompt::TCHARToString</a></div><div class="ttdeci">static std::string TCHARToString(const TCHAR *ptsz)</div><div class="ttdoc">TCHAR 문자열을 std::string으로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00240">prompt.cpp:240</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a3cab872e21984606fdc8848b84a0c0b8"><div class="ttname"><a href="classprompt_1_1_prompt.html#a3cab872e21984606fdc8848b84a0c0b8">prompt::Prompt::ClearConsole</a></div><div class="ttdeci">static void ClearConsole(const _TCHAR *mes=nullptr)</div><div class="ttdoc">콘솔을 지우고 선택적으로 메시지를 출력합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00230">prompt.cpp:230</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a422dff8328f7a4777c51dff1badcdffb"><div class="ttname"><a href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">prompt::Prompt::Spinner</a></div><div class="ttdeci">static void Spinner(bool done, const _TCHAR *status)</div><div class="ttdoc">콘솔에 스피너 애니메이션을 출력합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00176">prompt.cpp:176</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a42620bbdcc465d3d5435012536926fa3"><div class="ttname"><a href="classprompt_1_1_prompt.html#a42620bbdcc465d3d5435012536926fa3">prompt::Prompt::GetFileName</a></div><div class="ttdeci">static const _TCHAR * GetFileName(const _TCHAR *path)</div><div class="ttdoc">주어진 경로에서 파일 이름만을 추출합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00271">prompt.cpp:271</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a537e306b14a45f9bd537054e1ee38c4c"><div class="ttname"><a href="classprompt_1_1_prompt.html#a537e306b14a45f9bd537054e1ee38c4c">prompt::Prompt::IsInteger</a></div><div class="ttdeci">static bool IsInteger(const _TCHAR *str)</div><div class="ttdoc">주어진 문자열이 정수인지 확인합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00120">prompt.cpp:120</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_a928d152187db83b8476a8e6afb808bcd"><div class="ttname"><a href="classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd">prompt::Prompt::IsDouble</a></div><div class="ttdeci">static bool IsDouble(const _TCHAR *str)</div><div class="ttdoc">주어진 문자열이 실수인지 확인합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00104">prompt.cpp:104</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a30fb012d7cf854aab64f42fd8b05aa0a"><div class="ttname"><a href="classprompt_1_1_prompt.html#a30fb012d7cf854aab64f42fd8b05aa0a">prompt::Prompt::TCHARToString</a></div><div class="ttdeci">static std::string TCHARToString(const TCHAR *ptsz)</div><div class="ttdoc">TCHAR 문자열을 std::string으로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00247">prompt.cpp:247</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a3cab872e21984606fdc8848b84a0c0b8"><div class="ttname"><a href="classprompt_1_1_prompt.html#a3cab872e21984606fdc8848b84a0c0b8">prompt::Prompt::ClearConsole</a></div><div class="ttdeci">static void ClearConsole(const _TCHAR *mes=nullptr)</div><div class="ttdoc">콘솔을 지우고 선택적으로 메시지를 출력합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00237">prompt.cpp:237</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a422dff8328f7a4777c51dff1badcdffb"><div class="ttname"><a href="classprompt_1_1_prompt.html#a422dff8328f7a4777c51dff1badcdffb">prompt::Prompt::Spinner</a></div><div class="ttdeci">static void Spinner(bool done, const _TCHAR *status)</div><div class="ttdoc">콘솔에 스피너 애니메이션을 출력합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00183">prompt.cpp:183</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a42620bbdcc465d3d5435012536926fa3"><div class="ttname"><a href="classprompt_1_1_prompt.html#a42620bbdcc465d3d5435012536926fa3">prompt::Prompt::GetFileName</a></div><div class="ttdeci">static const _TCHAR * GetFileName(const _TCHAR *path)</div><div class="ttdoc">주어진 경로에서 파일 이름만을 추출합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00278">prompt.cpp:278</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a537e306b14a45f9bd537054e1ee38c4c"><div class="ttname"><a href="classprompt_1_1_prompt.html#a537e306b14a45f9bd537054e1ee38c4c">prompt::Prompt::IsInteger</a></div><div class="ttdeci">static bool IsInteger(const _TCHAR *str)</div><div class="ttdoc">주어진 문자열이 정수인지 확인합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00127">prompt.cpp:127</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_a928d152187db83b8476a8e6afb808bcd"><div class="ttname"><a href="classprompt_1_1_prompt.html#a928d152187db83b8476a8e6afb808bcd">prompt::Prompt::IsDouble</a></div><div class="ttdeci">static bool IsDouble(const _TCHAR *str)</div><div class="ttdoc">주어진 문자열이 실수인지 확인합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00111">prompt.cpp:111</a></div></div>
 <div class="ttc" id="aclassprompt_1_1_prompt_html_a998d4cf3b807e984f707c427e9056b7a"><div class="ttname"><a href="classprompt_1_1_prompt.html#a998d4cf3b807e984f707c427e9056b7a">prompt::Prompt::ParseCommand</a></div><div class="ttdeci">static bool ParseCommand(const std::basic_string&lt; _TCHAR &gt; &amp;input, int &amp;argc, _TCHAR *argv[], int maxArgs=100)</div><div class="ttdoc">사용자의 입력 명령어를 파싱하여 argc 및 argv 형태로 분리합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00081">prompt.cpp:81</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_abd8e2d6084b83286563431d3bd4fd2ca"><div class="ttname"><a href="classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca">prompt::Prompt::IsAbsolutePath</a></div><div class="ttdeci">static bool IsAbsolutePath(const _TCHAR *path)</div><div class="ttdoc">주어진 경로가 절대 경로인지 확인합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00286">prompt.cpp:286</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_abe66a6ed7075ee66079cc8aa8a003cb8"><div class="ttname"><a href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">prompt::Prompt::lastMessageLength</a></div><div class="ttdeci">static int lastMessageLength</div><div class="ttdef"><b>Definition</b> <a href="prompt_8h_source.html#l00147">prompt.h:147</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_ad1bf208b7118e50e4bb08dfb9fdbb657"><div class="ttname"><a href="classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657">prompt::Prompt::wtof</a></div><div class="ttdeci">static bool wtof(const std::wstring &amp;str, double *i)</div><div class="ttdoc">주어진 문자열을 실수로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00155">prompt.cpp:155</a></div></div>
-<div class="ttc" id="aclassprompt_1_1_prompt_html_af7bf9f7202405fcc5c606900e4494461"><div class="ttname"><a href="classprompt_1_1_prompt.html#af7bf9f7202405fcc5c606900e4494461">prompt::Prompt::StringToTCHAR</a></div><div class="ttdeci">static TCHAR * StringToTCHAR(const std::string &amp;str)</div><div class="ttdoc">std::string을 TCHAR로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00255">prompt.cpp:255</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_aa584daa4f16fcfbca5003d5f5ad2d1fb"><div class="ttname"><a href="classprompt_1_1_prompt.html#aa584daa4f16fcfbca5003d5f5ad2d1fb">prompt::Prompt::IsCommandValid</a></div><div class="ttdeci">static bool IsCommandValid(int argc, _TCHAR *argv[], const _TCHAR *cmd)</div><div class="ttdoc">주어진 명령어가 유효한지 확인합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00103">prompt.cpp:103</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_abd8e2d6084b83286563431d3bd4fd2ca"><div class="ttname"><a href="classprompt_1_1_prompt.html#abd8e2d6084b83286563431d3bd4fd2ca">prompt::Prompt::IsAbsolutePath</a></div><div class="ttdeci">static bool IsAbsolutePath(const _TCHAR *path)</div><div class="ttdoc">주어진 경로가 절대 경로인지 확인합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00293">prompt.cpp:293</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_abe66a6ed7075ee66079cc8aa8a003cb8"><div class="ttname"><a href="classprompt_1_1_prompt.html#abe66a6ed7075ee66079cc8aa8a003cb8">prompt::Prompt::lastMessageLength</a></div><div class="ttdeci">static int lastMessageLength</div><div class="ttdef"><b>Definition</b> <a href="prompt_8h_source.html#l00158">prompt.h:158</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_ad1bf208b7118e50e4bb08dfb9fdbb657"><div class="ttname"><a href="classprompt_1_1_prompt.html#ad1bf208b7118e50e4bb08dfb9fdbb657">prompt::Prompt::wtof</a></div><div class="ttdeci">static bool wtof(const std::wstring &amp;str, double *i)</div><div class="ttdoc">주어진 문자열을 실수로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00162">prompt.cpp:162</a></div></div>
+<div class="ttc" id="aclassprompt_1_1_prompt_html_af7bf9f7202405fcc5c606900e4494461"><div class="ttname"><a href="classprompt_1_1_prompt.html#af7bf9f7202405fcc5c606900e4494461">prompt::Prompt::StringToTCHAR</a></div><div class="ttdeci">static TCHAR * StringToTCHAR(const std::string &amp;str)</div><div class="ttdoc">std::string을 TCHAR로 변환합니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00262">prompt.cpp:262</a></div></div>
 <div class="ttc" id="anamespaceprompt_html"><div class="ttname"><a href="namespaceprompt.html">prompt</a></div><div class="ttdoc">Prompt 클래스를 포함하는 네임스페이스입니다.</div><div class="ttdef"><b>Definition</b> <a href="#l00003">prompt.cpp:4</a></div></div>
 <div class="ttc" id="aprompt_8h_html"><div class="ttname"><a href="prompt_8h.html">prompt.h</a></div></div>
+<div class="ttc" id="aprompt_8h_html_ab0d87e07831e7e4943caef187872123e"><div class="ttname"><a href="prompt_8h.html#ab0d87e07831e7e4943caef187872123e">COMMAND</a></div><div class="ttdeci">#define COMMAND</div><div class="ttdef"><b>Definition</b> <a href="prompt_8h_source.html#l00011">prompt.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
